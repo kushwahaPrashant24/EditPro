@@ -8,18 +8,19 @@ import {
 import Home from '../src/Componont/Home/Home';
 import Careers from '../src/Componont/Careers/Careers';
 import Contact from '../src/Componont/Contact/Contact';
+import Services from './Componont/Services/Services';
 
 
 const router = createBrowserRouter([
   
   {
-    path: "/Home",
+    path: "/",
     element:<><ResponsiveAppBar/><Home/></>
   },
 
   {
     path: "Services",
-    element:<><ResponsiveAppBar/><Home/></>
+    element:<><ResponsiveAppBar/><Services/></>
   },
 
   {

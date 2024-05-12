@@ -17,7 +17,12 @@ import { Link } from "react-router-dom";
 
 
 const pages = ['Home', 'Services', 'Careers', 'Contact'];
-
+const pageDestinations = {
+  Home: '/',          // Destination for Home page
+  Services: '/services',  // Destination for Services page
+  Careers: '/careers',    // Destination for Careers page
+  Contact: '/contact'     // Destination for Contact page
+};
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -130,7 +135,8 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 component={Link} // Use Link component for navigation
-                to={`/${page.toLowerCase()}`} // Specify the destination based on the page
+                //to={`/${page.toLowerCase()}`} // Specify the destination based on the page
+                to={pageDestinations[page]}
               >
                 {page}
                 
