@@ -1,27 +1,26 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import MenuItem from "@mui/material/MenuItem";
+import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
-import Logo  from "../../assets/logo.png";
+import Logo from "../../assets/logo.png";
 
-
-const pages = ['Home', 'Services', 'Careers', 'Contact'];
+const pages = ["Home", "Services", "Careers", "Contact"];
 const pageDestinations = {
-  Home: '/',          // Destination for Home page
-  Services: '/services',  // Destination for Services page
-  Careers: '/careers',    // Destination for Careers page
-  Contact: '/contact'     // Destination for Contact page
+  Home: "/", // Destination for Home page
+  Services: "/services", // Destination for Services page
+  Careers: "/careers", // Destination for Careers page
+  Contact: "/contact", // Destination for Contact page
 };
 
 function ResponsiveAppBar() {
@@ -44,37 +43,47 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" 
-    sx={{
-    flexGrow: 1,
-    
-    backgroundColor: 'rgb(105, 117, 127, 0.5)', // Here's the color property
-    borderRadius: '30px', 
-  }}
+    <AppBar
+      className="my-2 flex "
+      position="static"
+      sx={{
+        flexGrow: 1,
+        display: { xs: "flex", md: "flex" },
+        justifyContent: "space-around",
+        backgroundColor: "rgb(105, 117, 127, 0.5)", // Here's the color property
+        borderRadius: "30px",
+      }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters >
-         
+        <Toolbar
+          disableGutters
+          
+        >
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              justifyContent: 'space-around',
-              fontFamily: 'monospace',
+              display: { xs: "none", md: "flex" },
+              justifyContent: "space-around",
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-            <img src={Logo} style={{ height: '60px', width: '60px' }}/>
+            <img src={Logo} style={{ height: "60px", width: "60px" }} />
           </Typography>
 
-          <Box sx={{ flexGrow: 10, display: { xs: 'flex', sm:'none', md: 'none' } }}>
+          <Box
+            sx={{
+              flexGrow: 10,
+              display: { xs: "flex", sm: "none", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -86,43 +95,40 @@ function ResponsiveAppBar() {
               <MenuIcon />
             </IconButton>
             <Menu
-            
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-                
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block'}}
-                component={Link} // Use Link component for navigation
-                //to={`/${page.toLowerCase()}`} // Specify the destination based on the page
-                to={pageDestinations[page]}
-              >
-                {page}
-                
-              </Button>
+                  <Button
+                    key={page}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "black", display: "block" }}
+                    component={Link} // Use Link component for navigation
+                    //to={`/${page.toLowerCase()}`} // Specify the destination based on the page
+                    to={pageDestinations[page]}
+                  >
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          
+
           <Typography
             variant="h5"
             noWrap
@@ -130,29 +136,34 @@ function ResponsiveAppBar() {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
-           <img src={Logo} style={{ height: '60px', width: '60px' }}/>
+            <img src={Logo} style={{ height: "60px", width: "60px" }} />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: {  xs: 'none', sm:'flex', md: 'flex'}}}>
+          <Box
+            sx={{
+              flexGrow: 10,
+              display: { xs: "none", sm: "flex", md: "flex" },
+              justifyContent: "flex-end",
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: "white", display: "block" }}
                 component={Link} // Use Link component for navigation
                 //to={`/${page.toLowerCase()}`} // Specify the destination based on the page
                 to={pageDestinations[page]}
               >
                 {page}
-                
               </Button>
             ))}
           </Box>
