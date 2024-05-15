@@ -9,28 +9,29 @@ import Home from '../src/Componont/Home/Home';
 import Careers from '../src/Componont/Careers/Careers';
 import Contact from '../src/Componont/Contact/Contact';
 import Services from './Componont/Services/Services';
+import Footer from './Footer/Footer';
 
 
 const router = createBrowserRouter([
   
   {
     path: "/",
-    element:<><ResponsiveAppBar/><Home/></>
+    element:<><ResponsiveAppBar/><Home/><Footer /></>
   },
 
   {
     path: "Services",
-    element:<><ResponsiveAppBar/><Services/></>
+    element:<><ResponsiveAppBar/><Services/><Footer /></>
   },
 
   {
     path: "Careers",
-    element:<><ResponsiveAppBar/><Careers/></>
+    element:<><ResponsiveAppBar/><Careers/><Footer /></>
   },
 
   {
     path: "Contact",
-    element:<><ResponsiveAppBar/><Contact/></>
+    element:<><ResponsiveAppBar/><Contact/><Footer /></>
   },
 
  
