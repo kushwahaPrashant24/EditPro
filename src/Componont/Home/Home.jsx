@@ -35,7 +35,7 @@ export default function Home() {
           </Link>
           </div>
           <div className="w-1/2   flex justify-center">
-            <img className="max-w-xl" alt="Model" />
+            <img className="max-w-xl" src={model1} alt="Model" />
           </div>
          
         </div>
