@@ -10,6 +10,7 @@ export default {
         white: '#f8fafc',
         dimwite: '#94a3b8',
         Amber: '#92400e',
+        zinc: "rgb(63 63 70)",
     },
     extend: {},
   },
