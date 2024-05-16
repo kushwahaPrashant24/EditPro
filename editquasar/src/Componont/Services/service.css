@@ -1,0 +1,280 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 2rem auto;
+  
+   
+    
+}
+
+.cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col {
+    width: calc(50%, 1rem);
+    margin: 1rem;
+    
+    cursor: pointer;
+
+}
+
+.container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.img1{
+    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/photo-editing-1.jpg)
+}
+.img2{
+background-image: url(https://editpro5.files.wordpress.com/2024/02/logo-designing.jpg);
+}
+.img3{
+background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/website-designing.webp);
+}
+.img4{
+background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/blog-writing.webp );
+}
+.img5{
+background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/edit.jpg?w=1024&h=683 );
+}
+
+
+
+
+
+.img6{
+    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/content-writing.jpg?w=1024&h=685);
+}
+.img7{
+    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/cv-or-resume-making.webp);
+}
+.img8{
+    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/advertising-poster.jpg);
+}
+
+.img9{
+    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/personal-porfolio.webp);
+}
+.img10{
+    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/occassion-card.jpg);
+}
+.img11{
+    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/company-portfolio-templates.webp);
+}
+.img12{
+    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/business-card-making.png);
+}
+.img13{
+    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/bgm-making.jpg);
+}
+.front,
+.back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    box-shadow: 0 0 10px solid blue;
+
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+span{
+    font-size: 1.5rem;
+}
+
+.front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+
+
+
+@media screen and (max-width:640px )   {
+    span{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 640px) {
+    .col {
+        width: calc(40% - 2rem);
+        
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .col {
+        width: 100%;
+       
+        margin: 1rem 1rem;
+    }
+} 
+
+
+/* button {
+    background-color: #1f1d1d;
+    padding: 10px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    margin: -1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    top: 20px;
+    color: #fff;
+    cursor: pointer;
+   
+}
+
+button:hover {
+    background: rgb(64, 70, 72);
+    color: #000000;
+    transition: all 0.4s ease-in-out;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 12%;
+} */
+
+
+

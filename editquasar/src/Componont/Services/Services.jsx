@@ -1,207 +1,397 @@
 import React from "react";
- {/*  src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/photo-editing-1.jpg" */}
-        {/*     src="https://editpro5.files.wordpress.com/2024/02/logo-designing.jpg" */}
-     {/* https://editpro5.wordpress.com/wp-content/uploads/2024/02/website-designing.webp */}
-     {/* https://editpro5.wordpress.com/wp-content/uploads/2024/02/blog-writing.webp */}
-
-
-// export default function Services() {
-  
-//   return (
-//     <div className="bg-richblack-800  h-full w-[100vw] ">
-//       <p className="text-6xl bg-slate-700  py-4 text-center text-richblack-50  ">
-//         Our Services
-//       </p>
-//       <div className=" max-w-maxContent w-11/12 px-5  mx-auto">
-//         <p className="text-xl text-center text-yellow-5 md:text-3xl">
-//           "“Unleash Creative Excellence with EditQuasar Your Partner for
-//           Crafting Captivating Masterpieces”"
-//         </p>
-//       </div>
-     
-       
-//         <div class="parallax-container">
-//   <div class="grid grid-cols-2 gap-4">
-//     <div class="relative overflow-hidden group">
-//       <img  src="https://editpro5.files.wordpress.com/2024/02/logo-designing.jpg" class="w-full h-auto transition-transform duration-300 transform hover:scale-105" alt="Image 1"/>
-//       <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//         <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         <div class="mt-4">
-//           <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">Learn More</button>
-//           <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">Login</button>
-//         </div>
-//       </div>
-//     </div>
-
-
-//     <div class="relative overflow-hidden group ">
-//      <div className="relative overflow-hidden group hover:opacity-5"> <img  src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/photo-editing-1.jpg" alt="Image 1"  /></div>
-//       <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//         <p class="text-black text-xl  text-center">Transform images with EditPro’s professional photo editing. Meticulous attention ensures stunning results.</p>
-//         <div class="mt-4">
-//           <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">Learn More</button>
-//           <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">Login</button>
-//         </div>
-//       </div>
-//     </div>
-
-
-//     <div class="relative overflow-hidden group">
-//       <img src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/blog-writing.webp" alt="Image 1"/>
-//       <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//         <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         <div class="mt-4">
-//           <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">Learn More</button>
-//           <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">Login</button>
-//         </div>
-//       </div>
-//     </div>
-
-
-//     <div class="relative overflow-hidden group">
-//       <img  src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/website-designing.webp " alt="Image 1"/>
-//       <div class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//         <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//         <div class="mt-4">
-//           <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">Learn More</button>
-//           <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">Login</button>
-//         </div>
-//       </div>
-//     </div>
-    
-//   </div>
-// </div>
-
-
-
-
-
-
-//     </div>
-//   );
-// }
-
+import "./service.css";
+{
+  /*  src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/photo-editing-1.jpg" */
+}
+{
+  /*     src="https://editpro5.files.wordpress.com/2024/02/logo-designing.jpg" */
+}
+{
+  /* https://editpro5.wordpress.com/wp-content/uploads/2024/02/website-designing.webp */
+}
+{
+  /* https://editpro5.wordpress.com/wp-content/uploads/2024/02/blog-writing.webp */
+}
+//  https://editpro5.wordpress.com/wp-content/uploads/2024/02/edit.jpg?w=1024&h=683        video diting
+//   https://editpro5.wordpress.com/wp-content/uploads/2024/02/content-writing.jpg?w=1024&h=685
+// https://editpro5.wordpress.com/wp-content/uploads/2024/02/cv-or-resume-making.webp
+//  https://editpro5.wordpress.com/wp-content/uploads/2024/02/advertising-poster.jpg
+//  https://editpro5.wordpress.com/wp-content/uploads/2024/02/personal-porfolio.webp
+//  https://editpro5.wordpress.com/wp-content/uploads/2024/02/occassion-card.jpg
+//  https://editpro5.wordpress.com/wp-content/uploads/2024/02/company-portfolio-templates.webp
+// https://editpro5.wordpress.com/wp-content/uploads/2024/02/business-card-making.png
+//  https://editpro5.wordpress.com/wp-content/uploads/2024/02/bgm-making.jpg
+//
 
 export default function Services() {
   return (
-    <div className="bg-richblack-800 h-full w-full">
-      <p className="text-6xl bg-slate-700 py-4 text-center text-richblack-50">
-        Our Services
-      </p>
-      <div className="max-w-maxContent w-11/12 px-5 mx-auto">
-        <p className="text-xl text-center text-yellow-500 md:text-3xl">
-          "Unleash Creative Excellence with EditQuasar Your Partner for Crafting Captivating Masterpieces"
+    <div>
+      <div>
+        {" "}
+        <p className="text-6xl bg-slate-700 py-4 text-center text-richblack-50">
+          Our Services
         </p>
+        <div className="max-w-maxContent w-11/12 px-5 mx-auto">
+          <p className="text-xl text-center text-yellow-500 md:text-3xl">
+            "Unleash Creative Excellence with EditQuasar Your Partner for
+            Crafting Captivating Masterpieces"
+          </p>
+        </div>
       </div>
 
-
-        {/* image 1  */}
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-maxContent mx-auto mt-8">
-        <div className="relative overflow-hidden group">
-          <img
-            src="https://editpro5.files.wordpress.com/2024/02/logo-designing.jpg"
-            className="w-full h-auto transition-transform duration-300 transform hover:scale-105"
-            alt="Image 1"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-white text-center">
-              Transform images with EditPro’s professional photo editing.
-              Meticulous attention ensures stunning results.
-            </p>
-            <div className="mt-4">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">
-                Explore Our Work
-              </button>
-              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">
-                View Pricing
-              </button>
+      <div className="wrapper">
+        {/* img 1  */}
+        <div className="cols">
+          <div className="col">
+            <div className="container">
+              <div className="front img1">
+                <div className="inner">
+                  <p>Photo Editing:</p>
+                  <span>
+                    Transform images with EditQuasar's professional photo
+                    editing. Meticulous attention ensures stunning results. For
+                    more samples and pricing.
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-
-      
-      </div>
-
-
-      {/* image 2  */}
-    
-        <div className="relative overflow-hidden group">
-          <img
-          src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/photo-editing-1.jpg" 
-            className="w-full h-auto transition-transform duration-300 transform hover:scale-105"
-            alt="Image 1"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-white text-center">
-              Transform images with EditPro’s professional photo editing.
-              Meticulous attention ensures stunning results.
-            </p>
-            <div className="mt-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">
-                Explore Our Work
-              </button>
-              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">
-                View Pricing
-              </button>
+          {/* img 2  */}
+          <div className="col">
+            <div className="container">
+              <div className="front img2">
+                <div className="inner">
+                  <p>Logo Designing:</p>
+                  <span>
+                    Make a memorable impression with EditQuasar's meaningful
+                    logo design. Our creative team ensures a logo that
+                    resonates. .
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-       
-
-        
-      </div>
-      {/* image 3  */}
-      
-        <div className="relative overflow-hidden group">
-          <img
-            src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/website-designing.webp"
-            className="w-full h-auto transition-transform duration-300 transform hover:scale-105"
-            alt="Image 1"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-white text-center">
-              Transform images with EditPro’s professional photo editing.
-              Meticulous attention ensures stunning results.
-            </p>
-            <div className="mt-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">
-                Explore Our Work
-              </button>
-              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">
-                View Pricing
-              </button>
+          {/* img 3 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img3">
+                <div className="inner">
+                  <p>Website Designing:</p>
+                  <span>
+                    Create a seamless online experience with EditQuasar's
+                    website designing. Modern, responsive, engaging websites
+                    that reflect your brand
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        
+          {/* img 4 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img4">
+                <div className="inner">
+                  <p>Blog Writing:</p>
+                  <span>
+                    Fuel your digital presence with EditPro’s dynamic blog
+                    writing. Compelling, informative content tailored to your
+                    audience.{" "}
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 5  */}
+          <div className="col">
+            <div className="container">
+              <div className="front img5">
+                <div className="inner">
+                  <p>Video Editing:</p>
+                  <span>
+                    Elevate your storytelling with EditPro’s video editing. Our
+                    editors blend footage, add effects, ensuring captivating
+                    content.{" "}
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        
-      </div>
-      {/* image 4  */}
-     
-        <div className="relative overflow-hidden group">
-          <img
-            src="https://editpro5.wordpress.com/wp-content/uploads/2024/02/blog-writing.webp"
-            className="w-full h-auto transition-transform duration-300 transform hover:scale-105"
-            alt="Image 1"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-white text-center">
-              Transform images with EditPro’s professional photo editing.
-              Meticulous attention ensures stunning results.
-            </p>
-            <div className="mt-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 transition-transform duration-300 transform hover:-translate-y-1">
-                Explore Our Work
-              </button>
-              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 transform hover:-translate-y-1">
-                View Pricing
-              </button>
+          {/* img 6 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img6">
+                <div className="inner">
+                  <p> Content Writing:</p>
+                  <span>
+                    Drive results with EditQuasar's content writing. Engaging
+                    narratives that enhance your brand’s visibility.
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 7 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img7">
+                <div className="inner">
+                  <p>CV/Resume Making:</p>
+                  <span>
+                    Land your dream job with EditQuasar's professionally crafted
+                    CVs/resumes. Showcase skills and achievements
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                {" "}
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 8  */}
+          <div className="col">
+            <div className="container">
+              <div className="front img8">
+                <div className="inner">
+                  <p>Personalized Advertising Poster Creation:</p>
+                  <span>
+                    Convey messages effectively with EditQuasar's advertising
+                    poster creation. Eye-catching designs that leave a lasting
+                    impact
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 9  */}
+          <div className="col">
+            <div className="container">
+              <div className="front img9">
+                <div className="inner">
+                  <p>Personal Portfolio Creation:</p>
+                  <span>
+                    Highlight talents with EditQuasar's personal portfolio
+                    creation. Showcase skills in a visually appealing manner.
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 10 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img10">
+                <div className="inner">
+                  <p>Personalized Occasion Card Making:</p>
+                  <span>
+                    Celebrate moments with EditQuasar's personalized occasion
+                    card making. Custom cards that reflect event uniqueness
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 11 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img11">
+                <div className="inner">
+                  <p>Company Portfolio Making::</p>
+                  <span>
+                    mpress with EditQuasar's comprehensive company portfolio.
+                    Highlight strengths and achievements professionally.
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 12 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img12">
+                <div className="inner">
+                  <p>Personalized Business Card Making:</p>
+                  <span>
+                    Stand out with EditQuasar's personalized business card
+                    making. Unique, professional cards that leave a lasting
+                    impression
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* img 13 */}
+          <div className="col">
+            <div className="container">
+              <div className="front img13">
+                <div className="inner">
+                  <p>Background Music Making:</p>
+                  <span>
+                    Enhance content atmosphere with EditQuasar's custom
+                    background music. Original, impactful compositions tailored
+                    to your need
+                  </span>
+                </div>
+              </div>
+              <div className="back">
+                <div className="inner">
+                  <div className="flex flex-col">
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      Explore Our Work
+                    </button>
+                    <button className="bg-blue-500 mx-auto hover:bg-blue-900 text-richblack-50 font-bold py-1 px-2 rounded mb-5 transition-transform duration-300 transform hover:-translate-y-2">
+                      View Pricing
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-       
       </div>
     </div>
   );
 }
-
