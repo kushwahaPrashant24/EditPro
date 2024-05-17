@@ -127,6 +127,15 @@ export default {
         800: "#171717",
         900: "#141414",
       },
+      "Lime": {
+        5: "#f0fdf4"
+      },
+      "Red": {
+       
+        50:"#ffebee",
+        100: " #ffcdd2",
+        200:" #ef9a9a",
+      },
       myblue: '#083344',
       white: '#f8fafc',
       dimwite: '#94a3b8',
