@@ -216,7 +216,8 @@ export default function Services() {
             <div className="container">
               <div className="front img8">
                 <div className="inner">
-                  <p>Personalized Advertising Poster Creation:</p>
+                  <p> Advertising Poster Creation:</p>
+                  
                   <span>
                     Convey messages effectively with EditQuasar's advertising
                     poster creation. Eye-catching designs that leave a lasting
