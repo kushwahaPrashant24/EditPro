@@ -5,6 +5,11 @@ import Main from "./Homepage/main";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import Doing from "./Homepage/Doing/Doing";
+import Abouthome from "./Homepage/About/Abouthome";
+import Start from "./Homepage/Start/Start";
+import Serve from "./Homepage/Serve/Serve";
+import Impact from "./Homepage/Impact/Impact";
 
 export default function Home() {
   return (
@@ -40,6 +45,11 @@ export default function Home() {
          
         </div>
         <Main />
+        <Doing />
+        <Abouthome />
+        <Serve />
+        <Start />
+        <Impact />
       </div>
     </>
   );
