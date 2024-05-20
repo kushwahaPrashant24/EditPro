@@ -141,6 +141,10 @@ export default {
       dimwite: '#94a3b8',
       Amber: '#92400e',
       zinc: "rgb(63 63 70)",
+      Background: 'linear-gradient(90deg, rgba(3,8,40,0.9164915966386554) 0%, rgba(74,94,135,0.9501050420168067) 54%, rgba(97,73,125,0.8800770308123249) 100%, rgba(120,255,56,1) 100%)',
+      creame: "#FFFDD0",
+      head:"#FEFCFD",
+      head2: "#BFCDE0",
     },
     extend: {
       maxWidth: {

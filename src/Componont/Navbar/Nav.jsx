@@ -148,18 +148,18 @@ function ResponsiveAppBar() {
           >
             <img src={Logo} style={{ height: "60px", width: "60px" }} />
           </Typography>
-          <Box
+          <Box 
             sx={{
               flexGrow: 10,
               display: { xs: "none", sm: "flex", md: "flex" },
-              justifyContent: "flex-end",
+              justifyContent: "space-around",
             }}
           >
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white" }}
                 component={Link} // Use Link component for navigation
                 //to={`/${page.toLowerCase()}`} // Specify the destination based on the page
                 to={pageDestinations[page]}
