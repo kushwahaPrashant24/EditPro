@@ -2,89 +2,30 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import Stack from "@mui/material/Stack";
+import Img from "../../../../assets/coding.jpg"
+import StartCard from "./Startcard";
 
 function Start() {
   return (
     <>
-      <div className="flex justify-center flex-col">
-        <div className=" h-10 bg-Lime-5 flex align-center justify center">
+      <div className="flex justify-center flex-col pl-5">
+      
+        <div className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white ">
           <h1>Let's Get Your Project Started</h1>
           <Link to="/Services">
-            <Stack spacing={2} direction="row">
-              <Button variant="contained">View All</Button>
+            <Stack className="mt-5" spacing={2} direction="row">
+              <Button  variant="contained">View All</Button>
             </Stack>
           </Link>
         </div>
-        <div className="bg-Amber">
-          <h2>Why choose Us</h2>
-          <h1>What We Offer</h1>
-
-          <div id="1" className="flex flex-col gap-5">
-            <div id="2" className="flex gap-5">
-              <div id="3" className="bg-zinc">
-                <div className="flex bg-caribbeangreen">
-                  <div className="h-36 w-36 bg-pure-greys-5 rounded-full"></div>
-                  <h1 className="">sdfbadlf</h1>
-                </div>
-                <p className="">
-                  Providing customized services for individualized results.
-                </p>
-              </div>
-              <div id="3" className="bg-zinc">
-                <div className="flex bg-caribbeangreen">
-                  <div className="h-36 w-36 bg-pure-greys-5 rounded-full"></div>
-                  <h1 className="">sdfbadlf</h1>
-                </div>
-                <p className="">
-                  Providing customized services for individualized results.
-                </p>
-              </div>
-            </div>
-
-            <div id="2" className="flex gap-5">
-              <div id="3" className="bg-zinc">
-                <div className="flex bg-caribbeangreen">
-                  <div className="h-36 w-36 bg-pure-greys-5 rounded-full"></div>
-                  <h1 className="">sdfbadlf</h1>
-                </div>
-                <p className="">
-                  Providing customized services for individualized results.
-                </p>
-              </div>
-              <div id="3" className="bg-zinc">
-                <div className="flex bg-caribbeangreen">
-                  <div className="h-36 w-36 bg-pure-greys-5 rounded-full"></div>
-                  <h1 className="">sdfbadlf</h1>
-                </div>
-                <p className="">
-                  Providing customized services for individualized results.
-                </p>
-              </div>
-            </div>
-
-            <div id="2" className="flex gap-5">
-              <div id="3" className="bg-zinc">
-                <div className="flex bg-caribbeangreen">
-                  <div className="h-36 w-36 bg-pure-greys-5 rounded-full"></div>
-                  <h1 className="">sdfbadlf</h1>
-                </div>
-                <p className="">
-                  Providing customized services for individualized results.
-                </p>
-              </div>
-              <div id="3" className="bg-zinc">
-                <div className="flex bg-caribbeangreen">
-                  <div className="h-36 w-36 bg-pure-greys-5 rounded-full"></div>
-                  <h1 className="">sdfbadlf</h1>
-                </div>
-                <p className="">
-                  Providing customized services for individualized results.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="flex">
+        <div className="mt-16">
+          <h2 className="w-full sm:w-3/4 md:w-1/2 text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">Why choose Us</h2>
+          <h1  className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white ">What We Offer</h1>
+          <StartCard />
         </div>
-        <div></div>
+        <div><img src={Img} /> </div>
+        </div>
       </div>
     </>
   );

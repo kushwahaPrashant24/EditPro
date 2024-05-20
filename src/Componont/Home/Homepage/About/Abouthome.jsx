@@ -5,13 +5,15 @@ function Abouthome() {
   return (
     <>
       <div className="flex">
-        <div className="w-4/12  bg-pink-500">
-          <img src={Model2} />
+        <div className="w-4/12  ">
+          <img className="h-full w-full" src={Model2} />
         </div>
-        <div className="w-8/12  bg-pink-5">
-          <h2>About Us</h2>
-          <h1>We Harness creativity to Serve Our Clients</h1>
-          <p>
+        <div className="w-8/12  flex flex-col gap-5 ">
+        <div>
+          <h2 className="w-full sm:w-3/4 md:w-1/2 text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">About Us</h2>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white">We Harness creativity to Serve Our Clients</h1>
+          </div>
+          <p className="text-head text-lg sm:text-xl font-semibold">
             At EditQuasar, creativity isn't just a tool; it's our guiding
             principle. We believe in harnessing the power of imagination to
             craft solutions that not only meet but exceed our clients'
