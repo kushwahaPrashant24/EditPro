@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar
-      className="my-2 flex "
+      className="my-2 flex  "
       position="static"
       sx={{
         flexGrow: 1,
