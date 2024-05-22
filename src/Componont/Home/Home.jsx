@@ -14,6 +14,7 @@ import CaseStudy from "./Homepage/Casestudy.jsx/Casestudy";
 import Gotproject from "./Homepage/Getproject/Getproject";
 import Review from "./Homepage/Review/Review";
 import Aura from "./Aura/Aura";
+import Army from "./Homepage/ccc/Case";
 
 export default function Home() {
   return (
@@ -67,7 +68,7 @@ export default function Home() {
         <Serve />
         <Start />
         <Impact />
-        <CaseStudy />
+        <Army />
         <Gotproject />
         <Review />
       </div>

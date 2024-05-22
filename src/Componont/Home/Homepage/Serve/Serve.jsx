@@ -19,7 +19,7 @@ function Serve() {
     <CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={100} delay={0} />}+</h1>
+        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={200} delay={0} />}+</h1>
         </Typography>
         <Typography variant="body2" color="text.secondary">
           <p className="text-head text-xl font-bold ">Projects Completed</p>
@@ -32,7 +32,7 @@ function Serve() {
     <CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={50} delay={0} />}+</h1>
+        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={80} delay={0} />}+</h1>
         </Typography>
         <Typography variant="body2" color="text.secondary">
           <p className="text-head text-xl font-bold ">Positive Testimonials</p>
