@@ -29,14 +29,14 @@ const Transition = React.forwardRef(function Transition(props, ref) {
           setOpen(false);
         };
 
-        return  <div className="main">
-       
-       <React.Fragment>
-     
+        return  <React.Fragment>
+       <Button variant="outlined" onClick={handleClickOpen}>
       <p className='text-black'> <h2>{props.name}</h2></p>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      
         {props.butt}
       </Button>
+
+
       <Dialog
         fullScreen
         open={open}
@@ -72,14 +72,14 @@ const Transition = React.forwardRef(function Transition(props, ref) {
               primary=""
               secondary=""
             />
-             <img  src={props.img}/>
+             <img className="h-2xl w-3xl"  src={props.img}/>
           </ListItemButton>
         </List>
       </Dialog>
     </React.Fragment>
       
       
-        </div>
+        
       }
 
      
