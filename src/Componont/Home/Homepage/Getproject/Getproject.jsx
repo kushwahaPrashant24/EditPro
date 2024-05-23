@@ -18,7 +18,7 @@ function Gotproject() {
                 </div>
                 <Link to="/contact">
             <Stack spacing={2} direction="row">
-              <Button className="mb-10" variant="contained">View All</Button>
+              <Button className="mb-10" variant="contained">Contact Us</Button>
             </Stack>
           </Link>
             </div>

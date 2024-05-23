@@ -48,14 +48,7 @@ export default function Review() {
         className="mySwiper"
       >
         <SwiperSlide className='h-96 w-36'>dfnsdf</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 2</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 3</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 4</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 5</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 6</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 7</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 8</SwiperSlide>
-        <SwiperSlide className='h-96 w-36'>Slide 9</SwiperSlide>
+        
       </Swiper>
       </div>
     </>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.scss";
 import model1 from "../../assets/model1.png";
-import Main from "./Homepage/main";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
@@ -10,11 +9,11 @@ import Abouthome from "./Homepage/About/Abouthome";
 import Start from "./Homepage/Start/Start";
 import Serve from "./Homepage/Serve/Serve";
 import Impact from "./Homepage/Impact/Impact";
-import CaseStudy from "./Homepage/Casestudy.jsx/Casestudy";
 import Gotproject from "./Homepage/Getproject/Getproject";
 import Review from "./Homepage/Review/Review";
 import Aura from "./Aura/Aura";
-import Army from "./Homepage/ccc/Case";
+import CaseStudies from "./Homepage/Casestudies/Casestudies";
+import Compnies from "./Homepage/Compnies/Compnies";
 
 export default function Home() {
   return (
@@ -62,13 +61,13 @@ export default function Home() {
 </div>
 
        
-               <Main />
+        <Compnies />
         <Doing />
         <Abouthome />
         <Serve />
         <Start />
         <Impact />
-        <Army />
+        <CaseStudies />
         <Gotproject />
         <Review />
       </div>
