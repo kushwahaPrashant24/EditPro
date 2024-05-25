@@ -1,43 +1,36 @@
-/*import React from "react";
-
-function Review() {
-    return <>
-        <div className="h-96 w-full bg-yellow-500 flex flex-col items-center">
-        <h1 className="font-black text-4xl">What Our Clients Say</h1>
-           <div className="h-80 w-4/5 bg-yellow-900"></div>
-        </div>
-    </>
-}
-
-export default Review;*/
-
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Card from './Card';
+import ReviewData from "./ReviewData";
 
-export default function Review() {
+function createCard(Reviews) {
   return (
-    <>
-     <div className="h-96 w-full  flex flex-col items-center mb-10">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-10">What Our Clients Say</h1>
-           
-        
+    <Card
+      key={Reviews.id} 
+      review={Reviews.review}
+      name= {Reviews.name}
+    />
+  );
+}
+
+function Review() {
+  console.log(ReviewData);
+
+  return (
+    <div className="mt-28 mb-20">
+      <div className=" mt-20">
+      <center><h1 className="max-h-10  max-w-4xl sm:text-lg md:text-3xl  font-black text-center text-head2   mt-3 "> 30+ COMPANIES & Organisations TRUST EditQuasar</h1></center>
+      </div>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={2} // default value
         centeredSlides={true}
         spaceBetween={30}
         grabCursor={true}
         autoplay={{
-          delay: 2000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -46,11 +39,28 @@ export default function Review() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
       >
-        <SwiperSlide className='h-96 w-36'>dfnsdf</SwiperSlide>
-        
+        {ReviewData.map((Reviews) => (
+          <SwiperSlide key={Reviews.id} >
+            <div className=" bg-Amber">
+              {createCard(Reviews)}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
-      </div>
-    </>
+    </div>
   );
 }
+
+export default Review;
