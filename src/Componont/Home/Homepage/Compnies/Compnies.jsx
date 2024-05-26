@@ -7,15 +7,11 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-function createCard(Regiment) {
+function createCard(Company) {
   return (
     <Cards
-      key={Regiment.id}
-      name={Regiment.name}
-      img={Regiment.img}
-      active={Regiment.active}
-      center={Regiment.center}
-      butt={Regiment.butt}
+      key={Company.id} 
+      img={Company.img}
     />
   );
 }
@@ -24,9 +20,9 @@ function Compnies() {
   console.log(CompaniesConst);
 
   return (
-    <div className="mt-28 mb-24">
-      <div className="mb-10 mt-20">
-      <center><h1 className="max-h-10  max-w-2xl sm:text-lg md:text-3xl  font-black text-center text-head2   mt-3 "> 30+ COMPANIES & Organisations TRUST EditQuasar</h1></center>
+    <div className="mt-28 mb-20">
+      <div className=" mt-20">
+      <center><h1 className="max-h-10  max-w-4xl sm:text-lg md:text-3xl  font-black text-center text-head2   mt-3 "> 30+ COMPANIES & Organisations TRUST EditQuasar</h1></center>
       </div>
       <Swiper
         slidesPerView={2} // default value
@@ -55,10 +51,10 @@ function Compnies() {
           },
         }}
       >
-        {CompaniesConst.map((regiment) => (
-          <SwiperSlide key={regiment.id} className='h-60 mt-16'>
+        {CompaniesConst.map((Company) => (
+          <SwiperSlide key={Company.id} className='h-60 mt-10'>
             <div className="App">
-              {createCard(regiment)}
+              {createCard(Company)}
             </div>
           </SwiperSlide>
         ))}
