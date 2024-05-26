@@ -1,10 +1,12 @@
 import React from "react";
 import Model2 from "../../../../assets/model2.png";
+import Aboutcard from "./AboutCard/Aboutcard";
 
 function Abouthome() {
   return (
     <>
-      <div className="flex">
+  
+      <div className="flex mt-10">
         <div className="w-4/12  ">
           <img className="h-full w-full" src={Model2} />
         </div>
@@ -21,6 +23,7 @@ function Abouthome() {
             weave creativity into every aspect of our work, ensuring that each
             project is a masterpiece in its own right.
           </p>
+          <Aboutcard />
           <div className="bg-Amber flex flex-col gap-16">
           <div className=" flex justify-around ">
             <div className="bg-pink-300">

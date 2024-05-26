@@ -20,12 +20,9 @@ function Review() {
   console.log(ReviewData);
 
   return (
-    <div className="mt-28 mb-20">
-      <div className=" mt-20">
-      <center><h1 className="max-h-10  max-w-4xl sm:text-lg md:text-3xl  font-black text-center text-head2   mt-3 "> 30+ COMPANIES & Organisations TRUST EditQuasar</h1></center>
-      </div>
+    <div className="bg-white p-10">
       <Swiper
-        slidesPerView={2} // default value
+        slidesPerView={1} // default value
         centeredSlides={true}
         spaceBetween={30}
         grabCursor={true}
@@ -44,16 +41,16 @@ function Review() {
             slidesPerView: 1,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 1,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 1,
           },
         }}
       >
         {ReviewData.map((Reviews) => (
           <SwiperSlide key={Reviews.id} >
-            <div className=" bg-Amber">
+            <div className="">
               {createCard(Reviews)}
             </div>
           </SwiperSlide>

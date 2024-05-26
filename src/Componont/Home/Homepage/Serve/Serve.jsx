@@ -1,87 +1,38 @@
 import React, { useState } from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
-import CountUp from "react-countup";
-import ScrollTrigger from 'react-scroll-trigger';
+import Sideleft from "../../../../assets/sideleft.png";
+import Sideright from "../../../../assets/sideright.png";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+import Stack from "@mui/material/Stack";
+import Increaser from "./increaser";
+import "./serve.css"
 
 function Serve() {
-
-    const [counterOn, setCounterOn] = useState(false);
-
+  
   return (
     <>
-     <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-     <div className="w-full mt-5 flex justify-around flex-wrap gap-10 mt-16 mb-16">
-  <Card className="flex" sx={{ maxWidth: 275, background: "#061E47" }}>
-    <CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={200} delay={0} />}+</h1>
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <p className="text-head text-xl font-bold ">Projects Completed</p>
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
-
-  <Card className="flex" sx={{ maxWidth: 275, background: "#061E47" }}>
-    <CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={80} delay={0} />}+</h1>
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <p className="text-head text-xl font-bold ">Positive Testimonials</p>
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
-
-  <Card className="flex" sx={{minHeight: 200  , maxWidth: 275, background: "#061E47" }}>
-    <CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={20} delay={0} />}+</h1>
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <p className="text-head text-xl font-bold ">Team Member</p>
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
-
-  <Card className="flex" sx={{ maxWidth: 275, background: "#061E47" }}>
-    <CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl"  start={0} end={5} delay={0} />}+</h1>
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <p className="text-head text-xl font-bold ">Year Experience</p>
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
-
-  <Card className="flex" sx={{ maxWidth: 275, background: "#061E47" }}>
-    <CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        <h1 className="text-4xl text-white text-center"> {counterOn && <CountUp className="text-4xl" start={0} end={95} delay={0} />}% +</h1>
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <p className="text-xl font-bold text-head">Customers Satisfaction</p>
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
+     <div className="flex flex-col items-center mb-10">
+  <div className="flex flex-col md:flex-row justify-between items-center w-full mt-16">
+    <div className="hidden md:block">
+      <img className="h-56" src={Sideright} alt="Side Right" />
+    </div>
+    <div className="w-full md:w-auto flex justify-center md:justify-start">
+      <Increaser />
+    </div>
+    <div className="hidden md:block">
+      <img className="h-56" src={Sideleft} alt="Side Left" />
+    </div>
+  </div>
+  <div id="Serve" className="h-24 w-10/12 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white bg-increaser flex flex-col md:flex-row items-center justify-between rounded-xl -mt-10 p-4">
+    <h1 className="mb-4 md:mb-0">Let's Get Your Project Started</h1>
+    <Link to="/Services">
+      <Stack spacing={2} direction="row">
+        <Button variant="contained">View All</Button>
+      </Stack>
+    </Link>
+  </div>
 </div>
 
-</ScrollTrigger>
     </>
   );
 }
