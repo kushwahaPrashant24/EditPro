@@ -14,6 +14,7 @@ import Review from "./Homepage/Review/Review";
 import Aura from "./Aura/Aura";
 import CaseStudies from "./Homepage/Casestudies/Casestudies";
 import Compnies from "./Homepage/Compnies/Compnies";
+import ReviewStrucure from "./Homepage/Review/ReviewStructure";
 
 export default function Home() {
   return (
@@ -69,7 +70,7 @@ export default function Home() {
         <Impact />
         <CaseStudies />
         <Gotproject />
-        <Review />
+        <ReviewStrucure />
       </div>
     </>
   );

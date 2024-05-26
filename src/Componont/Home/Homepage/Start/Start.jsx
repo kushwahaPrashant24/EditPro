@@ -1,30 +1,23 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
-import Stack from "@mui/material/Stack";
 import Img from "../../../../assets/coding.jpg"
 import StartCard from "./Startcard";
+import Homevid1 from "../../../../assets/homevid1.mp4"
 
 function Start() {
   return (
     <>
-      <div className="flex justify-center flex-col pl-5">
-      
-        <div className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white ">
-          <h1>Let's Get Your Project Started</h1>
-          <Link to="/Services">
-            <Stack className="mt-5" spacing={2} direction="row">
-              <Button  variant="contained">View All</Button>
-            </Stack>
-          </Link>
-        </div>
-        <div className="flex">
+      <div className="flex justify-center items-center flex-col pl-5">
+        <div className="flex justify-center items-center">
         <div className="mt-16">
           <h2 className="w-full sm:w-3/4 md:w-1/2 text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">Why choose Us</h2>
           <h1  className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white ">What We Offer</h1>
           <StartCard />
         </div>
-        <div><img src={Img} /> </div>
+        <div className="w-full md:w-1/2 lg:w-2/5 mb-6 md:mb-0 mt-24">
+    <video className="w-full rounded-lg shadow-lg" autoPlay loop muted>
+      <source src={Homevid1} type="video/mp4" />
+    </video>
+  </div>
         </div>
       </div>
     </>
