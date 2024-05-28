@@ -11,6 +11,53 @@
 body {
     background-color: #000;
 }
+.videosection p{
+    position: relative;
+    top:12vh;
+}
+.services-section{
+    min-height: 60vh;
+    
+}
+.services-section .text{
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+    font-family: 'Arial';
+    
+    font-size: 30px;
+    font-weight: 100;
+    color:grey;
+
+}
+@media (max-width:600px) {
+    .services-section .text{
+        padding-bottom: 4vh;
+    }
+    .services-section .text2{
+        padding-bottom: 2vh;
+        font-size: 7vw;
+    }
+    .services-section .text2 span{
+        font-size: 7vw;
+    }
+    .services-section .para{
+        padding-bottom: 3vh;
+
+    }
+    .services-section .text3{
+        font-size: 8vw;
+    }
+    .services-section .text3 span{
+        font-size: 8vw;
+    }
+    .services-section .para1{
+        font-size: 4vw;
+    }
+
+
+    
+}
+
 
 .wrapper {
     width: 100%;
@@ -322,4 +369,11 @@ button:hover {
     bottom: 0;
     z-index: -1;
   } */
+
+
+.contact-section .Contact:hover{
+    background: none;
+    
+}
+
    

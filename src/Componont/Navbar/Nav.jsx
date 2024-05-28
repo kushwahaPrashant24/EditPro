@@ -45,14 +45,15 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar
-      className="my-2 flex "
+      className="my-0 flex "
       position="sticky"
+      
       sx={{
         flexGrow: 1,
         display: { xs: "flex", md: "flex" },
         justifyContent: "space-around",
-        backgroundColor: "rgb(105, 117, 127, 0.9)", // Here's the color property
-        borderRadius: "30px",
+        backgroundColor: "transparent", // Here's the color property
+        
       }}
     >
       <Container maxWidth="xl">
