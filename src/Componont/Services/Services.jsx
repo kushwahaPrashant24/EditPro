@@ -3,13 +3,20 @@ import React, { useState,useRef, createRef } from "react";
 import Counter from "./counter";
 import Increase from "./increase";
 import { Link } from "react-router-dom";
+import PhoneIcon from '@mui/icons-material/Phone';
 import "./Services.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 import service from "../../assets/final background for service section.mp4";
 import logo from "../../assets/logo-noname.png";
-import logo5 from "../../assets/logo5.png";
+import brand1 from "../../assets/Brand Identity.png";
+import brand2 from "../../assets/Brand Consulting.png";
+import brand3 from "../../assets/2d design.png";
+import brand4 from "../../assets/Logo design.png";
+import brand5 from "../../assets/graphic design.png";
 import logo1 from "../../assets/logo1.png";
+import logo5 from "../../assets/logo5.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
+
 
 
 
@@ -19,226 +26,259 @@ export default function Services() {
     {
       imgClass: "img1",
       title: "Branding",
-      description: "Transform images with EditQuasar's professional photo editing. Meticulous attention ensures stunning results. For more samples and pricing.",
+      description: "Build a powerful brand with EditQuasar's comprehensive branding solutions. We create unique identities that resonate with your target audience.",
     },
     {
       imgClass: "img2",
       title: "Design Fusion",
-      description: "Make a memorable impression with EditQuasar's meaningful logo design. Our creative team ensures a logo that resonates.",
+      description: "Transform your ideas into captivating visuals with EditQuasar's Design Fusion package. We provide comprehensive design solutions tailored to your needs.",
     },
     {
       imgClass: "img3",
       title: "Digital Marketing",
-      description: "Create a seamless online experience with EditQuasar's website designing. Modern, responsive, engaging websites that reflect your brand.",
+      description: "Boost your online presence with EditQuasar's Digital Marketing solutions. We deliver targeted strategies to reach and engage your audience.",
     },
     {
       imgClass: "img4",
       title: "Experience Design",
-      description: "Fuel your digital presence with EditPro’s dynamic blog writing. Compelling, informative content tailored to your audience.",
+      description: "Create intuitive and engaging digital experiences with EditQuasar's Experience Design package. We design interfaces that delight users.",
     },
     {
       imgClass: "img5",
       title: "Technology",
-      description: "Elevate your storytelling with EditPro’s video editing. Our editors blend footage, add effects, ensuring captivating content.",
+      description: "Empower your business with EditQuasar's Technology solutions. We offer innovative tech services to meet your unique needs.",
     },
     {
       imgClass: "img6",
       title: "Creativity",
-      description: "Drive results with EditQuasar's content writing. Engaging narratives that enhance your brand's visibility.",
+      description: "Turn your ideas into stunning content with EditQuasar's Creativity package. We bring your creative visions to life.",
     },
   ];
 
   const absol = [
      [
             {
-                image: logo1,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                image: brand1,
+                heading: "Brand Identity:",
+                subtitle: "Develop a strong and consistent brand identity with EditQuasar. Our experts craft a memorable presence for your business.",
                 btntext: "Service Details"
             },
             {
-                image: logo1,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                image: brand2,
+                heading: "Brand Consulting:",
+                subtitle: "Receive expert advice to enhance your brand’s market presence. Our consulting services help align your brand with its mission.",
                 btntext: "Service Details"
             },
             {
-                image: logo1,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                image: brand4,
+                heading: "Logo Design:",
+                subtitle: "Make a memorable impression with EditQuasar’s meaningful logo design. Our creative team ensures a logo that resonates.",
                 btntext: "Service Details"
             },
             {
-                image: logo1,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                image: brand3,
+                heading: "2D/3D Visualization:",
+                subtitle: "Bring your ideas to life with stunning 2D and 3D visualizations. We create visuals that captivate and engage.",
                 btntext: "Service Details"
             },
             {
-                image: logo1,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                image: brand5,
+                heading: "Graphic Design:",
+                subtitle: "Elevate your brand with our exceptional graphic design services. We create visuals that communicate your brand’s message effectively.",
                 btntext: "Service Details"
             }
         ],
         [
             {
                 image: logo5,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                heading: "Personalized Advertising Poster Creation:",
+                subtitle: "Design impactful posters tailored to your specific needs. Our posters capture attention and convey your message effectively.",
                 btntext: "Service Details"
             },
             {
                 image: logo5,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                heading: "Personal Portfolio Creation:",
+                subtitle: "Build professional portfolios that highlight your achievements. Our personalized portfolios make you stand out.",
                 btntext: "Service Details"
             },
             {
                 image: logo5,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                heading: "Company Portfolio Making:",
+                subtitle: "Showcase your company’s success with comprehensive portfolios. We create portfolios that impress and inform.",
                 btntext: "Service Details"
             },
             {
                 image: logo5,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                heading: "Personalized Business Card Making:",
+                subtitle: "Create unique business cards that leave a lasting impression. Our custom designs reflect your professional identity.",
                 btntext: "Service Details"
             },
             {
                 image: logo5,
-                heading: "Sub Service Name",
-                subtitle: "A supporting Sentence",
+                heading: "Social Media Creatives & Other Advertising Materials:",
+                subtitle: "Develop engaging creatives for effective social media campaigns. Our advertising materials drive engagement and visibility.",
                 btntext: "Service Details"
+
+
+            },
+            {
+              image: logo5,
+              heading: "Brochures:",
+              subtitle: "Design informative and visually appealing brochures. Our brochures communicate your message clearly and attractively.",
+              btntext: "Service Details"
             }
         ],
      [
           {
               image: logo1,
-              heading: "Sub Service Name",
-              subtitle: "A supporting Sentence",
+              heading: "Search Engine Optimization:",
+              subtitle: "Enhance your online visibility with our SEO services. We help you rank higher and attract more traffic.",
               btntext: "Service Details"
           },
           {
               image: logo1,
-              heading: "Sub Service Name",
-              subtitle: "A supporting Sentence",
+              heading: "Social Media Management:",
+              subtitle: "Manage your social presence and engage with your audience. Our experts handle your social media for maximum impact.",
               btntext: "Service Details"
           },
           {
               image: logo1,
-              heading: "Sub Service Name",
-              subtitle: "A supporting Sentence",
+              heading: "Performance Marketing:",
+              subtitle: "Drive targeted results with our data-driven marketing strategies. We optimize your campaigns for the best ROI.",
               btntext: "Service Details"
           },
           {
               image: logo1,
-              heading: "Sub Service Name",
-              subtitle: "A supporting Sentence",
+              heading: "Content Marketing:",
+              subtitle: "Create valuable content that resonates with your audience. Our content marketing boosts engagement and brand loyalty.",
               btntext: "Service Details"
           },
           {
               image: logo1,
-              heading: "Sub Service Name",
-              subtitle: "A supporting Sentence",
+              heading: "Marketing Automation:",
+              subtitle: "Streamline your marketing efforts with automated solutions. We implement automation for efficient and effective campaigns.",
               btntext: "Service Details"
+          },
+          {
+            image: logo1,
+            heading: "Analytics:",
+            subtitle:"Gain insights and measure the effectiveness of your campaigns. Our analytics services provide actionable data." ,
+            btntext: "Service Details"
           }
       ],
       [
         {
             image: logo5,
-            heading: "Sub Service Name",
-            subtitle: "A supporting Sentence",
+            heading: "UI/UX Design:",
+            subtitle: "Enhance user experiences with our intuitive UI/UX designs. We make interactions seamless and enjoyable.",
             btntext: "Service Details"
         },
         {
             image: logo5,
-            heading: "Sub Service Name",
-            subtitle: "A supporting Sentence",
+            heading: "Website Design:",
+            subtitle: "Create stunning and user-friendly websites with our design services. We ensure your site is both beautiful and functional.",
             btntext: "Service Details"
         },
         {
             image: logo5,
-            heading: "Sub Service Name",
-            subtitle: "A supporting Sentence",
+            heading: "Mobile Experience:",
+            subtitle: "Optimize mobile interfaces for seamless user interactions. Our designs enhance mobile usability and engagement.",
             btntext: "Service Details"
         },
         {
             image: logo5,
-            heading: "Sub Service Name",
-            subtitle: "A supporting Sentence",
+            heading: "Commerce Experience:",
+            subtitle: "Build effective and engaging e-commerce platforms. Our designs drive sales and improve user satisfaction.",
             btntext: "Service Details"
         },
         {
             image: logo5,
-            heading: "Sub Service Name",
-            subtitle: "A supporting Sentence",
+            heading: "Human Machine Interface (HMI):",
+            subtitle: "Design advanced interfaces for seamless human-machine interaction. We create intuitive and efficient HMIs.",
             btntext: "Service Details"
+        },
+        {
+          image: logo5,
+          heading: "Applications & Dashboard:",
+          subtitle: "Develop interactive applications and dashboards. Our designs provide clear, actionable insights and user-friendly experiences.",
+          btntext: "Service Details"
+
         }
     ],
      [
       {
           image: logo1,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Data & Analytics:",
+          subtitle: "Leverage data for actionable insights and informed decisions. Our analytics services help you understand and grow your business.",
           btntext: "Service Details"
       },
       {
           image: logo1,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Web Development:",
+          subtitle: "Build robust and scalable web solutions with our development services. We create websites that are secure and efficient.",
           btntext: "Service Details"
       },
       {
           image: logo1,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Mobile App Development:",
+          subtitle: "Create user-friendly mobile applications with our expert team. We develop apps that enhance user experience and engagement.",
           btntext: "Service Details"
       },
       {
           image: logo1,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "E-commerce:",
+          subtitle: "Develop effective e-commerce platforms to boost sales. Our solutions are tailored to your business needs.",
           btntext: "Service Details"
       },
       {
           image: logo1,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "AI & Machine Learning (ML):",
+          subtitle: "Integrate advanced AI and ML solutions into your operations. We help you stay ahead with cutting-edge technology.",
           btntext: "Service Details"
+      },
+      {
+        image: logo1,
+        heading: "Cyber Security:",
+        subtitle: "Protect your digital assets with our advanced cybersecurity measures. We ensure your data and systems are secure.",
+        btntext: "Service Details"
       }
   ],
    [
       {
           image: logo5,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Video Editing:",
+          subtitle: "Create professional and engaging videos with our editing services. We enhance your content to captivate your audience.",
           btntext: "Service Details"
       },
       {
           image: logo5,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Photo Editing:",
+          subtitle: "Enhance images to perfection with our photo editing services.We make your visuals look their best.",
           btntext: "Service Details"
       },
       {
           image: logo5,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Blog Writing:",
+          subtitle: "Craft compelling and informative blog posts with our writing services. We help you connect with your audience.",
           btntext: "Service Details"
       },
       {
           image: logo5,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Content Writing:",
+          subtitle: "Produce high-quality content that engages readers. Our writing services boost your brand’s visibility and credibility.",
           btntext: "Service Details"
       },
       {
           image: logo5,
-          heading: "Sub Service Name",
-          subtitle: "A supporting Sentence",
+          heading: "Resume Making:",
+          subtitle: "Create unique cards for any occasion. Our personalized designs add a special touch to your celebrations.",
           btntext: "Service Details"
+      },
+      {
+        image: logo5,
+        heading: "Personalized Occasion Card Making:",
+        subtitle:"Create unique cards for any occasion. Our personalized designs add a special touch to your celebrations.",
+        btntext:"Service Details"
       }
   ]
 ];
@@ -333,6 +373,7 @@ export default function Services() {
             {services.map((item, index) => (
               <div className="col" key={index}>
                 <div className="container">
+                  
                   <div className={`front ${item.imgClass}`}>
                     <div className="inner">
                       <p className="rp">{item.title}:</p>
@@ -391,14 +432,15 @@ export default function Services() {
 
 
 
+        
         {/* contact section */}
-        <div className="contact-section text-center flex h-[25vh] w-[40vw]  p-10 " style={{ alignItems: "center", position: "relative", top: "-5vh", left: "28vw", paddingBottom: "4vh" }}>
-          <div className="Contact text-center p-6" style={{ border: "2px solid green", position: "relative", bottom: "5vh", borderRadius: "15px", backgroundColor: "green" }}>
-
-            <Link to="/contact" className="text-lg text-center text-black font-bold text-richblack-100 md:text-2xl us" style={{ position: "relative", bottom: "0vw" }}><p>CONTACT US</p></Link>
+        <div className="contact-section text-center flex h-[25vh] w-[40vw]  p-10 " style={{alignItems:"center",position:"relative" ,top:"-5vh", left:"28vw",paddingBottom:"4vh"}}>
+          <div className="Contact text-center p-6" style={{border:"2px solid green",position:"relative",bottom:"5vh",borderRadius:"15px",backgroundColor:"green"}}>
+            
+            <Link to="/contact" className="text-lg text-center text-black font-bold text-richblack-100 md:text-2xl us" style={{position:"relative",bottom:"0vw"}}><p>CONTACT US</p></Link>
           </div>
-          <div className="phone flex text-sm text-center text-black font-bold  text-richblack-200  " style={{ position: "relative", bottom: "4vh", left: "7vw", fontSize: "1.5vw", lineHeight: "1.5" }} >
-            <i aria-hidden="true" className="fas fa-phone-alt"></i>
+          <div className="phone flex text-sm text-center text-black font-bold  text-richblack-200  " style={{position:"relative",bottom:"5vh",left:"5vw",fontSize:"1.5vw",lineHeight:"1.5"}} >
+            <Link to="tel:+918967908081"><PhoneIcon style={{position:"relative",right:"2vw",top:"1vh",border:"2px solid green",fontSize:"4vw",borderRadius:"50%",backgroundColor:"green"}}/></Link>
             <div>
               <a href="tel:+918967908081"><p>+91 8967908081</p></a>
               <p>Talk to an Expert</p>
