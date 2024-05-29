@@ -1,10 +1,4 @@
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-
 .circle {
     background: linear-gradient(to bottom, #fa39ad 40%, #fe6c4c 50%);
     filter: blur(120px);

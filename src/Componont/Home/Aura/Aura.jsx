@@ -5,7 +5,7 @@ import Model1 from "../../../assets/model1.png";
 function Aura() {
   return (
     <>
-      <div>
+      <div className="">
         <div class="circle   rounded-full"></div>
       </div>
     </>

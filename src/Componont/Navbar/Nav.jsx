@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 
 const pages = ["Home", "Services", "Careers", "Contact", "About"];
+
 const pageDestinations = {
   Home: "/", // Destination for Home page
   Services: "/services", // Destination for Services page

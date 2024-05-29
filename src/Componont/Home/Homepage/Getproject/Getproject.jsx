@@ -6,10 +6,10 @@ import "./Getproject.scss"
 
 function Gotproject() {
     return <>
-         <div id="GetProject" className="w-full  flex items-center justify-center flex-col gap-10 pb-10 mb-10">
+         <div id="GetProject" className="w-full  flex items-center justify-center flex-col gap-10 pb-10 ">
          <div className="flex items-center justify-center flex-col mt-5">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white">Got New Project</h1>
-            <div className="h-2 rounded-md flex align-center bg-head w-36"></div>
+            <div className="h-2 rounded-md flex align-center bg-head w-36 mt-5"></div>
             </div>
             <div className="flex items-center justify-center flex-col">
                 <div className="flex items-center justify-center flex-col mb-10">

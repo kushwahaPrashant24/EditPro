@@ -9,15 +9,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 
-function createCard(Regiment) {
+function createCard(Cases) {
   return (
     <Card
-      key={Regiment.id}
-      name={Regiment.name}
-      img={Regiment.img}
-      active={Regiment.active}
-      center={Regiment.center}
-      butt={Regiment.butt}
+      key={Cases.id}
+      logo={Cases.logo}
+      name={Cases.name}
+      CaseStudy= {Cases.CaseStudy}
+      butt={Cases.button}
     />
   );
 }
@@ -32,7 +31,7 @@ function CaseStudies() {
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white text-center">Our Latest Case Studies</h1>
     </div>
     <Swiper
-      slidesPerView={2}
+      
       centeredSlides={true}
       spaceBetween={30}
       grabCursor={true}
@@ -46,11 +45,22 @@ function CaseStudies() {
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
+      breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
     >
-      {Caseconst.map((regiment) => (
-        <SwiperSlide key={regiment.id} className='h-96 w-96'>
+      {Caseconst.map((Cases) => (
+        <SwiperSlide key={Cases.id} className='h-96 w-96'>
           <div className="App">
-            {createCard(regiment)}
+            {createCard(Cases)}
           </div>
         </SwiperSlide>
       ))}

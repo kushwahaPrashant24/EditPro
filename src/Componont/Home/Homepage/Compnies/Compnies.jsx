@@ -20,12 +20,12 @@ function Compnies() {
   console.log(CompaniesConst);
 
   return (
-    <div className="mt-28 mb-20">
+    <div className="mt-28">
       <div className=" mt-20">
-      <center><h1 className="max-h-10  max-w-4xl sm:text-lg md:text-3xl  font-black text-center text-head2   mt-3 "> 30+ COMPANIES & Organisations TRUST EditQuasar</h1></center>
+      <center><h1 className="max-h-10 max-w-4xl sm:text-lg md:text-3xl font-black text-center text-head2 mt-3"> 30+ Companies & Organisations TRUST EditQuasar</h1></center>
       </div>
       <Swiper
-        slidesPerView={2} // default value
+        slidesPerView={2} 
         centeredSlides={true}
         spaceBetween={30}
         grabCursor={true}
@@ -52,7 +52,7 @@ function Compnies() {
         }}
       >
         {CompaniesConst.map((Company) => (
-          <SwiperSlide key={Company.id} className='h-60 mt-10'>
+          <SwiperSlide key={Company.id} className='  h-60  mt-24 mb-20 ml-10'>
             <div className="App">
               {createCard(Company)}
             </div>

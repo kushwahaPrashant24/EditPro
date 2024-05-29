@@ -1,51 +1,67 @@
+import Case1 from "../../../../assets/Case/case1.jpg"
+import Case2 from "../../../../assets/Case/Case 2.jpg"
+import Case3 from "../../../../assets/Case/Case 3.jpg"
+import Case4 from "../../../../assets/Case/Case 4.jpg"
+import Case5 from "../../../../assets/Case/Case 5.jpg"
+import Case6 from "../../../../assets/Case/Case 6.jpg"
+
 const props = [
     {
         "id": 1,
-        name:"Madras Regiment",
-        img:"https://hrdots.com/wp-content/uploads/2021/09/Bihar-Army.png",
-        active:"Active From: 1758",
-        center:"Regimental Centre: Wellington, Tamil Nadu",
-        butt:"case-1"
+        companyname:"Innovoloop",
+        logo: Case1,
+        CaseStudy:"Revitalizing Brand Identity for Innovoloop",
+        button:"case-1"
     
     },
     
     {
         "id": 2,
-        name:"Rajputana Rifles",
-        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/The_President%2C_Shri_Ram_Nath_Kovind_with_the_Indian_Army_Band_Contingents_%28participants_of_the_Beating_Retreat_Ceremony%29_and_Provost_Outrides%2C_at_Rashtrapati_Bhavan%2C_in_New_Delhi_on_January_30%2C_2018.jpg/1280px-thumbnail.jpg",
+        companyname:"Innovoloop",
+        logo: Case2,
         active:"Active From: 1775",
-        center:"Regimental Centre: Delhi Cantonment, Delhi",
-        butt:"case-2"
+        CaseStudy:"Enhancing Digital Presence for GreenTech Solutions",
+        button:"case-2"
     },
     
     
     {
         "id": 3,
-        name:"Rajput Regiment",
-        img:"https://www.postoast.com/wp-content/uploads/2018/02/Rajput-Regiment.jpg",
+        companyname:"Innovoloop",
+        logo: Case3,
         active:"Active From: 1778",
-        center:"Regimental Centre: Fatehgarh, Uttar Pradesh",
-        butt:"case-3"
+        CaseStudy:"Boosting Customer Engagement for SmartHome Inc.",
+        button:"case-3"
     },
     
     {
         "id": 4,
-        name:"Dogra Regiment",
-        img:"https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/11/2020_11$largeimg_667804911.jpg",
+        companyname:"Innovoloop",
+        logo: Case4,
         active:"Active From: 1877",
-        center:"Regimental Centre: Ayodhya, Uttar Pradesh",
-        butt:"case-4"
+        CaseStudy:"Rebranding and Digital Transformation for EcoClean",
+        button:"case-4"
     },
       
     
     {
         "id": 5,
-        name:"Sikh Regiment",
-        img:"https://static.theprint.in/wp-content/uploads/2023/01/SIKH-REGIMENT.jpg",
+        companyname:"Innovoloop",
+        logo: Case5,
         active:"Active From: 1846",
-        center:"Regimental Centre: Ramgarh Cantonment, Jharkhand",
-        butt:"case-6"
+        CaseStudy:"Enhancing User Experience for HealthTech Innovations",
+        button:"case-6"
     },
+    
+    {
+        "id": 6,
+        companyname:"Innovoloop",
+        logo: Case6,
+        active:"Active From: 1795",
+        CaseStudy:"Elevating Brand Presence for Wellness Solutions Co.",
+        button:"case-6"
+    },
+    
     
     
     /*{
@@ -56,34 +72,11 @@ const props = [
         center:"Regimental Centre: "
     }*/
     
-    {
-        "id": 6,
-        name:"Jat Regiment",
-        img:"https://qph.cf2.quoracdn.net/main-qimg-552890ceff431ccf19a2cbecd649ae03-lq",
-        active:"Active From: 1795",
-        center:"Regimental Centre: Bareilly, Uttar Pradesh",
-        butt:"case-6"
-    },
     
     
-    {
-        "id": 7,
-        name:"Parachute Regiment",
-        img:"https://www.indiasentinels.com/post_uploads/43340fcfdbbe8d50a5053fc99fb8138aa228d812.jpg",
-        active:"Active From: 1945",
-        center:"Regimental Centre: Bengaluru, Karnataka",
-        butt:"case-7"
-    },
     
-    {
-        "id": 8,
-        name:"Punjab Regiment",
-        img:"https://www.thestatesman.com/wp-content/uploads/2019/08/QT-O-4.jpg",
-        active:"Active From: 1761",
-        center:"Regimental Centre: Ramgarh Cantonment, Jharkhand",
-        butt:"case-8"
-
-    },
+    
+   
     
     /*{
         "id": 9,
@@ -93,13 +86,7 @@ const props = [
         center:"Regimental Centre: Jabalpur, Madhya Pradesh"
     },
     
-     {
-        "id": 10,
-        name:"Sikh Light Infantry",
-        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sikh_Light_Infantry.jpg/450px-Sikh_Light_Infantry.jpg",
-        active:"Active From: 1944",
-        center:"Regimental Centre: Fatehgarh, Uttar Pradesh"
-    },
+    
     
     {
         "id": 11,
