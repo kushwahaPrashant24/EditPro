@@ -112,7 +112,12 @@ body {
 .container1{
     width: 100%;
     height: 100%;
-    background: #8f86868d;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: relative ;
     border-radius: 50px;
     display: flex;
@@ -154,7 +159,7 @@ body {
 }
 .box{
     width: 100%;
-    min-height: 220px;
+    min-height: 40vh;
     background-color: #ffffff;
     border-radius: 25px;
     padding: 5% 10%;
@@ -205,16 +210,28 @@ body {
     width: 15px;
   }
   .cards::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background-color: #f1f1f1;
     border-radius: 10px;
+    
 
   }
+  
   .cards::-webkit-scrollbar-thumb {
+
     background: #fffdfd;
     border-radius: 10px;
 }
   .cards::-webkit-scrollbar-thumb:hover {
     background: #aea7a7;
+
+    width: 18px; /* Adjust the width */
+    height: 50px; /* Adjust the height */
+    background: grey;
+    border-radius: 10px;
+}
+  .cards::-webkit-scrollbar-thumb:hover {
+    background: black;
+
   }
 
 .img1{
@@ -241,28 +258,7 @@ background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/
 .img6{
     background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/content-writing.jpg?w=1024&h=685);
 }
-.img7{
-    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/cv-or-resume-making.webp);
-}
-.img8{
-    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/advertising-poster.jpg);
-}
 
-.img9{
-    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/personal-porfolio.webp);
-}
-.img10{
-    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/occassion-card.jpg);
-}
-.img11{
-    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/company-portfolio-templates.webp);
-}
-.img12{
-    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/business-card-making.png);
-}
-.img13{
-    background-image: url( https://editpro5.wordpress.com/wp-content/uploads/2024/02/bgm-making.jpg);
-}
 .front,
 .back {
     background-size: cover;
