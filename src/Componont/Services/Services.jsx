@@ -10,6 +10,7 @@ import logo from "../../assets/logo-noname.png";
 import logo5 from "../../assets/logo5.png";
 import logo1 from "../../assets/logo1.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { IoIosArrowRoundDown } from "react-icons/io";
 
 
 
@@ -247,15 +248,35 @@ export default function Services() {
 
 
   const [active, setActive] = useState('navBar')
+
+  
   // function to toggle navbar 
   const showNav = () => {
     setActive('navBar activenavBar');
   }
+
   const removeNavbar = () => {
     setActive('navBar');
+    
   }
   const [ind,setInd]=useState(0);
-  console.log(ind)
+
+  const slider = useRef();
+
+  let f=0;
+  // const downslide =()=>{
+  //   slider.current.style.transform='translateY(-230px)';  
+  // }
+
+  const downslide = () => {
+    // setCurrentSlide((prevSlide) => (prevSlide + 1) % absol[ind].length);
+     slider.current.scrollIntoView({
+      behavior: "smooth",
+      block:"nearest" ,
+    });
+  };
+  
+  
 
   const con=useRef();
 
@@ -366,10 +387,10 @@ export default function Services() {
           </div>
 
           <div className={active} ref={con}>
-            <div className="container1">
-              <div className="cards">
+            <div className="container1" id="container1" >
+              <div className="cards" >
                 {absol[ind].map((item,index) => (
-                  <div className="box" key={index}>
+                  <div className="box" id="box"  key={index} ref={slider} >
                     <div className="head">
                       <img src={item.image} alt="" className="logo" />
                       <h2 className="headingg">{item.heading}</h2>
@@ -384,6 +405,11 @@ export default function Services() {
               <div onClick={removeNavbar} className="closeNavbar">
                 <AiFillCloseCircle className='icon' />
               </div>
+
+              <div className="arr" onClick={downslide} >
+              <IoIosArrowRoundDown />
+              </div>
+
             </div>
           </div>
 
