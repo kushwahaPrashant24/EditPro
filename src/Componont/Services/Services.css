@@ -125,6 +125,19 @@ body {
     align-items: center;
 
 }
+.arr{
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    cursor: pointer;
+    padding: 5px 2px;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    bottom: 40px;
+    left: 44.5%;
+}
 .icon{
     color: #fff;
     font-size: 60px;
@@ -154,6 +167,8 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 15px;
+    /* transform: translateY(-230%); */
+
 
 }
 .head{
@@ -202,6 +217,13 @@ body {
   }
   
   .cards::-webkit-scrollbar-thumb {
+
+    background: #fffdfd;
+    border-radius: 10px;
+}
+  .cards::-webkit-scrollbar-thumb:hover {
+    background: #aea7a7;
+
     width: 18px; /* Adjust the width */
     height: 50px; /* Adjust the height */
     background: grey;
@@ -209,6 +231,7 @@ body {
 }
   .cards::-webkit-scrollbar-thumb:hover {
     background: black;
+
   }
 
 .img1{
