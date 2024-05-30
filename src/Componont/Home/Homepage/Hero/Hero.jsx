@@ -4,13 +4,13 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 import Aura from "../../Aura/Aura";
-import Model1 from "../../../../assets/NewModel1.png";
+import Model1 from "../../../../assets/Homepage/NewModel1.png";
 
 export default function Hero() {
   return (
     <>
-     <section>
-  <div id="Hero" className="flex flex-col md:flex-row items-center justify-center">
+     
+  <div id="Hero" className="flex flex-col md:flex-row items-center justify-center pt-20 ">
     <div className="w-full md:w-1/2 flex flex-col px-7 mt-12 md:mt-24 lg:mt-48 gap-6 md:gap-9">
       <div>
         <h3 className="w-full sm:w-3/4 md:w-full text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">
@@ -49,7 +49,7 @@ export default function Hero() {
       <img className="w-full h-auto max-w-xl mt-16  z-10" src={Model1} alt="Model" />
     </div>
   </div>
-</section>
+
 
     </>
   );

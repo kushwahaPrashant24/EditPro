@@ -9,7 +9,14 @@ import WebDesigning from "../../../../../assets/Web designing.png";
 
 export default function Card2() {
   return (
-    <Card sx={{ maxWidth: 255, background: "#061E47" }}>
+    <Card
+      sx={{
+        maxWidth: 255,
+        backgroundImage:
+          "linear-gradient(to bottom, #10115d, #1c1260, #251263, #2e1366, #361369, #3b186c, #401c70, #452173, #482977, #4b317b, #4e397f, #524083)",
+        color: "white",
+      }}
+    >
     <CardActionArea>
       <CardMedia
       className='h-48'

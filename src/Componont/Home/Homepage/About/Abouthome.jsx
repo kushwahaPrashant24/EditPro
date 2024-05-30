@@ -5,17 +5,17 @@ import Aboutcard from "./AboutCard/Aboutcard";
 function Abouthome() {
   return (
     <>
-      <div className="flex flex-col md:flex-row mt-10">
-        <div className="w-full md:w-4/12 mb-6 md:mb-0">
+      <div className="flex flex-col justify-between md:flex-row mt-10">
+        <div className=" mb-6 md:mb-0">
           <img
-            className="h-full w-full object-cover"
+            className=" object-cover"
             src={Model2}
             alt="Model Image"
           />
         </div>
-        <div className="w-full md:w-8/12 flex flex-col gap-5">
+        <div className="w-3/5  h-7xl bg-Amber flex items-center flex-col gap-5">
           <div>
-            <h2 className="w-full sm:w-3/4 md:w-1/2 text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">
+            <h2 className=" text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">
               About Us
             </h2>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white">

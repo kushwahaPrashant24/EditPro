@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 
  function Footer() {
     return <>
+      <section>
             <div className="sm bg-myblue flex justify-center flex-col items-center flex-wrap gap-6 py-10">
                   <img className="max-w-24 " src={Logotwo} />
                   <h1 className="text-center text-7xl text-white font-black  ">Don't be shy and <br />talk to us?</h1>
@@ -43,6 +44,7 @@ import { motion } from "framer-motion";
                   </div>
                   <p className="text-center text-white">© 2023 EditQuasar | Powered by SensioSynci | All Rights Reserved</p>
             </div>
+            </section>
     </>
 } 
 
