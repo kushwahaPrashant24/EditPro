@@ -25,7 +25,7 @@ export default  function counter() {
 
                 <Card
                   style={{background:"linear-gradient(#3f2182,#13072e)"}}
-                  className="flex card1"
+                  className="flex card1 text-center"
                   sx={{ minHeight: 200, maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>

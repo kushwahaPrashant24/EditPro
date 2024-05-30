@@ -417,7 +417,7 @@ export default function Services() {
               Creating Experiences That Inspire:
             </p>
 
-            <p className="text-sm hidden md:block  text-richblack-5 sm:text-lg">
+            <p className="text-sm hidden md:block  text-richblack-5 sm:text-lg"style={{fontSize:"1.1vw"}}>
               We specialize in the art and science of designing, building,
               and marketing, mastering every detail to deliver exceptional
               results.
@@ -431,15 +431,15 @@ export default function Services() {
             Our Services
           </p>
           <div className="max-w-maxContent w-11/12 px-5 mx-auto">
-            <p className="text-lg text-center  font-bold text-white md:text-4xl pb-2 text2">
-              WHAT WE <span className="text-lg md:text-4xl text-[#bcc8eb] ">OFFER </span>
+            <p className="text-lg text-center  font-bold text-white md:text-5xl pb-2 text2">
+              WHAT WE <span className="text-lg md:text-5xl text-[#bcc8eb] ">OFFER </span>
             </p>
             <p className=" text-center font-bold  text-white  md:pb-4 para">
               Elevate Your Expectations.
             </p>
 
 
-            <p className="text-center text-white pb-4 ">
+            <p className="text-center text-white pb-4 "  style={{fontSize:"1.1vw",width:"75vw"}}>
               Welcome to EditQuasar, your premier destination for a comprehensive suite of digital services designed  to amplify your online presence and fuel your success in the digital world. Our team of highly skilled  professionals is committed to delivering innovative solutions that are precisely tailored to meet your  unique needs. We take pride in our client-centric approach, ensuring that we consistently provide top tier services that surpass expectations. Collaborate with us to unlock your digital potential and embark  on a path of sustained growth and success in today’s dynamic digital landscape.
 
             </p>
@@ -450,9 +450,9 @@ export default function Services() {
 
 
           </div>
-          <div className="max-w-maxContent w-11/12 px-5 mx-auto">
-            <p className="text-lg text-center  font-bold text-white md:text-5xl pb-3 pt-20 text3">
-              Unleashing Digital <span className="text-lg md:text-5xl text-[#bcc8eb]">Excellence</span>
+          <div className="max-w-maxContent w-11/12 px-5 mx-auto" style={{position:"relative",left:"2.5vw"}}>
+            <p className="text-lg text-center  font-bold text-white md:text-6xl pb-3 pt-20 text3">
+              Unleashing Digital <span className="text-lg md:text-6xl text-[#bcc8eb]">Excellence</span>
             </p>
             <p className=" text-center  font-bold  text-white  md:pb-4 para1">
               Explore our comprehensive suite of top-tier digital services today.
