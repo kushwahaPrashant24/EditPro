@@ -26,8 +26,15 @@ body {
     
     font-size: 30px;
     font-weight: 100;
-    color:grey;
+    color:#ffffff;
 
+}
+.para{
+    font-size: 18px;
+    
+}
+.para1{
+    font-size:19px;
 }
 @media (max-width:600px) {
     .services-section .text{
@@ -185,19 +192,39 @@ body {
 .head .headingg{
     flex-basis: 70%;
     font-size: 25px;
+    color:#ffffff;
 }
 .support{
     font-size: 17px;
     font-weight: 500;
+    color:#ffffff;
 }
 
 .box .btn1{
-    border: 3px solid #000;
+    border: 3px solid #ffffff;
     padding: 5px 15px;
     border-radius: 50px;
     display:flex;
     font-weight: 500;
+    color: white;
+
 }
+.head img{
+    position: relative;
+    right:28px;
+    display: inline-block;
+    background-color: white;
+    background-size: cover; 
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    
+}
+
+
 .box .btn1 span{
     font-size: 25px;
     text-align: center;
@@ -210,7 +237,7 @@ body {
     width: 15px;
   }
   .cards::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+    background-color: black;
     border-radius: 10px;
     
 
@@ -218,45 +245,295 @@ body {
   
   .cards::-webkit-scrollbar-thumb {
 
-    background: #fffdfd;
+    background: #ffffff;
     border-radius: 10px;
 }
-  .cards::-webkit-scrollbar-thumb:hover {
-    background: #aea7a7;
+/* css for specific box */
 
-    width: 18px; /* Adjust the width */
-    height: 50px; /* Adjust the height */
-    background: grey;
-    border-radius: 10px;
+/* for 1 */
+#first1{
+    
+    background-image: url(../../assets/first1.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+    
 }
-  .cards::-webkit-scrollbar-thumb:hover {
-    background: black;
 
-  }
+#first2{
+    
+    background-image: url(../../assets/first2.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+    
+}
+#first3{
+    
+    background-image: url(../../assets/first3.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+    
+}
+#first4{
+    
+    background-image: url(../../assets/first4.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+    
+}
+#first5{
+    
+    background-image: url(../../assets/first5.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+    
+}
+/* for 2 */
+
+#second1{
+    min-height: 45vh;
+    background-image: url(../../assets/secon1.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#second1 h2{
+    font-size: 3vh;
+    
+}
+#second2{
+    min-height: 50vh;
+    background-image: url(../../assets/second2.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#second2 h2{
+    font-size: 3vh;
+}
+#second2 button{
+    position: relative;
+    top:4vh;
+    
+}
+#second3{
+    height: 40vh;
+    background-image: url(../../assets/second3.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#second4{
+    background-image: url(../../assets/second4.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#second5{
+    background-image: url(../../assets/second5.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#second6{
+    background-image: url(../../assets/second6.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+/* for 3 */
+#third1{
+    background-image: url(../../assets/third1.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#third2{
+    background-image: url(../../assets/third2.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#third3{
+    background-image: url(../../assets/third3.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#third4{
+    background-image: url(../../assets/third4.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#third5{
+    background-image: url(../../assets/third5.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+#third6{
+    background-image: url(../../assets/third6.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+}
+/* for 4 */
+#forth1{
+    background-image: url(../../assets/forth1.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#forth2{
+    background-image: url(../../assets/forth2.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#forth3{
+    background-image: url(../../assets/forth3.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#forth4{
+    background-image: url(../../assets/forth4.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#forth5{
+    background-image: url(../../assets/forth5.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#forth6{
+    background-image: url(../../assets/forth6.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+/* for 5 */
+#fifth1{
+    background-image: url(../../assets/fifth1.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#fifth2{
+    background-image: url(../../assets/fifth2.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#fifth3{
+    background-image: url(../../assets/fifth3.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#fifth4{
+    background-image: url(../../assets/fifth4.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#fifth5{
+    background-image: url(../../assets/fifth5.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#fifth6{
+    background-image: url(../../assets/fifth6.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+/* for 6 */
+#sixth1{
+    background-image: url(../../assets/sixth1.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#sixth2{
+    background-image: url(../../assets/sixth2.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#sixth3{
+    background-image: url(../../assets/sixth3.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#sixth4{
+    background-image: url(../../assets/sixth4.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#sixth5{
+    background-image: url(../../assets/sixth5.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+#sixth6{
+    background-image: url(../../assets/sixth6.jpg);
+    background-size: cover; 
+    background-position: center;
+    object-fit: cover;
+
+}
+
+  
+  
 
 .img1{
-    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/photo-editing-1.jpg);
+    background-image: url(../../assets/Branding.jpg);
    
 }
 .img2{
-background-image: url(https://editpro5.files.wordpress.com/2024/02/logo-designing.jpg);
+    background-image: url(../../assets/designfusion.jpg);
 }
 .img3{
-background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/website-designing.webp);
+    background-image: url(../../assets/DigitalMarketing.jpg);
 }
 .img4{
-background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/blog-writing.webp );
+    background-image: url(../../assets/experiencedesign.jpg );
 }
 .img5{
-background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/edit.jpg?w=1024&h=683 );
+    background-image: url(../../assets/technology.jpg);
 }
 
-
-
-
-
 .img6{
-    background-image: url(https://editpro5.wordpress.com/wp-content/uploads/2024/02/content-writing.jpg?w=1024&h=685);
+    background-image: url(../../assets/creativity.jpg);
 }
 
 .front,
@@ -391,7 +668,7 @@ span{
 }
 
 .front .inner span {
-    color: rgba(255, 255, 255, 0.7);
+    color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 300;
 }

@@ -24,17 +24,18 @@ export default  function counter() {
                 
 
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e)"}}
                   className="flex card1"
                   sx={{ minHeight: 200, maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-5xl  text-center text-[#7ED957]">
+                        <h1 className="text-5xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-6xl font-bold text-center text-[#7ED957]"
+                              className="text-6xl font-bold text-center text-[#bcc8eb]"
                               start={0}
                               end={200}
                               delay={0}
@@ -53,17 +54,18 @@ export default  function counter() {
                 </Card>
 
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e)"}}
                   className="flex card2"
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-5xl  text-center text-[#7ED957]">
+                        <h1 className="text-5xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-6xl font-bold text-center text-[#7ED957]"
+                              className="text-6xl font-bold text-center text-[#bcc8eb]"
                               start={0}
                               end={20}
                               delay={0}
@@ -81,18 +83,19 @@ export default  function counter() {
                   </CardActionArea>
                 </Card>
 
-                <Card
+                <Card 
+                  style={{background:"linear-gradient(#3f2182,#13072e)"}}
                   className="flex card3"
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-5xl  text-center text-[#7ED957]">
+                        <h1 className="text-5xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-6xl font-bold text-center text-[#7ED957]"
+                              className="text-6xl font-bold text-center text-[#bcc8eb]"
                               start={0}
                               end={90}
                               delay={0}

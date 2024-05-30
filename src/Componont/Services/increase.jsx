@@ -7,7 +7,7 @@ import { CardActionArea } from "@mui/material";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-
+// bcc8eb
 
 export default  function Increaser() {
     const [counterOn, setCounterOn] = useState(false);
@@ -19,17 +19,18 @@ export default  function Increaser() {
             >
               <div className="w-full mt-5 flex justify-around flex-wrap gap-10 mt-16 mb-16" style={{position:"relative",left:"13.5vw"}}>
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none" }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-4xl  text-center text-[#7ED957]">
+                        <h1 className="text-4xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-4xl text-[#7ED957]"
+                              className="text-4xl text-[#bcc8eb]"
                               start={0}
                               end={98}
                               delay={0}
@@ -48,17 +49,18 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-4xl  text-center text-[#7ED957]">
+                        <h1 className="text-4xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-4xl text-[#7ED957]"
+                              className="text-4xl text-[#bcc8eb]"
                               start={0}
                               end={100}
                               delay={0}
@@ -77,17 +79,18 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e"}}
                   className="flex" 
                   sx={{ minHeight: 200, maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-4xl  text-center text-[#7ED957]">
+                        <h1 className="text-4xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-4xl text-[#7ED957]"
+                              className="text-4xl text-[#bcc8eb]"
                               start={0}
                               end={99}
                               delay={0}
@@ -106,17 +109,18 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-4xl  text-center text-[#7ED957]">
+                        <h1 className="text-4xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-4xl text-[#7ED957]"
+                              className="text-4xl text-[#bcc8eb]"
                               start={0}
                               end={95}
                               delay={0}
@@ -135,17 +139,18 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
+                  style={{background:"linear-gradient(#3f2182,#13072e"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
                   <CardActionArea>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <h1 className="text-4xl  text-center text-[#7ED957]">
+                        <h1 className="text-4xl  text-center text-[#bcc8eb]">
                           {" "}
                           {counterOn && (
                             <CountUp
-                              className="text-4xl text-[#7ED957]"
+                              className="text-4xl text-[#bcc8eb]"
                               start={0}
                               end={200}
                               delay={0}
