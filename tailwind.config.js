@@ -136,6 +136,7 @@ export default {
         100: " #ffcdd2",
         200:" #ef9a9a",
       },
+      Aboutcard: "background-image: linear-gradient(to bottom, #09326a, #003589, #0035a6, #0032c2, #1927dc)",
       myblue: '#083344',
       white: '#f8fafc',
       dimwite: '#94a3b8',

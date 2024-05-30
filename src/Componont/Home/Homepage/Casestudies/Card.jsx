@@ -15,7 +15,7 @@ import Slide from '@mui/material/Slide';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="up" ref={ref} {...props} />;
+    return <Slide direction="right" ref={ref} {...props} />;
   });
 
     function Card(props) {
@@ -31,22 +31,34 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
         return  <React.Fragment>
        <Button variant="outlined" onClick={handleClickOpen}>
-      <p className='text-black'> <h2>{props.name}</h2></p>
+       <div className="flex justify-center items-center ">
+       <img className=" relative"  src={props.logo}/>
+      <p className='text-white text-2xl text-head2  absolute'> 
       
-        {props.butt}
+      <h2>{props.name}</h2>  {props.button}</p>
+      
+       
+        </div>
       </Button>
 
 
       <Dialog
+      className="w-1/2"
         fullScreen
         open={open}
         onClose={handleClose}
         TransitionComponent={Transition}
+        PaperProps={{
+          style: {
+            width: '100%', // Half of the page width
+            marginLeft: 'auto', // Align to the right side
+          },
+        }}
       >
         <AppBar sx={{ position: 'relative' }}>
           <Toolbar>
             <IconButton
-              edge="start"
+              edge="right"
               color="inherit"
               onClick={handleClose}
               aria-label="close"

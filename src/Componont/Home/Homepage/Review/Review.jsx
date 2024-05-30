@@ -20,7 +20,7 @@ function Review() {
   console.log(ReviewData);
 
   return (
-    <div className="bg-white p-10">
+    <div className="bg-white rounded-3xl border-2 border-zinc p-10">
       <Swiper
         slidesPerView={1} // default value
         centeredSlides={true}
@@ -49,7 +49,7 @@ function Review() {
         }}
       >
         {ReviewData.map((Reviews) => (
-          <SwiperSlide key={Reviews.id} >
+          <SwiperSlide className='' key={Reviews.id} >
             <div className="">
               {createCard(Reviews)}
             </div>

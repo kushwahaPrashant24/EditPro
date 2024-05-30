@@ -11,8 +11,8 @@ function Serve() {
   
   return (
     <>
-     <div className="flex flex-col items-center mb-10">
-  <div className="flex flex-col md:flex-row justify-between items-center w-full mt-16">
+     <div className="flex flex-col items-center   mb-10">
+  <div id="servebg" className="flex flex-col md:flex-row justify-between items-center w-full mt-16 bg-Amber">
     <div className="hidden md:block">
       <img className="h-56" src={Sideright} alt="Side Right" />
     </div>
