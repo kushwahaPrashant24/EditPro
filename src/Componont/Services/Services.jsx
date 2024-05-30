@@ -8,7 +8,7 @@ import "./Services.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 import service from "../../assets/final background for service section.mp4";
 import logo from "../../assets/logo-noname.png";
-import brand1 from "../../assets/Brand Identity.png";
+import brand1 from "../../assets/BrandIdentity.png";
 import brand2 from "../../assets/Brand Consulting.png";
 import brand3 from "../../assets/2d design.png";
 import brand4 from "../../assets/Logo design.png";
