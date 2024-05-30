@@ -1,6 +1,6 @@
 import React from "react";
 import "./Aura.css";
-import Model1 from "../../../assets/model1.png";
+
 
 function Aura() {
   return (
