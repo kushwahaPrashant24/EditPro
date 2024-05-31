@@ -19,7 +19,7 @@ export default  function Increaser() {
             >
               <div className="w-full mt-5 flex justify-around flex-wrap gap-10 mt-16 mb-16" style={{position:"relative",left:"13.5vw"}}>
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e"}}
+                  style={{border:"3px solid white",borderRadius:"15px"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none" }}
                 >
@@ -49,7 +49,7 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e"}}
+                  style={{border:"3px solid white",borderRadius:"15px"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
@@ -79,7 +79,7 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e"}}
+                  style={{border:"3px solid white",borderRadius:"15px"}}
                   className="flex" 
                   sx={{ minHeight: 200, maxWidth: 275, background: "none"  }}
                 >
@@ -109,7 +109,7 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e"}}
+                  style={{border:"3px solid white",borderRadius:"15px"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
@@ -139,7 +139,7 @@ export default  function Increaser() {
                 </Card>
 
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e"}}
+                  style={{border:"3px solid white",borderRadius:"15px"}}
                   className="flex" 
                   sx={{ maxWidth: 275, background: "none"  }}
                 >

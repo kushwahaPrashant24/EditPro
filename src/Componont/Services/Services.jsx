@@ -15,6 +15,7 @@ import brand4 from "../../assets/Logo design.png";
 import brand5 from "../../assets/graphic design.png";
 
 
+
 // for 2 sub service
 import Brochers from "../../assets/Brochers.jpg";
 import Bussiness from  "../../assets/bussines card.png";
@@ -54,6 +55,8 @@ import Resume from "../../assets/resume.jpg";
 import Videos from "../../assets/video.jpg";
 import Write from "../../assets/Writing.jpg";
 
+import ReviewSt from "../../Componont/Home/Homepage/Review/ReviewStructure";
+
 
 
 
@@ -64,31 +67,44 @@ export default function Services() {
       imgClass: "img1",
       title: "Branding",
       description: "Build a powerful brand with EditQuasar's comprehensive branding solutions. We create unique identities that resonate with your target audience.",
+      content1:"Explore Branding",
+      content2:"Include Branding",
+      mainLogo:Mang,
     },
     {
       imgClass: "img2",
       title: "Design Fusion",
       description: "Transform your ideas into captivating visuals with EditQuasar's Design Fusion package. We provide comprehensive design solutions tailored to your needs.",
+      content1:"Explore Design",
+      content2:"Include Design",
     },
     {
       imgClass: "img3",
       title: "Digital Marketing",
       description: "Boost your online presence with EditQuasar's Digital Marketing solutions. We deliver targeted strategies to reach and engage your audience.",
+      content1:"Explore Digital Marketing",
+      content2:"Include Digital Marketing",
     },
     {
       imgClass: "img4",
       title: "Experience Design",
       description: "Create intuitive and engaging digital experiences with EditQuasar's Experience Design package. We design interfaces that delight users.",
+      content1:"Explore Experience",
+      content2:"Include Experience",
     },
     {
       imgClass: "img5",
       title: "Technology",
       description: "Empower your business with EditQuasar's Technology solutions. We offer innovative tech services to meet your unique needs.",
+      content1:"Explore Technology",
+      content2:"Include Technology",
     },
     {
       imgClass: "img6",
       title: "Creativity",
       description: "Turn your ideas into stunning content with EditQuasar's Creativity package. We bring your creative visions to life.",
+      content1:"Explore Creativity",
+      content2:"Include Creativity",
     },
   ];
 
@@ -417,7 +433,7 @@ export default function Services() {
               Creating Experiences That Inspire:
             </p>
 
-            <p className="text-sm hidden md:block  text-richblack-5 sm:text-lg">
+            <p className="text-sm hidden md:block  text-richblack-5 sm:text-lg"style={{fontSize:"1.1vw"}}>
               We specialize in the art and science of designing, building,
               and marketing, mastering every detail to deliver exceptional
               results.
@@ -431,15 +447,15 @@ export default function Services() {
             Our Services
           </p>
           <div className="max-w-maxContent w-11/12 px-5 mx-auto">
-            <p className="text-lg text-center  font-bold text-white md:text-4xl pb-2 text2">
-              WHAT WE <span className="text-lg md:text-4xl text-[#bcc8eb] ">OFFER </span>
+            <p className="text-lg text-center  font-bold text-white md:text-5xl pb-2 text2">
+              WHAT WE <span className="text-lg md:text-5xl text-[#bcc8eb] ">OFFER </span>
             </p>
             <p className=" text-center font-bold  text-white  md:pb-4 para">
               Elevate Your Expectations.
             </p>
 
 
-            <p className="text-center text-white pb-4 ">
+            <p className="text-center text-white pb-4 "  style={{fontSize:"1.1vw",width:"75vw"}}>
               Welcome to EditQuasar, your premier destination for a comprehensive suite of digital services designed  to amplify your online presence and fuel your success in the digital world. Our team of highly skilled  professionals is committed to delivering innovative solutions that are precisely tailored to meet your  unique needs. We take pride in our client-centric approach, ensuring that we consistently provide top tier services that surpass expectations. Collaborate with us to unlock your digital potential and embark  on a path of sustained growth and success in today’s dynamic digital landscape.
 
             </p>
@@ -450,9 +466,9 @@ export default function Services() {
 
 
           </div>
-          <div className="max-w-maxContent w-11/12 px-5 mx-auto">
-            <p className="text-lg text-center  font-bold text-white md:text-5xl pb-3 pt-20 text3">
-              Unleashing Digital <span className="text-lg md:text-5xl text-[#bcc8eb]">Excellence</span>
+          <div className="max-w-maxContent w-11/12 px-5 mx-auto" style={{position:"relative",left:"2.5vw"}}>
+            <p className="text-lg text-center  font-bold text-white md:text-6xl pb-3 pt-20 text3">
+              Unleashing Digital <span className="text-lg md:text-6xl text-[#bcc8eb]">Excellence</span>
             </p>
             <p className=" text-center  font-bold  text-white  md:pb-4 para1">
               Explore our comprehensive suite of top-tier digital services today.
@@ -469,7 +485,9 @@ export default function Services() {
               <div className="col" key={index}>
                 <div className="container">
                   
+                  
                   <div className={`front ${item.imgClass}`}>
+                    <img src={item.mainLogo} alt="" style={{position:"absolute",height:"5vw",width:"5vw",left:"5vw",top:"3vh",zIndex:"9",borderRadius:"50%",backgroundSize:"cover",backgroundPosition:"center",objectFit:"cover"}}/>
                     <div className="inner">
                       <p className="rp">{item.title}:</p>
                       <span>
@@ -481,7 +499,7 @@ export default function Services() {
                     <div className="inner">
                       <div className="flex flex-col justify-center  items-center  my-8">
                         <button className="bg-blue-200 mx-auto   hover:bg-blue-900 text-richblack-5 font-bold  rounded-lg mb-6 mt-6 px-3 py-1 transition-transform duration-300 transform hover:-translate-y-3">
-                          Service Specifications
+                          {item.content1}
                         </button>
                         <img
                           src={logo}
@@ -490,7 +508,7 @@ export default function Services() {
                           className="absolute z-[-50] "
                         />
                         <button onClick={()=>{setInd(index);showNav()}} className="bg-blue-200  mx-aut o hover:bg-blue-900 text-richblack-5 font-bold py-1 px-3 rounded-lg mb-5 transition-transform duration-300 transform hover:-translate-y-3">
-                          View Pricing
+                          {item.content2}
                         </button>
                       </div>
                     </div>
@@ -559,6 +577,11 @@ export default function Services() {
         <div className="relative  md:w-auto flex justify-center md:justify-start ">
           <Increase />
         </div>
+
+        <div>
+          <ReviewSt/>
+        </div>
+        
       </div>
     </>
   );

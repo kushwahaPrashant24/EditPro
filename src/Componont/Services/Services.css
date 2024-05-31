@@ -30,11 +30,11 @@ body {
 
 }
 .para{
-    font-size: 18px;
+    font-size: 20px;
     
 }
 .para1{
-    font-size:19px;
+    font-size:20px;
 }
 @media (max-width:600px) {
     .services-section .text{
@@ -189,15 +189,19 @@ body {
     max-width: 70px;
     flex-basis: 30%;
 }
+
 .head .headingg{
     flex-basis: 70%;
     font-size: 25px;
     color:#ffffff;
 }
 .support{
-    font-size: 17px;
+    position: relative;
+    top:1vh;
+    font-size: 19px;
     font-weight: 500;
     color:#ffffff;
+    padding-bottom: 2.5vh;
 }
 
 .box .btn1{
@@ -295,7 +299,7 @@ body {
 /* for 2 */
 
 #second1{
-    min-height: 45vh;
+    min-height: 40vh;
     background-image: url(../../assets/secon1.jpg);
     background-size: cover; 
     background-position: center;
@@ -305,8 +309,12 @@ body {
     font-size: 3vh;
     
 }
+#second1 button{
+    position: relative;
+    top:1vh;
+}
 #second2{
-    min-height: 50vh;
+    min-height: 46vh;
     background-image: url(../../assets/second2.jpg);
     background-size: cover; 
     background-position: center;
@@ -327,6 +335,7 @@ body {
     background-position: center;
     object-fit: cover;
 }
+
 #second4{
     background-image: url(../../assets/second4.jpg);
     background-size: cover; 
@@ -340,11 +349,17 @@ body {
     object-fit: cover;
 }
 #second6{
+    
     background-image: url(../../assets/second6.jpg);
     background-size: cover; 
     background-position: center;
     object-fit: cover;
 }
+#second6 img{
+    height: 13vh;
+    width: 12vw;
+}
+
 /* for 3 */
 #third1{
     background-image: url(../../assets/third1.jpg);
@@ -353,6 +368,7 @@ body {
     object-fit: cover;
 }
 #third2{
+    
     background-image: url(../../assets/third2.jpg);
     background-size: cover; 
     background-position: center;
@@ -391,11 +407,16 @@ body {
 
 }
 #forth2{
+    
     background-image: url(../../assets/forth2.jpg);
     background-size: cover; 
     background-position: center;
     object-fit: cover;
 
+}
+#forth2 button{
+    position: relative;
+    top:3vh;
 }
 #forth3{
     background-image: url(../../assets/forth3.jpg);
@@ -427,11 +448,16 @@ body {
 }
 /* for 5 */
 #fifth1{
+    min-height: 40vh;
     background-image: url(../../assets/fifth1.jpg);
     background-size: cover; 
     background-position: center;
     object-fit: cover;
 
+}
+#fifth1 button{
+    position: relative;
+    top:3vh;
 }
 #fifth2{
     background-image: url(../../assets/fifth2.jpg);
@@ -448,11 +474,16 @@ body {
 
 }
 #fifth4{
+    height: 40vh;
     background-image: url(../../assets/fifth4.jpg);
     background-size: cover; 
     background-position: center;
     object-fit: cover;
 
+}
+#fifth4 button{
+    position: relative;
+    top:2vh;
 }
 #fifth5{
     background-image: url(../../assets/fifth5.jpg);
@@ -510,6 +541,10 @@ body {
     background-position: center;
     object-fit: cover;
 
+}
+#sixth6 img{
+    height:9vh;
+    width: 18vh;
 }
 
   
