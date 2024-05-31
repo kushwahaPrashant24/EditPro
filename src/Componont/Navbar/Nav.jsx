@@ -1,4 +1,4 @@
-import * as React from "react";
+import React,{useEffect,useState} from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
+import './Nav.css';
 
 const pages = ["Home", "Services", "Careers", "Contact", "About"];
 
@@ -43,10 +44,22 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  const [sticky, setSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <AppBar
-      className="my-0 flex "
+      className={`my-0 flex ${sticky ? "dark-nav" : ""}`}
       position="sticky"
       
       sx={{
