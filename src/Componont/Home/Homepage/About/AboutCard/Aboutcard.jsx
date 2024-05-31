@@ -17,7 +17,7 @@ function createCard(aa) {
 
 
 function Aboutcard() {
-    return <div className="flex gap-10 flex-wrap">
+    return <div className="flex  justify-center gap-10 flex-wrap">
         {AboutConst.map(createCard)}
         </div>
 }
