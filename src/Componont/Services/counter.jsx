@@ -24,7 +24,7 @@ export default  function counter() {
                 
 
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e)"}}
+                  style={{borderRadius:"15px"}}
                   className="flex card1 text-center"
                   sx={{ minHeight: 200, maxWidth: 275, background: "none"  }}
                 >
@@ -54,7 +54,7 @@ export default  function counter() {
                 </Card>
 
                 <Card
-                  style={{background:"linear-gradient(#3f2182,#13072e)"}}
+                  style={{borderRadius:"15px"}}
                   className="flex card2"
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
@@ -84,7 +84,7 @@ export default  function counter() {
                 </Card>
 
                 <Card 
-                  style={{background:"linear-gradient(#3f2182,#13072e)"}}
+                  style={{borderRadius:"15px"}}
                   className="flex card3"
                   sx={{ maxWidth: 275, background: "none"  }}
                 >
