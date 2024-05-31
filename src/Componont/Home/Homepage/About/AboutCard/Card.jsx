@@ -9,7 +9,7 @@ function Card(props) {
       >
         <div className="flex flex-col sm:flex-row items-center  justify-around">
           <div className="w-20 sm:w-36">
-            <img src={props.logo} alt="Logo" />
+            <img className="pl-5" src={props.logo} alt="Logo" />
           </div>
           <h1 className="mt-4 sm:mt-0 sm:ml-10 text-2xl sm:text-3xl text-head">
             {props.name}

@@ -6,7 +6,7 @@ import Startcard from "./StartCard/StartCard";
 function Start() {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-around items-center p-4">
+      <div className="flex flex-col md:flex-row justify-around items-center p-36">
   <div className="mt-8 md:mt-16 w-full md:w-8/12">
     <h2 className="w-full text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">
       Why choose Us

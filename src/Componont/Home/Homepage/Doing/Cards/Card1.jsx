@@ -15,11 +15,12 @@ export default function Card1() {
         backgroundImage:
           "linear-gradient(to bottom, #10115d, #1c1260, #251263, #2e1366, #361369, #3b186c, #401c70, #452173, #482977, #4b317b, #4e397f, #524083)",
         color: "white",
+        borderRadius: "24px",  // Corrected borderRadius with unit
       }}
     >
       <CardActionArea>
         <CardMedia
-          className="h-48 w-36"
+          className="h-48 w-36 "
           component="img"
           height="20"
           image={BrandIdentity}

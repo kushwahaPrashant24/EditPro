@@ -12,7 +12,7 @@ function Doing() {
     <>
      <div className="w-full h-auto flex flex-col md:flex-row mt-10">
   <div className="w-full md:w-1/2 px-4 md:px-10 flex flex-col gap-4 mt-10 md:mt-44">
-    <div className="text-center md:text-left">
+    <div className="text-center md:text-left -mt-12">
       <h1 className="w-full sm:w-3/4 md:w-full text-lg md:text-xl lg:text-2xl font-medium text-head2">
         OUR SERVICES
       </h1>
