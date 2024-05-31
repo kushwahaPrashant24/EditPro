@@ -1,101 +1,87 @@
-import Logo1 from "../../../../assets/logo1.png"
-import Logo2 from "../../../../assets/logo2.png"
-import Logo3 from "../../../../assets/Innovater.png"
-import Logo4 from "../../../../assets/logo4.png"
-import Logo5 from "../../../../assets/logo5.png"
-import Logo6 from "../../../../assets/logo6.jpg"
-import Logo7 from "../../../../assets/logo7.jpg"
-import Logo8 from "../../../../assets/insider.jpg"
-import Logo9 from "../../../../assets/strater.jpg"
-import Logo10 from "../../../../assets/Quytex.png"
-import Logo11 from "../../../../assets/insiderlogo.png"
-import Logo12 from "../../../../assets/Ikana.png"
-import Logo13 from "../../../../assets/achi.png"
-import Logo14 from "../../../../assets/Biox.png"
+import Anjucreation from "../../../../assets/logo/AnjuCreations.png";
+import Archi from '../../../../assets/logo/Archi.png';
+import Biox from '../../../../assets/logo/Biox.png';
+import Ikana from "../../../../assets/logo/Ikana.png";
+import Innovator from "../../../../assets/logo/insider1.png";
+import Ironic from "../../../../assets/logo/Ironics.png"
+import Quitech from "../../../../assets/logo/Quitech.png";
+import Sensiosync from "../../../../assets/SENSIOSYNC.png"
+import Starter from "../../../../assets/logo/Starter.png";
+import Tcs from "../../../../assets/logo/tcs.jpg";
+import Youngleader from "../../../../assets/logo/Youngleader.png"
 
 
 
 const props = [
+   
     {
         "id": 1,
-        name:"AnjuCreations",
-        img: Logo1,
-        active:"",
-        center:"",
-        
-    
+        img: Anjucreation,
+        name: "Anju Creation"
     },
     
+     
     {
         "id": 2,
-        name:"IRONICS",
-        img: Logo2,
-       
+        img: Archi,
+        name: "Archi"
     },
-    
-    
+
     {
         "id": 3,
-        name:"INNOVAIT",
-        img: Logo3,
-        
+        img: Biox,
+        name: "Biox"
     },
-    
-    /*{
+
+    {
         "id": 4,
-        name:"",
-        img: Logo4,
-        
-    },*/
-      
-    
+        img: Ikana,
+        name: "Ikana"
+    },
+
     {
         "id": 5,
-        name:"Young Leaders Foundation",
-        img: Logo5,
-        
-    },
-    
-
-    {
-        "id": 9,
-        name:"Strater",
-        img: Logo9,
-       
+        img: Innovator,
+        name: "Innovator"
     },
 
     {
-        "id": 9,
-        name:"Strater",
-        img: Logo10,
-       
+        "id": 6,
+        img: Ironic,
+        name: "Ironic"
+    },
+
+    {
+        "id": 7,
+        img: Quitech,
+        name: "Quitech"
+    },
+
+    {
+        "id": 8,
+        img: Sensiosync,
+        name: "Sensiosync"
     },
 
     {
         "id": 9,
-        name:"Strater",
-        img: Logo11,
-       
+        img: Starter,
+        name: "Starter"
     },
-    
-    {
-        "id": 9,
-        name:"Strater",
-        img: Logo12,
-       
-    },
-    
- 
 
     {
-        "id": 9,
-        name:"Strater",
-        img: Logo14,
-       
+        "id": 10,
+        img: Tcs,
+        name: "Tcs"
     },
-    
-    
-    
+
+
+    {
+        "id": 11,
+        img: Youngleader,
+        name: "Youngleader",    
+    },
+
     ]
     
     export default props;
