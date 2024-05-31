@@ -14,7 +14,8 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
-import './Nav.css';
+
+
 
 const pages = ["Home", "Services", "Careers", "Contact", "About"];
 
@@ -59,14 +60,18 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar
-      className={`my-0 flex ${sticky ? "dark-nav" : ""}`}
+      className="my-0 flex"
       position="sticky"
       
       sx={{
         flexGrow: 1,
         display: { xs: "flex", md: "flex" },
         justifyContent: "space-around",
-        backgroundColor: "transparent", // Here's the color property
+        backgroundColor: sticky ? "rgb(45, 15, 94)" : "transparent",
+        transition: "background-color 0.3s",
+        borderRadius: "50px",
+
+         // Here's the color property
         
       }}
     >

@@ -15,6 +15,7 @@ import brand4 from "../../assets/Logo design.png";
 import brand5 from "../../assets/graphic design.png";
 
 
+
 // for 2 sub service
 import Brochers from "../../assets/Brochers.jpg";
 import Bussiness from  "../../assets/bussines card.png";
@@ -53,6 +54,8 @@ import Photo from "../../assets/photo.jpg";
 import Resume from "../../assets/resume.jpg";
 import Videos from "../../assets/video.jpg";
 import Write from "../../assets/Writing.jpg";
+
+import ReviewSt from "../../Componont/Home/Homepage/Review/ReviewStructure";
 
 
 
@@ -559,6 +562,11 @@ export default function Services() {
         <div className="relative  md:w-auto flex justify-center md:justify-start ">
           <Increase />
         </div>
+
+        <div>
+          <ReviewSt/>
+        </div>
+        
       </div>
     </>
   );
