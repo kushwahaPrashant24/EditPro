@@ -67,31 +67,44 @@ export default function Services() {
       imgClass: "img1",
       title: "Branding",
       description: "Build a powerful brand with EditQuasar's comprehensive branding solutions. We create unique identities that resonate with your target audience.",
+      content1:"Explore Branding",
+      content2:"Include Branding",
+      mainLogo:Mang,
     },
     {
       imgClass: "img2",
       title: "Design Fusion",
       description: "Transform your ideas into captivating visuals with EditQuasar's Design Fusion package. We provide comprehensive design solutions tailored to your needs.",
+      content1:"Explore Design",
+      content2:"Include Design",
     },
     {
       imgClass: "img3",
       title: "Digital Marketing",
       description: "Boost your online presence with EditQuasar's Digital Marketing solutions. We deliver targeted strategies to reach and engage your audience.",
+      content1:"Explore Digital Marketing",
+      content2:"Include Digital Marketing",
     },
     {
       imgClass: "img4",
       title: "Experience Design",
       description: "Create intuitive and engaging digital experiences with EditQuasar's Experience Design package. We design interfaces that delight users.",
+      content1:"Explore Experience",
+      content2:"Include Experience",
     },
     {
       imgClass: "img5",
       title: "Technology",
       description: "Empower your business with EditQuasar's Technology solutions. We offer innovative tech services to meet your unique needs.",
+      content1:"Explore Technology",
+      content2:"Include Technology",
     },
     {
       imgClass: "img6",
       title: "Creativity",
       description: "Turn your ideas into stunning content with EditQuasar's Creativity package. We bring your creative visions to life.",
+      content1:"Explore Creativity",
+      content2:"Include Creativity",
     },
   ];
 
@@ -472,7 +485,9 @@ export default function Services() {
               <div className="col" key={index}>
                 <div className="container">
                   
+                  
                   <div className={`front ${item.imgClass}`}>
+                    <img src={item.mainLogo} alt="" style={{position:"absolute",height:"5vw",width:"5vw",left:"5vw",top:"3vh",zIndex:"9",borderRadius:"50%",backgroundSize:"cover",backgroundPosition:"center",objectFit:"cover"}}/>
                     <div className="inner">
                       <p className="rp">{item.title}:</p>
                       <span>
@@ -484,7 +499,7 @@ export default function Services() {
                     <div className="inner">
                       <div className="flex flex-col justify-center  items-center  my-8">
                         <button className="bg-blue-200 mx-auto   hover:bg-blue-900 text-richblack-5 font-bold  rounded-lg mb-6 mt-6 px-3 py-1 transition-transform duration-300 transform hover:-translate-y-3">
-                          Service Specifications
+                          {item.content1}
                         </button>
                         <img
                           src={logo}
@@ -493,7 +508,7 @@ export default function Services() {
                           className="absolute z-[-50] "
                         />
                         <button onClick={()=>{setInd(index);showNav()}} className="bg-blue-200  mx-aut o hover:bg-blue-900 text-richblack-5 font-bold py-1 px-3 rounded-lg mb-5 transition-transform duration-300 transform hover:-translate-y-3">
-                          View Pricing
+                          {item.content2}
                         </button>
                       </div>
                     </div>
