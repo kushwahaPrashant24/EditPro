@@ -1,0 +1,41 @@
+.our-service {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.service-description {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.description {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* Initially hidden */
+}
+
+.description p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.title.active {
+  color: #007bff; /* Change color when active */
+}
+
+.title.active + .description {
+  display: block; /* Show description when active */
+}

@@ -1,0 +1,54 @@
+.branding-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.branding-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.branding-page p {
+    font-size: 1.2rem;
+}
+.ServicesGrid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    justify-content: flex-start;
+}
+.services-grid > * {
+    flex-basis: calc(33.33% - 60px); /* Adjust width and margin */
+    margin-bottom: 20px; /* Adjust margin between rows */
+  }
+  .service-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .our-service {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .FAQ{
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }  
+  .Tittle{
+    font-weight: 500;
+    font-size: 2rem;
+  }
