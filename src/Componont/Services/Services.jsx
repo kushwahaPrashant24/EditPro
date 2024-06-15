@@ -424,7 +424,8 @@ export default function Services() {
     <>
       <div>
         {/*   video section */}
-        <div className="relative my-8  h-[88vh] -mt-36 mb-56  ">
+        <section>
+        <div className="relative my-8  h-[100vh] -mt-36 mb-56  ">
           <video autoPlay loop muted>
             <source src={service} type="video/mp4" />
           </video>
@@ -441,6 +442,7 @@ export default function Services() {
 
           </div>
         </div>
+        </section>
         {/* service section */}
         <div className="services-section">
           <p className="text text-center font-bold">
