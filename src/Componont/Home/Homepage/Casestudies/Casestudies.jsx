@@ -14,9 +14,15 @@ function createCard(Cases) {
     <Card
       key={Cases.id}
       logo={Cases.logo}
-      name={Cases.name}
+      companyname={Cases.companyname}
       CaseStudy= {Cases.CaseStudy}
       butt={Cases.button}
+      paragraph={Cases.paragraph}
+      industryname={Cases.industryname}
+      img1={Cases.img1}
+      img2={Cases.img2}
+      img3={Cases.img3}
+      img4={Cases.img4}
     />
   );
 }
