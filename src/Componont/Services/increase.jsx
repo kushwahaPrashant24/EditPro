@@ -7,8 +7,8 @@ import { CardActionArea } from "@mui/material";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-// bcc8eb
 
+ 
 export default  function Increaser() {
     const [counterOn, setCounterOn] = useState(false);
 

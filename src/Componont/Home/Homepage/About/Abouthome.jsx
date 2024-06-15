@@ -1,17 +1,34 @@
 import React from "react";
 import Model2 from "../../../../assets/NewModel2.png";
 import Aboutcard from "./AboutCard/Aboutcard";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Abouthome() {
+  const variants = {
+    initial: {
+      y: 150,
+      opacity: 0,
+    },
+    animate: {
+      y: 1,
+      opacity: 1,
+      transition: {
+        duration: 2,
+        staggerChildern: 1,
+      },
+    },
+  };
+
   return (
     <>
-      <div className="flex flex-col justify-around items-center md:flex-row mt-10">
+      <motion.div
+        className="flex flex-col justify-around items-center md:flex-row mt-10"
+        variants={variants}
+        initial="initial"
+        whileInView="animate"
+      >
         <div className=" mb-6 md:mb-0">
-          <img
-            className=" object-cover"
-            src={Model2}
-            alt="Model Image"
-          />
+          <img className=" object-cover" src={Model2} alt="Model Image" />
         </div>
         <div className="w-3/5  h-7xl  flex  justify-around items-center flex-col gap-5">
           <div>
@@ -34,7 +51,7 @@ function Abouthome() {
             <Aboutcard />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
