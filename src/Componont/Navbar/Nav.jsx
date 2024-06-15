@@ -16,6 +16,7 @@ import "./Nav.css";
 const menuConfig = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services", content: "Services Content" },
+  { name: "Industries", path: "/Industries" },
   { name: "Careers", path: "/careers" },
   { name: "Contact", path: "/contact" },
   { name: "About", path: "/about" },

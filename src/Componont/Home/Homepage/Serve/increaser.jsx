@@ -12,11 +12,12 @@ import ScrollTrigger from "react-scroll-trigger";
 export default  function Increaser() {
     const [counterOn, setCounterOn] = useState(false);
 
-    return <>
-         <ScrollTrigger
+    return <> 
+    <ScrollTrigger
               onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
             >
+        
               <div className="w-full mt-5 flex justify-around flex-wrap gap-10 mt-16 mb-16">
                 <Card
                   className="flex"

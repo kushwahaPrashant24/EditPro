@@ -12,6 +12,7 @@ import Contact from '../src/Componont/Contact/Contact';
 import Services from './Componont/Services/Services';
 import Footer from './Footer/Footer';
 import About from './Componont/About Us/About';
+import Industries from './Componont/Industries/Industries';
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "Services",
     element:<><ResponsiveAppBar/><section><Services/><Footer /></section></>
+  },
+
+  {
+    path: "Industries",
+    element:<><ResponsiveAppBar/><section><Industries/><Footer /></section></>
   },
 
   {

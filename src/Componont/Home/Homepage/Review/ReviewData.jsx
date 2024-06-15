@@ -31,28 +31,28 @@ const props = [
     },
     {
         "id": 5,
-        review: "“I couldn’t be happier with EditPro’s CV/resume making service! They crafted a standout resume that helped me land my dream job. Professional, efficient, and highly skilled. I highly recommend their services to anyone looking to enhance their career prospects.”",
+        review: "“I couldn't be happier with EditPro's CV/resume making service! They crafted a standout resume that helped me land my dream job. Professional, efficient, and highly skilled. I highly recommend their services to anyone looking to enhance their career prospects.”",
         name: "John Smith",
         position: "IT Professional",
         img: ""
     },
     {
         "id": 6,
-        review: "“EditPro’s photo editing is top-notch! They transformed my images with precision, exceeding expectations.”",
+        review: "“EditPro's photo editing is top-notch! They transformed my images with precision, exceeding expectations.”",
         name: "Jennifer Lee",
         position: "Graphic Designer",
         img: ""
     },
     {
         "id": 7,
-        review: "“EditPro’s company portfolio service is outstanding! Professional and impressive.”",
+        review: "“EditPro's company portfolio service is outstanding! Professional and impressive.”",
         name: "David Rodriguez",
         position: "Entrepreneur",
         img: ""
     },
     {
         "id": 8,
-        review: "EditPro’s background music is incredible! Perfectly complements my projects.”",
+        review: "EditPro's background music is incredible! Perfectly complements my projects.”",
         name: "James Wilson",
         position: "Freelance Photographer",
         img: ""
