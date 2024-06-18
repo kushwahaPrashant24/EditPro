@@ -147,6 +147,7 @@ export default {
       head:"#FEFCFD",
       head2: "#BFCDE0",
       increaser:"background: rgb(10,12,28);background: linear-gradient(90deg, rgba(10,12,28,0.9164915966386554) 0%, rgba(27,54,110,1) 0%, rgba(110,87,136,0.8800770308123249) 50%, rgba(101,128,186,1) 100%);"
+      
     },
     extend: {
       maxWidth: {
@@ -157,8 +158,12 @@ export default {
   },
 
     
-    extend: {},
+    extend: {
+      'custom-pattern': "url('/src/assets/first3.jpg')",
+    },
   
-  plugins: [],
+    plugins: [
+      require('tailwindcss-signals'),
+    ]
 }
 

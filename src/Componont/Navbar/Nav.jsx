@@ -1,50 +1,37 @@
-  import React, { useEffect, useState } from "react";
-  import AppBar from "@mui/material/AppBar";
-  import Box from "@mui/material/Box";
-  import Toolbar from "@mui/material/Toolbar";
-  import IconButton from "@mui/material/IconButton";
-  import Typography from "@mui/material/Typography";
-  import Menu from "@mui/material/Menu";
-  import MenuIcon from "@mui/icons-material/Menu";
-  import Container from "@mui/material/Container";
-  import Button from "@mui/material/Button";
-  import MenuItem from "@mui/material/MenuItem";
-  import { Link } from "react-router-dom";
-  import Logo from "../../assets/logo.png";
-  import "./Nav.css";
-  import Lightbox from './Lightbox/'; 
 
+import React, { useEffect, useState } from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
+import "./Nav.css";
 
-  const menuConfig = [
-    { name: "Home", path: "/" },
-    { name: "Services", path: "/services", content: "Services Content" },
-    { name: "Careers", path: "/careers" },
-    { name: "Contact", path: "/contact" },
-    { name: "About", path: "/about" },
-  ];
+const menuConfig = [
+  { name: "Home", path: "/" },
+  { name: "Services", path: "/services", content: "Services Content" },
+  { name: "Industries", path: "/Industries" },
+  { name: "Careers", path: "/careers" },
+  { name: "Contact", path: "/contact" },
+  { name: "About", path: "/about" },
+];
 
-  function ResponsiveAppBar() {
-    const [anchorElNav, setAnchorElNav] = useState(null);
-    const [sticky, setSticky] = useState(false);
-    const [hoverBoxContent, setHoverBoxContent] = useState(null);
-    const [selectedService, setSelectedService] = useState(null); 
-    const [showLightbox, setShowLightbox] = useState(false); 
-    
+function ResponsiveAppBar() {
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [sticky, setSticky] = useState(false);
+  const [hoverBoxContent, setHoverBoxContent] = useState(null);
 
-    useEffect(() => {
-      const handleScroll = () => {
-        setSticky(window.scrollY > 50);
-      };
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 50);
 
-      window.addEventListener("scroll", handleScroll);
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-
-    const handleOpenNavMenu = (event) => {
-      setAnchorElNav(event.currentTarget);
     };
 
     const handleCloseNavMenu = () => {
