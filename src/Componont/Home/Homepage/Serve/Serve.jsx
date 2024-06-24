@@ -58,10 +58,23 @@ function Serve() {
             animate="animate"
           >
             <h1 className="mb-4 md:mb-0">Let's Get Your Project Started</h1>
-            <Link to="/Services">
-              <Stack spacing={2} direction="row">
-                <Button variant="contained">View All</Button>
-              </Stack>
+            <Link
+              to="/contact"
+              className="text-lg text-center  font-bold text-black md:text-2xl us"
+              style={{ position: "relative", bottom: "0vw" }}
+            >
+              <div
+                className="Contact text-center "
+                style={{
+                  width: "200px",
+                  border: "2px solid #bcc8eb",
+                  position: "relative",
+                  borderRadius: "15px",
+                  backgroundColor: "#bcc8eb",
+                }}
+              >
+                <p>CONTACT US</p>
+              </div>
             </Link>
           </motion.div>
         )}

@@ -24,31 +24,32 @@ export default function Hero() {
               </h1>
             </div>
             <div>
-              <p className="hidden md:block text-sm md:text-base lg:text-lg font-medium text-left text-caribbeangreen-5">
+              <p className="hidden md:block text-sm md:text-base lg:text-2xl font-medium text-left text-caribbeangreen-5">
                 Welcome to EditQuasar, where creativity meets precision. We
                 specialize in diverse editing services to bring your visions to
                 life. Let your vision shine through our expert craftsmanship.
                 Together, we'll create something extraordinary.
               </p>
             </div>
-            <Link to="/About">
-              <Button
-                sx={{
-                  my: 2,
-                  color: "black",
-                  "&:hover": {
-                    color: "#1E40AF",
-                  },
-                  backgroundColor: "#adbbd8",
-                  "&:hover": {
-                    backgroundColor: "#1E40AF",
-                  },
-                  borderRadius: "20%",
+            <Link
+              to="/contact"
+              className="text-lg text-center  font-bold text-black md:text-2xl us"
+              style={{ position: "relative", bottom: "0vw" }}
+            >
+              <div
+                className="Contact text-center p-2 m-5"
+                style={{
+
+                  width: "300px",
+                  border: "2px solid #bcc8eb",
+                  position: "relative",
+                  bottom: "5vh",
+                  borderRadius: "15px",
+                  backgroundColor: "#bcc8eb",
                 }}
-                variant="contained"
               >
-                About Us
-              </Button>
+                <p>CONTACT US</p>
+              </div>
             </Link>
           </div>
           <div className="w-full md:w-1/2 flex justify-center items-end bg-contain h-96  md:h-auto">
