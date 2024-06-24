@@ -136,6 +136,14 @@ export default {
         100: " #ffcdd2",
         200:" #ef9a9a",
       },
+       
+      "Indigo": {
+        800: "#3730a3",
+        900: "#312e81",
+        950: "#1e1b4b",
+        
+      },
+
       Aboutcard: "background-image: linear-gradient(to bottom, #09326a, #003589, #0035a6, #0032c2, #1927dc)",
       myblue: '#083344',
       white: '#f8fafc',

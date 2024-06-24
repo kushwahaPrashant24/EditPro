@@ -6,8 +6,10 @@ import IndustriesData from "./IndustriesData/IndustriesData";
 
 function Industries() {
     return <>
+       <section>
         <Main />
         <IndustriesData />
+        </section>
     </>
 }
 

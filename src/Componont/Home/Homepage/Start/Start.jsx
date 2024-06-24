@@ -23,7 +23,7 @@ function Start() {
   return (
     <>
       <motion.div
-        className="flex flex-col md:flex-row justify-around items-center p-36"
+        className="flex flex-col md:flex-row justify-around items-center "
         variants={variants}
         initial="initial"
         whileInView="animate"
