@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -31,281 +30,179 @@ function ResponsiveAppBar() {
   useEffect(() => {
     const handleScroll = () => {
       setSticky(window.scrollY > 50);
-
     };
 
-    const handleCloseNavMenu = () => {
-      setAnchorElNav(null);
-    };
+    window.addEventListener("scroll", handleScroll);
 
-    const handleMouseEnter = (content) => {
-      
-      setHoverBoxContent(content);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
 
-    const handleMouseLeave = () => {
-    
-      setHoverBoxContent(null);
-    };
-    
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
 
-    const handleOpenLightbox = (serviceName) => () => {
-      setShowLightbox(true);
-      setSelectedService(serviceName);
-    };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
-    const handleCloseLightbox = () => {
-      setShowLightbox(false);
-    };
+  const handleMouseEnter = (content) => {
+    setHoverBoxContent(content);
+  };
 
-    return (
-      <>
-        <div id="full-scr">
-          <div className="full-div1"></div>
-        </div>
-        <AppBar
-          position="sticky"
-          sx={{
-            flexGrow: 1,
-            display: { xs: "flex", md: "flex" },
-            justifyContent: "space-around",
-            backgroundColor: sticky ? "rgb(45, 15, 94)" : "transparent",
-            transition: "background-color 0.3s",
-            borderRadius: "50px",
-          }}
-        >
-          <Container maxWidth="xl">
-            <Toolbar disableGutters>
-              <Typography
-                variant="h6"
-                noWrap
-                component="a"
-                href="/"
-                sx={{
-                  mr: 2,
-                  display: { xs: "none", md: "flex" },
-                  justifyContent: "space-around",
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
+  const handleMouseLeave = () => {
+    setHoverBoxContent(null);
+  };
+
+  return (
+    <>
+      <div id="full-scr">
+        <div className="full-div1"></div>
+      </div>
+      <AppBar
+        position="sticky"
+        sx={{
+          flexGrow: 1,
+          display: { xs: "flex", md: "flex" },
+          justifyContent: "space-around",
+          backgroundColor: sticky ? "rgb(45, 15, 94)" : "transparent",
+          transition: "background-color 0.3s",
+          borderRadius: "50px",
+        }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                justifyContent: "space-around",
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <img src={Logo} style={{ height: "60px", width: "60px" }} />
+            </Typography>
+
+            <Box
+              sx={{
+                flexGrow: 10,
+                display: { xs: "flex", sm: "none", md: "none" },
+              }}
+            >
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
               >
-                <img src={Logo} style={{ height: "60px", width: "60px" }} />
-              </Typography>
-
-              <Box
-                sx={{
-                  flexGrow: 10,
-                  display: { xs: "flex", sm: "none", md: "none" },
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
                 }}
-              >
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleOpenNavMenu}
-                  color="inherit"
-                >
-                  <MenuIcon />
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorElNav}
-                  anchorOrigin={{
-                    vertical: "bottom",
-                    horizontal: "left",
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: "top",
-                    horizontal: "left",
-                  }}
-                  open={Boolean(anchorElNav)}
-                  onClose={handleCloseNavMenu}
-                  sx={{
-                    display: { xs: "block", md: "none" },
-                  }}
-                >
-                  {menuConfig.map((menu) => (
-                    <MenuItem key={menu.name} onClick={handleCloseNavMenu}>
-                      <Button
-                        key={menu.name}
-                        onClick={handleCloseNavMenu}
-                        sx={{ my: 2, color: "black", display: "block" }}
-                        component={Link}
-                        to={menu.path}
-                      >
-                        {menu.name}
-                      </Button>
-                    </MenuItem>
-                  ))}
-                </Menu>
-              </Box>
-
-              <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href="#app-bar-with-responsive-menu"
-                sx={{
-                  mr: 2,
-                  display: { xs: "flex", md: "none" },
-                  flexGrow: 1,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
                 }}
-              >
-                <img src={Logo} style={{ height: "60px", width: "60px" }} />
-              </Typography>
-              <Box
-
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
                 sx={{
-                  flexGrow: 10,
-                  display: { xs: "none", sm: "flex", md: "flex" },
-                  justifyContent: "space-around",
-                  
+                  display: { xs: "block", md: "none" },
                 }}
               >
                 {menuConfig.map((menu) => (
-                  <div
-                    key={menu.name}
-                    onMouseLeave={() => handleMouseLeave()}
-                    style={{ position: "relative"}}
-                  
-                  >
+                  <MenuItem key={menu.name} onClick={handleCloseNavMenu}>
                     <Button
+                      key={menu.name}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: "white" }}
+                      sx={{ my: 2, color: "black", display: "block" }}
                       component={Link}
                       to={menu.path}
-
-                      onMouseEnter={() => handleMouseEnter(menu.content)}
-                      
-                      
                     >
                       {menu.name}
                     </Button>
-                    {menu.content && (
-                      <Box
-                        className={`hover-box ${hoverBoxContent === menu.content ? "visible" : ""}`}
-                        
-                      >
-                        {/* <Typography variant="h6" color="primary" sx={{ padding: 2 }}>
-                          {menu.content}
-                        </Typography> */}
-                        {menu.content === 'Services Content' && (
-                          <div className="grid-container">
-                            
-                            <div className="grid-item">
-                              <p className="services-header">Building Strong Capabilities to Empower Your Brand</p>
-                              <div className="service-arrow">
-                              <p className="services-dis" onClick={handleOpenLightbox(menu.name)}>
-                              Start Your Personalized Project{' '} 
-                                <span className="material-symbols-outlined">
-                                  arrow_forward
-                                </span>
-                                </p>
-                              
-                              </div>
-                            </div>
-                            <div className="grid-item">
-                              <div>
-                              <a href="./Services/Branding" className="sub-heading-title">Branding 
-                                 <span className="material-symbols-outlined">
-                                  arrow_forward
-                                </span></a>
-                              <ul className="service-heading-title">
-                                <li>Brand Identity</li>
-                                <li>Brand Consulting</li>
-                                <li>Logo Design</li>
-                                <li>2D/3D Visualisation</li>
-                                <li>Graphic Design</li>
-                              </ul>
-                              </div>
-                              <div> 
-                                <p className="sub-heading-title">Design Fusion</p>
-                                <ul className="service-heading-title">
-                                  <li>Personalized Advertising Poster Creation</li>
-                                  <li>Personal Portfolio Creation</li>
-                                  <li>Personal Portfolio Creation</li>
-                                  <li>Company Portfolio Making</li>
-                                  <li>Personalized Business Card Making</li>
-                                  <li>Social media creatives & other advertising materials</li>
-                                  <li>Brochures</li>
-                                </ul>
-                              </div>
-
-                            </div>
-                            <div className="grid-item">
-                              <div>
-                              <p className="sub-heading-title">Digital Marketing</p>
-                              <ul className="service-heading-title">
-                                <li>Search Engine Optimisation</li>
-                                <li>Social Media Management</li>
-                                <li>Performance Marketing</li>
-                                <li>Content Marketing</li>
-                                <li>Marketing Automation</li>
-                                <li>Analytics</li>
-                              </ul>
-                              </div>
-                              <div>
-                              <p className="sub-heading-title">Experience Design</p>
-                              <ul className="service-heading-title">
-                                <li>UI/UX Design</li>
-                                <li>Website Design</li>
-                                <li>Mobile Experience</li>
-                                <li>Commerce Experience</li>
-                                <li>Human Machine Interface (HMI)</li>
-                                <li>Applications & Dashboard</li>
-                              </ul>
-                              </div>
-                            </div>
-                            <div className="grid-item">
-                              <div>
-                              <p className="sub-heading-title">Technology</p>
-                              <ul className="service-heading-title">
-                                <li>Data & Analytics</li>
-                                <li>Web Development</li>
-                                <li>Mobile App Development</li>
-                                <li>E-commerce</li>
-                                <li>AI & Machine Learning (ML)</li>
-                                <li>Cyber Security</li>
-                              </ul>
-                              </div>  
-                              <div>
-                                <p className="sub-heading-title">Creativity</p>
-                                  <ul className="service-heading-title">
-                                    <li>Video Editing</li>
-                                    <li>Photo Editing</li>
-                                    <li>Blog Writing</li>
-                                    <li>Content Writing</li>
-                                    <li>Resume Making</li>
-                                    <li>Personalized Occasion Card Making</li>
-                                  </ul>
-                              </div>
-                            </div>
-                          
-                          
-                          </div>
-                      )}
-                      
-                      </Box>
-                    )}
-                  </div>
+                  </MenuItem>
                 ))}
-              </Box>
-            </Toolbar>
-          </Container>
-        </AppBar>
-        {showLightbox && <Lightbox serviceName={selectedService} onClose={handleCloseLightbox} />}
-      </>
-    );
-  }
+              </Menu>
+            </Box>
 
-  export default ResponsiveAppBar;
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href="#app-bar-with-responsive-menu"
+              sx={{
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+                flexGrow: 1,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <img src={Logo} style={{ height: "60px", width: "60px" }} />
+            </Typography>
+            <Box
+              sx={{
+                flexGrow: 10,
+                display: { xs: "none", sm: "flex", md: "flex" },
+                justifyContent: "space-around",
+              }}
+            >
+              {menuConfig.map((menu) => (
+                <div
+                  key={menu.name}
+                  onMouseEnter={() => handleMouseEnter(menu.content)}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ position: "relative" }}
+                >
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white" }}
+                    component={Link}
+                    to={menu.path}
+                  >
+                    {menu.name}
+                  </Button>
+                  {menu.content && (
+                    <Box
+                      className={`hover-box ${hoverBoxContent === menu.content ? "visible" : ""}`}
+                    >
+                      <Typography variant="h6" color="primary" sx={{ padding: 2 }}>
+                        {menu.content}
+                      </Typography>
+                      {/* You can add more custom content here */}
+                      <div>
+                        <p>Custom content for {menu.name}</p>
+                      </div>
+                    </Box>
+                  )}
+                </div>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </>
+  );
+}
+
+export default ResponsiveAppBar;
