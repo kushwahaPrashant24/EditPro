@@ -16,11 +16,31 @@ import Slide from "@mui/material/Slide";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="right" ref={ref} {...props} />;
+  return <Slide direction="left" ref={ref} {...props} />;
 });
 
 function Card(props) {
   const [open, setOpen] = React.useState(false);
+
+  const [DialogTwoopen, setDialogTwoOpen] = React.useState(false);
+
+  const [DialogOneopen, setDialogOneOpen] = React.useState(false);
+
+  const handleDialogOneClickOpen = () => {
+    setDialogOneOpen(true);
+  };
+
+  const handleDialogOneClose = () => {
+    setDialogOneOpen(false);
+  };
+
+  const handleDialogClickOpen = () => {
+    setDialogTwoOpen(true);
+  };
+
+  const handleDialogClose = () => {
+    setDialogTwoOpen(false);
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -33,6 +53,7 @@ function Card(props) {
   return (
     <>
       <React.Fragment>
+        {/*Button */}
         <Button
           variant="outlined"
           className=" h-24 w-11/12"
@@ -45,15 +66,23 @@ function Card(props) {
             </div>
           </div>
         </Button>
+
+        {/*Dialog Box */}
+
         <Dialog
-          className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3"
-          fullScreen={window.innerWidth < 640}
           open={open}
           onClose={handleClose}
           TransitionComponent={Transition}
           PaperProps={{
+            className: "dialog-right", // Apply custom CSS class for positioning
             style: {
               width: "100%",
+              maxWidth: "600px", // Maximum width for the dialog
+              height: "100vh", // Full height
+              position: "fixed", // Fix the position
+              right: 0, // Align to the right
+              margin: 0, // Remove default margins
+              overflow: "auto", // Allow content to scroll if necessary
             },
           }}
         >
@@ -65,46 +94,279 @@ function Card(props) {
               height: "30px",
               width: "30px",
               top: "10px",
-              left: "380px",
+              left: "550px",
               color: "black",
               zIndex: 10,
             }}
           >
             <CloseIcon />
           </IconButton>
-
+          {/*Main Content of Dialog Box */}
           <div className=" -mt-8">
-            <img className="w-full" src={props.logo} alt="Company Logo" />
+            <img className="w-full" src={props.img} alt="Company Logo" />
           </div>
 
-          <div className="p-5">
-            <h2 className="text-3xl font-bold">{props.companyname}</h2>
-            <h1 className="text-4xl font-black">{props.industryname}</h1>
-            <p className="text-2xl mt-5">{props.paragraph}</p>
+          <div className="p-5 flex flex-col gap-5">
+            <h1 className="text-3xl font-bold">{props.name}</h1>
+            <p className="text-2xl mt-5">{props.paramain}</p>
           </div>
-          <div className="p-5">
-            <h2 className="text-3xl font-bold">Service Provided</h2>
-            <div className="flex flex-col gap-5 w-full">
-              <div className="flex flex-col sm:flex-row gap-5">
-                <img className="w-full sm:w-1/2" src={props.img1} />
-                <img className="w-full sm:w-1/2" src={props.img2} />
+
+          {/* Project Section Start */}
+          <div className="m-10">
+            <h1 className="text-6xl pb-5">Projects</h1>
+            <div className=" flex">
+              {/*Project One */}
+
+              <div className="">
+                <div>
+                  <Button className=" " onClick={handleDialogOneClickOpen}>
+                    <img
+                      className="w-full h-full"
+                      src={props.projectImageone}
+                      alt="Company Logo"
+                    />
+                  </Button>
+                  <Dialog
+                    fullScreen={window.innerWidth < 800}
+                    open={DialogOneopen}
+                    onClose={handleDialogOneClose}
+                    TransitionComponent={Transition}
+                    PaperProps={{
+                      className: "dialog-right", // Apply custom CSS class for positioning
+                      style: {
+                        width: "100%",
+                        maxWidth: "600px", // Maximum width for the dialog
+                        height: "100vh", // Full height
+                        position: "fixed", // Fix the position
+                        right: 0, // Align to the right
+                        margin: 0, // Remove default margins
+                        overflow: "auto", // Allow content to scroll if necessary
+                      },
+                    }}
+                  >
+                    <IconButton
+                      onClick={handleClose}
+                      style={{
+                        backgroundColor: "white",
+                        position: "sticky",
+                        height: "30px",
+                        width: "30px",
+                        top: "10px",
+                        left: "550px",
+                        color: "black",
+                        zIndex: 10,
+                      }}
+                    >
+                      <CloseIcon />
+                    </IconButton>
+                    <div className=" -mt-8">
+                      <img
+                        className="w-full"
+                        src={props.projectImageone}
+                        alt="Company Logo"
+                      />
+                    </div>
+
+                    <div className="p-5 flex flex-col gap-5">
+                      <h1 className="text-3xl font-bold">
+                        {props.projectonename}
+                      </h1>
+                      <p className="text-2xl mt-5">{props.projectonePara}</p>
+                      <h3 className="text-4xl">Project Overview</h3>
+                      <p className="text-2xl mt-5">
+                        {props.projectOverviewOne}
+                      </p>
+
+                      <h3 className="text-4xl">Objective</h3>
+                      <div>
+                        <ul>
+                          <li className="text-xl font-black">
+                            {props.objectivesOne1}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.objectivesOne2}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.objectivesOne3}
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h3 className="text-4xl">Our Solutions</h3>
+                      <p className="text-2xl">{props.solutionOne}</p>
+
+                      <h3 className="text-4xl">Services Provided:</h3>
+                      <div>
+                        <ul className="text-2xl">
+                          <li className="text-xl font-black">
+                            {props.servicesProvidedOne1}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.servicesProvidedOne2}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.servicesProvidedOne3}
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h3 className="text-4xl">Testimonial</h3>
+                      <p className="text-2xl">{props.testimonialOne}</p>
+
+                      <h3 className="text-4xl">Client</h3>
+                      <p className="text-2xl">{props.clientOne}</p>
+                    </div>
+
+                    <div className="p-5 flex flex-col gap-5">
+                      <h1 className="text-3xl font-bold">
+                        Would you like to know more about the project?
+                      </h1>
+                      <p className="text-2xl mt-5">
+                        To find more about our work or any of our other brands,
+                        get in touch. Mail us on <span>{props.email}</span> or
+                        call <span>{props.phone}</span>.
+                      </p>
+                    </div>
+                    <div className="sticky bottom-0 border-t-1 p-5 bg-white">
+                      <button className="w-56 h-12 border-2">
+                        Let's talk <ArrowForwardIcon />
+                      </button>
+                    </div>
+                  </Dialog>
+                  <p className="text-xl">
+                  {props.projectonename}
+                  </p>
+                </div>
+               
               </div>
-              <div className="flex flex-col sm:flex-row gap-5">
-                <img className="w-full sm:w-1/2" src={props.img3} />
-                <img className="w-full sm:w-1/2" src={props.img4} />
+
+              {/*Project Two */}
+
+              <div className="">
+                <div>
+                  <Button className=" " onClick={handleDialogClickOpen}>
+                    <img
+                      className="w-full"
+                      src={props.projectImageTwo}
+                      alt="Company Logo"
+                    />
+                  </Button>
+                  <Dialog
+                    fullScreen={window.innerWidth < 800}
+                    open={DialogTwoopen}
+                    onClose={handleDialogClose}
+                    TransitionComponent={Transition}
+                    PaperProps={{
+                      className: "dialog-right", // Apply custom CSS class for positioning
+                      style: {
+                        width: "100%",
+                        maxWidth: "600px", // Maximum width for the dialog
+                        height: "100vh", // Full height
+                        position: "fixed", // Fix the position
+                        right: 0, // Align to the right
+                        margin: 0, // Remove default margins
+                        overflow: "auto", // Allow content to scroll if necessary
+                      },
+                    }}
+                  >
+                    <IconButton
+                      onClick={handleClose}
+                      style={{
+                        backgroundColor: "white",
+                        position: "sticky",
+                        height: "30px",
+                        width: "30px",
+                        top: "10px",
+                        left: "550px",
+                        color: "black",
+                        zIndex: 10,
+                      }}
+                    >
+                      <CloseIcon />
+                    </IconButton>
+                    <div className=" -mt-8">
+                      <img
+                        className="w-full"
+                        src={props.projectImageTwo}
+                        alt="Company Logo"
+                      />
+                    </div>
+
+                    <div className="p-5 flex flex-col gap-5">
+                      <h1 className="text-3xl font-bold">
+                        {props.projectTwoname}
+                      </h1>
+                      <p className="text-2xl mt-5">{props.projectTwoPara}</p>
+
+                      <h3 className="text-4xl">Project Overview</h3>
+                      <p className="text-2xl mt-5">
+                        {props.projectOverviewTwo}
+                      </p>
+
+                      <h3 className="text-4xl">Objective</h3>
+                      <div>
+                        <ul>
+                          <li className="text-xl font-black">
+                            {props.objectivesTwo1}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.objectivesTwo2}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.objectivesTwo3}
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h3 className="text-4xl">Our Solutions</h3>
+                      <p className="text-2xl">{props.solutionTwo}</p>
+
+                      <h3 className="text-4xl">Services Provided:</h3>
+                      <div>
+                        <ul className="text-2xl">
+                          <li className="text-xl font-black">
+                            {props.servicesProvidedTwo1}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.servicesProvidedTwo2}
+                          </li>
+                          <li className="text-xl font-black">
+                            {props.servicesProvidedTwo3}
+                          </li>
+                        </ul>
+                      </div>
+
+                      <h3 className="text-4xl">Testimonial</h3>
+                      <p className="text-2xl">{props.testimonialTwo}</p>
+
+                      <h3 className="text-4xl">Client</h3>
+                      <p className="text-2xl">{props.clientTwo}</p>
+                    </div>
+
+                    <div className="p-5 flex flex-col gap-5">
+                      <h1 className="text-3xl font-bold">
+                        Would you like to know more about the project?
+                      </h1>
+                      <p className="text-2xl mt-5">
+                        To find more about our work or any of our other brands,
+                        get in touch. Mail us on <span>{props.email}</span> or
+                        call <span>{props.phone}</span>.
+                      </p>
+                    </div>
+                    <div className="sticky bottom-0 border-t-1 p-5 bg-white">
+                      <button className="w-56 h-12 border-2">
+                        Let's talk <ArrowForwardIcon />
+                      </button>
+                    </div>
+                  </Dialog>
+                  <p className="text-xl">
+                  {props.projectTwoname}
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="p-5 flex flex-col gap-5">
-              <h1 className="text-3xl font-bold">
-                Would you like to know more about the project?
-              </h1>
-              <p className="text-2xl mt-5">
-                To find more about our work or any of our other brands, get in
-                touch. Mail us on <span>{props.email}</span> or call{" "}
-                <span>{props.phone}</span>.
-              </p>
-            </div>
           </div>
+          {/* Project Section End */}
 
           <div className="sticky bottom-0 border-t-1 p-5 bg-white">
             <button className="w-56 h-12 border-2">

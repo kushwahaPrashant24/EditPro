@@ -2,12 +2,30 @@ import React, { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
+import IndustryVideo from "../../../assets/Industry/final industry section top video (1).mp4"
+
 
 function Main() {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
     <>
+     <div>
+     <section>
+        <div className="relative my-8  h-[100vh] -mt-36 mb-56  ">
+          <video autoPlay loop muted>
+            <source src={IndustryVideo} type="video/mp4" />
+          </video>
+          <div className="absolute top-[22%] left-[25%]  w-[60%] h-[60%] flex flex-col justify-evenly videosection">
+            <p className="text-xl font-black bg-gradient-to-r from-Indigo-900 via-Indigo-800 to-yellow-700 bg-clip-text text-transparent   sm:text-5xl lg:text-8xl text-richblack-5  ">
+              Industry Experties
+            </p>
+
+
+          </div>
+        </div>
+        </section>
+
       <div className="h-screen  flex justify-center items-center p-36">
         <div className="w-1/2 flex flex-col gap-28">
           <h1 className="text-7xl font-thin text-white">
@@ -29,8 +47,8 @@ function Main() {
           onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
         >
-          <div className="w-1/2 h-96 flex  items-end mt-96 m-5">
-            <h1 id="industrycount" className="text-[300px] text-white">
+          <div className="w-1/2 h-96 flex  items-end mt-84 ">
+            <h1 id="industrycount" className="text-[300px] bg-gradient-to-r from-blue-200 via-white-800 to-yellow-700 bg-clip-text text-transparent">
               {counterOn && (
                 <CountUp className="text-[300px] " start={0} end={10} delay={0} />
               )}
@@ -38,6 +56,7 @@ function Main() {
             </h1>
           </div>
         </ScrollTrigger>
+      </div>
       </div>
     </>
   );

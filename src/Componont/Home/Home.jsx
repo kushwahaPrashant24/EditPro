@@ -20,7 +20,7 @@ import Hero from "./Homepage/Hero/Hero";
 export default function Home() {
   return (
     <>
-      <div id="Home" className=" pt-96">
+      <div id="Home" className=" ">
         <div className=" flex flex-col sm:block align-center">
           <section>
           <Hero /> 

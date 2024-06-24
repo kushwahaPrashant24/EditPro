@@ -12,7 +12,7 @@ import Contact from '../src/Componont/Contact/Contact';
 import Services from './Componont/Services/Services';
 import Footer from './Footer/Footer';
 import About from './Componont/About Us/About';
-
+import Industries from './Componont/Industries/Industries';
 import Branding from './Componont/Services/MainServices/Branding'
 
 
@@ -31,13 +31,15 @@ const router = createBrowserRouter([
 
   {
     path: "Industries",
-    element:<><ResponsiveAppBar/><section><Industries/><Footer /></section></>
+    element:<><ResponsiveAppBar/><Industries/><Footer /></>
   },
 
+ 
   {
     path: "Careers",
     element:<><ResponsiveAppBar/><Careers/><Footer /></>
   },
+
 
   {
     path: "Contact",
