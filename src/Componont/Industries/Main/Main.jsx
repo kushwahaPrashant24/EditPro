@@ -12,7 +12,7 @@ function Main() {
     <>
      <div>
      <section>
-        <div className="relative my-8  h-[100vh] -mt-36 mb-56  ">
+        <div className="relative my-8  h-full -mt-36 mb-56  ">
           <video autoPlay loop muted>
             <source src={IndustryVideo} type="video/mp4" />
           </video>
@@ -26,7 +26,7 @@ function Main() {
         </div>
         </section>
 
-      <div className="h-screen  flex justify-center items-center p-36">
+      <div className="h-full  flex justify-center items-center ">
         <div className="w-1/2 flex flex-col gap-28">
           <h1 className="text-7xl font-thin text-white">
             Advancing Industry Innovation
@@ -47,10 +47,10 @@ function Main() {
           onEnter={() => setCounterOn(true)}
               onExit={() => setCounterOn(false)}
         >
-          <div className="w-1/2 h-96 flex  items-end mt-84 ">
+          <div className="w-[500px]  h-96 flex  items-end mt-84 ">
             <h1 id="industrycount" className="text-[300px] bg-gradient-to-r from-blue-200 via-white-800 to-yellow-700 bg-clip-text text-transparent">
               {counterOn && (
-                <CountUp className="text-[300px] " start={0} end={10} delay={0} />
+                <CountUp className=" text-[300px] " start={0} end={10} delay={0} />
               )}
               +
             </h1>
