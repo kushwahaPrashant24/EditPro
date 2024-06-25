@@ -32,7 +32,7 @@
 .grid-item {
     background-color: transparent; /* Example background color */
     padding: 10px; /* Example padding for each item */
-    text-align: center; /* Center the content */
+    /* Center the content */
     border-radius: 4px; /* Example border radius */
     margin-bottom: 10px;
     width: 100%;
@@ -78,8 +78,9 @@
     text-decoration: none;
     margin-bottom: 0;
     transition: color .3s ease;
-    font-weight: bold ;
+    font-weight: 500 ;
     text-align: left;
+
     
 }
 
