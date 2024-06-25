@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ProcessSection.css'; // Import CSS file
 
-const OurService = ({  title, description }) => {
+const OurProcess = ({ title, description }) => {
   const [showDescription, setShowDescription] = useState(false);
 
   const toggleDescription = () => {
@@ -10,20 +10,19 @@ const OurService = ({  title, description }) => {
 
   return (
     <section className="our-service">
-      
-        <div className="service-description">
-          <div className="title" onClick={toggleDescription}>
-            {title}
-          </div>
-          {showDescription && (
-            <div className="description">
-              <p>{description}</p>
-            </div>
-          )}
+      <div className="service-description">
+        <div className="title" onClick={toggleDescription}>
+          {title}
+          <button className="toggle-button">
+            {showDescription ? '-' : '+'}
+          </button>
         </div>
-     
+        <div className={`description ${showDescription ? 'open' : ''}`}>
+          <p>{description}</p>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default OurService;
+export default OurProcess;
