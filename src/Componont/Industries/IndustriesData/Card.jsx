@@ -76,8 +76,8 @@ function Card(props) {
           PaperProps={{
             className: "dialog-right", // Apply custom CSS class for positioning
             style: {
-              width: "100%",
-              maxWidth: "600px", // Maximum width for the dialog
+              width: "40%",
+              maxWidth: "100%", // Maximum width for the dialog
               height: "100vh", // Full height
               position: "fixed", // Fix the position
               right: 0, // Align to the right
@@ -134,8 +134,8 @@ function Card(props) {
                     PaperProps={{
                       className: "dialog-right", // Apply custom CSS class for positioning
                       style: {
-                        width: "100%",
-                        maxWidth: "600px", // Maximum width for the dialog
+                        width: "40%",
+                        maxWidth: "100%", // Maximum width for the dialog
                         height: "100vh", // Full height
                         position: "fixed", // Fix the position
                         right: 0, // Align to the right
@@ -259,8 +259,8 @@ function Card(props) {
                     PaperProps={{
                       className: "dialog-right", // Apply custom CSS class for positioning
                       style: {
-                        width: "100%",
-                        maxWidth: "600px", // Maximum width for the dialog
+                        width: "40%",
+                        maxWidth: "100%", // Maximum width for the dialog
                         height: "100vh", // Full height
                         position: "fixed", // Fix the position
                         right: 0, // Align to the right

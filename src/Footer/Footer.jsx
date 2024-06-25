@@ -1,51 +1,67 @@
 import React from "react";
 import Logotwo from "../assets/logo-noname.png";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import { motion } from "framer-motion";
 
-
-
- function Footer() {
-    return <>
+function Footer() {
+  return (
+    <>
       <section>
-            <div className="sm bg-myblue flex justify-center flex-col items-center flex-wrap gap-6 py-10">
-                  <img className="max-w-24 " src={Logotwo} />
-                  <h1 className="text-center text-7xl text-white font-black  ">Don't be shy and <br />talk to us?</h1>
-                  <h3 className="text-center text-dimwite">SAY HI AT EDITQUASAR@GMAIL.COM
-                  </h3>
-                  <div className="flex gap-5">
-                   <motion.a 
-                   whileHover={{ scale: 1.4 }} // Define the scale change on hover
-                    transition={{ duration: 0.3 }} 
-                    href="https://www.instagram.com/editquasar?igsh=MTVlYzBlb24zN3RhcQ==" target="main">
-                    <InstagramIcon className="text-white" /> 
-                    </motion.a>
-                   <motion.a
-                     whileHover={{ scale: 1.4 }} // Define the scale change on hover
-                     transition={{ duration: 0.3 }} 
-                    href="">
-                    <TwitterIcon className="text-white" />
-                    </motion.a>
-                    <motion.a 
-                    whileHover={{ scale: 1.4 }} // Define the scale change on hover
-                    transition={{ duration: 0.3 }} 
-                    href="https://www.linkedin.com/company/editquasar-creativemagic/" target="main">
-                    <LinkedInIcon className="text-white"/>
-                    </motion.a>
-                   <motion.a 
-                    whileHover={{ scale: 1.4 }} // Define the scale change on hover
-                    transition={{ duration: 0.3 }} 
-                   href="">
-                   <YouTubeIcon className="text-white"/>
-                   </motion.a>
-                  </div>
-                  <p className="text-center text-white">© 2023 EditQuasar | Powered by SensioSynci | All Rights Reserved</p>
+        <div className="h-[90vh]  bg-white  pt-36 rounded-[50px]">
+          <div className="flex justify-around items-center   h-[80%] p-5">
+            <div className="  flex flex-col justify-center items-center">
+            <div className="m-5">
+                <h1 className="text-5xl font-semibold">EditQuasar Inc.</h1>
+              </div>
+              <div>
+                <p className="text-3xl p-2">
+                  Stay in the loop and sign up for the  EditQuasar newsletter:
+                </p>
+              </div>
+              <div className="m-5">
+                <input placeholder="Enter your email"></input>
+              </div>
             </div>
-            </section>
+            <div className="w-full flex  gap-5 justify-around">
+            <div className=" flex flex-col  gap-2 ">
+              <h1 className="text-4xl">Company</h1>
+              <h2 className="text-2xl">Home</h2>
+              <h2 className="text-2xl">About</h2>
+              <h2 className="text-2xl">Services</h2>
+              <h2 className="text-2xl">Team</h2>
+              <h2 className="text-2xl">Career</h2>
+            </div>
+            <div className="flex flex-col  gap-2">
+              <h1 className="text-4xl">Documentation</h1>
+              <h2 className="text-2xl">Help Centre</h2>
+              <h2 className="text-2xl">Contact</h2>
+              <h2 className="text-2xl">FAQ </h2>
+              <h2 className="text-2xl">Privacy Policy</h2>
+              
+            </div>
+            <div className="flex flex-col  gap-2">
+              <h1 className="text-4xl">Social</h1>
+              <h2 className="text-2xl">Facebook</h2>
+              <h2 className="text-2xl">Instagram</h2>
+              <h2 className="text-2xl">Youtube</h2>
+              <h2 className="text-2xl">Twitter</h2>
+              
+            </div>
+
+            </div>
+          </div>
+
+          <div className=" flex justify-between px-24 border-t-2  m-10 p-4">
+            <h1 className="text-xl">© EditQuasar Inc. All Rights Reserved 2024</h1>
+            <h1 className="text-xl">Terms & Conditions</h1>
+          </div>
+        </div>
+      </section>
     </>
-} 
+  );
+}
 
 export default Footer;
