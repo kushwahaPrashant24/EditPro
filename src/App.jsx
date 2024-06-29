@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import ResponsiveAppBar from './Componont/Navbar/Nav';
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -57,7 +56,6 @@ const router = createBrowserRouter([
   },
 
 ]);
-
 
 function App() {
   
