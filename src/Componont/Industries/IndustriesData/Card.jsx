@@ -223,8 +223,8 @@ function Card(props) {
                       </h1>
                       <p className="text-2xl mt-5">
                         To find more about our work or any of our other brands,
-                        get in touch. Mail us on <span>{props.email}</span> or
-                        call <span>{props.phone}</span>.
+                        get in touch. Mail us on <span>editquasar@gmail.com</span> or
+                        call <span>+91 8967908081</span>.
                       </p>
                     </div>
                     <div className="sticky bottom-0 border-t-1 p-5 bg-white">
@@ -367,6 +367,17 @@ function Card(props) {
             </div>
           </div>
           {/* Project Section End */}
+
+          <div className="p-5 flex flex-col gap-5">
+                      <h1 className="text-3xl font-bold">
+                        Would you like to know more about the project?
+                      </h1>
+                      <p className="text-2xl mt-5">
+                        To find more about our work or any of our other brands,
+                        get in touch. Mail us on <span className="font-bold">editquasar@gmail.com</span> or
+                        call <span className="font-bold">+91 8967908081</span>.
+                      </p>
+                    </div>
 
           <div className="sticky bottom-0 border-t-1 p-5 bg-white">
             <button className="w-56 h-12 border-2">
