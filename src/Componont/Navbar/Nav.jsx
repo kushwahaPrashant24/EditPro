@@ -12,7 +12,9 @@ import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.png";
 import "./Nav.css";
-import Lightbox from './Lightbox/'; 
+
+import Lightbox from './Lightbox';
+
 
 const menuConfig = [
   { name: "Home", path: "/" },
