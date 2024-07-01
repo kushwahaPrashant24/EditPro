@@ -10,7 +10,7 @@ function Footer() {
   return (
     <>
       <section>
-        <div className="h-[90vh]  bg-white  pt-36 rounded-[50px]">
+        <div className="h-[90vh]  bg-white  pt-36 rounded-t-[50px]">
           <div className="flex justify-around items-center   h-[80%] p-5">
             <div className="  flex flex-col justify-center items-center">
             <div className="m-5">
