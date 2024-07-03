@@ -1,12 +1,96 @@
 import React from "react";
 import Logotwo from "../assets/logo-noname.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { motion } from "framer-motion";
 
 function Footer() {
+  return (
+    <>
+      <div className="bg-black text-white pt-44">
+        <div className="  flex justify-around items-center pb-20">
+          <div>
+            <h1 className="text-6xl">Get started now!</h1>
+            <p className="text-xl">It takes less than a minute of your time.</p>
+          </div>
+          <div>
+            <button className="h-12 w-56  border-2">Request a quote</button>
+          </div>
+        </div>
+
+        <div className="w-full flex  justify-around p-20">
+          <div className=" flex flex-col  gap-2 ">
+            <h1 className="text-4xl">Company</h1>
+            <p className="text-xl">Home</p>
+            <p className="text-xl">About</p>
+            <p className="text-xl">Services</p>
+            <p className="text-xl">Team</p>
+            <p className="text-xl">Career</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h1 className="text-4xl">Services </h1>
+            <p className="text-xl">Branding</p>
+            <p className="text-xl">Design Fusion</p>
+            <p className="text-xl">Experience Design</p>
+            <p className="text-xl">Technology</p>
+            <p className="text-xl">Digital Marketing</p>
+            <p className="text-xl">Creativity</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <h1 className="text-4xl">Other </h1>
+            <p className="text-xl">EQ Courses</p>
+            <p className="text-xl">EQ Events</p>
+            <p className="text-xl">EQ Blogs</p>
+            <p className="text-xl">Hall of Fame</p>
+            <p className="text-xl">EQ Merchandise</p>
+            <p className="text-xl">EQ Community</p>
+            <p className="text-xl">Success Stories</p>
+          </div>
+
+          <div className="flex flex-col  gap-2">
+            <h1 className="text-4xl">Connect </h1>
+            <div className="flex gap-5">
+              <span>General Enquiry:</span>
+              <span>+91 8967908081</span>
+            </div>
+            <div className="flex gap-5">
+              <span>Sales Enquiry:</span>
+              <span>+91 8101668460</span>
+            </div>
+            <div className="flex gap-5">
+              <span>Email:</span>
+              <span>editquasar@gmail.com</span>
+            </div>
+            <div className="flex gap-5">
+              <span>WhatsApp (Sales):</span>
+              <span>+91 8967908081</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-around pb-24">
+          <div className="flex gap-10">
+            <div>
+              <p>EditQuasar©2024 All rights reserved</p>
+            </div>
+            <div>
+              <p>Privacy Policy|Terms & Conditions</p>
+            </div>
+          </div>
+          <div className="flex gap-10 ">
+            <LinkedInIcon />
+            <InstagramIcon />
+            <XIcon />
+            <YouTubeIcon />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+/*function Footer() {
   return (
     <>
       <section>
@@ -62,6 +146,6 @@ function Footer() {
       </section>
     </>
   );
-}
+}*/
 
 export default Footer;
