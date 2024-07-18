@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../../../assets/About Us/background.mp4";
+import Background from "../../../assets/About Us/EQ Courses Background .mp4";
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import AchiveCard from "./AchiveCard/AchiveCard";
