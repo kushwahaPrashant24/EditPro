@@ -27,25 +27,7 @@
     z-index: -1; /* Send video to the background */
 }
 
-/* Overlay styling */
-.service-header-overlay {
-    position: relative;
-    text-align: center;
-    color: #fff; /* Text color */
-}
 
-/* Title styling */
-.service-header-title {
-    font-size: 5.5rem; /* Larger size for Branding */
-    font-weight: bold;
-    margin-bottom: 1rem; /* Optional: Add spacing between title and description */
-}
-
-/* Description styling */
-.service-header-description {
-    font-size: 1.5rem; /* Smaller size for description */
-    line-height: 1.5;
-}
 
 /* Next section styling */
 .next-section {
