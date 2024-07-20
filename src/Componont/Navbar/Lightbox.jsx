@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import SelectableButton from './selectableButton/selectableButton';
 import './Lightbox.css';
-import LightBoxbg from './../../assets/Services/wave 12.webp'; // Import the background image
-import Button from './../Services/MainServices/Components/Button/NewButton';
 
 const Lightbox = ({ onClose }) => {
   const [selectedServices, setSelectedServices] = useState([]);
@@ -12,7 +10,7 @@ const Lightbox = ({ onClose }) => {
       // Toggle subservice selection
       setSelectedServices(prevSelected => {
         const isSelected = prevSelected.includes(subService);
-
+  
         if (isSelected) {
           return prevSelected.filter(service => service !== subService);
         } else {
@@ -23,7 +21,7 @@ const Lightbox = ({ onClose }) => {
       // Toggle main service and all its subservices
       const allSubservices = services.find(service => service.name === mainService).subservices;
       const areAllSelected = allSubservices.every(subservice => selectedServices.includes(subservice));
-
+  
       setSelectedServices(prevSelected => {
         if (areAllSelected) {
           return prevSelected.filter(service => !allSubservices.includes(service));
@@ -33,6 +31,9 @@ const Lightbox = ({ onClose }) => {
       });
     }
   };
+  
+  
+  
 
   const services = [
     {
@@ -63,100 +64,33 @@ const Lightbox = ({ onClose }) => {
 
   return (
     <div className="lightbox-overlay" onClick={onClose}>
-      <div
-        className="lightbox-content"
-        onClick={(e) => e.stopPropagation()}
-        style={{ backgroundImage: `url(${LightBoxbg})`, backgroundSize: 'cover', backgroundPosition: 'center' }} // Set the background image here
-      >
-        <button className="close-button" onClick={onClose}>✖</button>
-        <h2 className="tittle">Customize Your Services & Schedule a Consultation</h2>
+      <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+        <h2 className="title">Customize Your Services & Schedule a Consultation</h2>
         <h3 className="sub-title">Tailor your needs and book a session with our experts today.</h3>
-        <div className="service-columns">
-          <div className="column">
-            {services.slice(0, 2).map(service => (
-              <div className="main-service" key={service.name}>
-                <label className="main-service-label">
-                  <input
-                    type="checkbox"
-                    checked={service.subservices.every(sub => selectedServices.includes(sub))}
-                    onChange={() => toggleSelection(service.name)}
-                  />
-                  {service.name}
-                </label>
-                <div className="sub-service-buttons">
-                  {service.subservices.map(subservice => (
-                    <label className="sub-service-label" key={subservice}>
-                      <input
-                        type="checkbox"
-                        checked={selectedServices.includes(subservice)}
-                        onChange={() => toggleSelection(service.name, subservice)}
-                      />
-                      {subservice}
-                    </label>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="column">
-            {services.slice(2, 4).map(service => (
-              <div className="main-service" key={service.name}>
-                <label className="main-service-label">
-                  <input
-                    type="checkbox"
-                    checked={service.subservices.every(sub => selectedServices.includes(sub))}
-                    onChange={() => toggleSelection(service.name)}
-                  />
-                  {service.name}
-                </label>
-                <div className="sub-service-buttons">
-                  {service.subservices.map(subservice => (
-                    <label className="sub-service-label" key={subservice}>
-                      <input
-                        type="checkbox"
-                        checked={selectedServices.includes(subservice)}
-                        onChange={() => toggleSelection(service.name, subservice)}
-                      />
-                      {subservice}
-                    </label>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="column">
-            {services.slice(4, 6).map(service => (
-              <div className="main-service" key={service.name}>
-                <label className="main-service-label">
-                  <input
-                    type="checkbox"
-                    checked={service.subservices.every(sub => selectedServices.includes(sub))}
-                    onChange={() => toggleSelection(service.name)}
-                  />
-                  {service.name}
-                </label>
-                <div className="sub-service-buttons">
-                  {service.subservices.map(subservice => (
-                    <label className="sub-service-label" key={subservice}>
-                      <input
-                        type="checkbox"
-                        checked={selectedServices.includes(subservice)}
-                        onChange={() => toggleSelection(service.name, subservice)}
-                      />
-                      {subservice}
-                    </label>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="submit-buttoon">
-          <Button buttonText="Let's Talk" link="https://example.com" />
-        </div>
+        {services.map(service => (
+  <div className="main-service" key={service.name}>
+    <div className="main-service-button">
+      <SelectableButton
+        content={service.name}
+        isSelected={selectedServices.includes(service.name)}
+        onClick={() => toggleSelection(service.name)}
+      />
+    </div>
+    <div className="main-service-buttons">
+      {service.subservices.map(subservice => (
+        <SelectableButton
+          key={subservice}
+          content={subservice}
+          isSelected={selectedServices.includes(subservice)}
+          onClick={() => toggleSelection(service.name, subservice)}
+        />
+      ))}
+    </div>
+  </div>
+))}
+       
       </div>
     </div>
   );
 };
-
 export default Lightbox;
