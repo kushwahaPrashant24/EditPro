@@ -236,72 +236,87 @@ function ResponsiveAppBar() {
                                   arrow_forward
                                 </span></a>
                               <ul className="service-heading-title">
-                                <li>Brand Identity</li>
-                                <li>Brand Consulting</li>
-                                <li>Logo Design</li>
-                                <li>2D/3D Visualisation</li>
-                                <li>Graphic Design</li>
+
+                              <li><Link to="/Services/MainServices/BrandIdentity">Brand Identity</Link></li>
+                              <li><Link to="/Services/MainServices/BrandConsulting">Brand Consulting</Link></li>
+                              <li><Link to="/Services/MainServices/LogoDesign">Logo Design</Link></li>
+                              <li><Link to="/Services/MainServices/2D3DVisualization">2D/3D Visualization</Link></li>
+                              <li><Link to="/Services/MainServices/GraphicDesign">Graphic Design</Link></li>
                               </ul>
                               </div>
                               <div> 
-                                <p className="sub-heading-title">Design Fusion</p>
+                              <a href="./Services/DesignFusion" className="sub-heading-title">Design Fusion
+                                 <span className="material-symbols-outlined">
+                                  arrow_forward
+                                </span></a>
                                 <ul className="service-heading-title">
-                                  <li>Personalized Advertising Poster Creation</li>
-                                  <li>Personal Portfolio Creation</li>
-                                  <li>Personal Portfolio Creation</li>
-                                  <li>Company Portfolio Making</li>
-                                  <li>Personalized Business Card Making</li>
-                                  <li>Social media creatives & other advertising materials</li>
-                                  <li>Brochures</li>
-                                </ul>
+                                  <li><Link to="/Services/MainServices/DesignFusion/PersonalizedAPC">Personalized Advertising Poster Creation</Link></li>
+                                  <li><Link to="/Services/MainServices/DesignFusion/PersonalPc">Personal Portfolio Creation</Link></li>
+                                  <li><Link to="/Services/MainServices/DesignFusion/CompanyPm">Company Portfolio Making</Link></li>
+                                  <li><Link to="/Services/MainServices/DesignFusion/PersonalizedBCM">Personalized Business Card Making</Link></li>
+                                  <li><Link to="/Services/MainServices/DesignFusion/SocialMedia">Social media creatives & other advertising materials</Link></li>                                      
+                                  <li><Link to="/Services/MainServices/DesignFusion/Brochures">Brochures</Link></li>
+                                 </ul>
                               </div>
 
                             </div>
                             <div className="grid-item">
                               <div>
-                              <p className="sub-heading-title">Digital Marketing</p>
+                              <a href="./Services/DigitalMarketing" className="sub-heading-title">Digital Marketing
+                                 <span className="material-symbols-outlined">
+                                  arrow_forward
+                                </span></a>
                               <ul className="service-heading-title">
-                                <li>Search Engine Optimisation</li>
-                                <li>Social Media Management</li>
-                                <li>Performance Marketing</li>
-                                <li>Content Marketing</li>
-                                <li>Marketing Automation</li>
-                                <li>Analytics</li>
+                              <li><Link to="/Services/MainServices/DigitalMarketing/SEO">Search Engine Optimisation</Link></li>
+                              <li><Link to="/Services/MainServices/DigitalMarketing/SMM">Social Media Management</Link></li> 
+                              <li><Link to="/Services/MainServices/DigitalMarketing/PerformanceM">Performance Marketing</Link></li> 
+                              <li><Link to="/Services/MainServices/DigitalMarketing/ContentM">Content Marketing</Link></li>
+                              <li><Link to="/Services/MainServices/DigitalMarketing/MarketingA">Marketing Automation</Link></li>
+                              <li><Link to="/Services/MainServices/DigitalMarketing/Analytics">Analytics</Link></li>
                               </ul>
                               </div>
                               <div>
-                              <p className="sub-heading-title">Experience Design</p>
+                              <a href="./Services/ExperienceDesign" className="sub-heading-title">Experience Design
+                                 <span className="material-symbols-outlined">
+                                  arrow_forward
+                                </span></a>
                               <ul className="service-heading-title">
-                                <li>UI/UX Design</li>
-                                <li>Website Design</li>
-                                <li>Mobile Experience</li>
-                                <li>Commerce Experience</li>
-                                <li>Human Machine Interface (HMI)</li>
-                                <li>Applications & Dashboard</li>
+                              <li><Link to="/Services/MainServices/ExperienceDesign/UIDesign">UI/UX Design</Link></li>
+                              <li><Link to="/Services/MainServices/ExperienceDesign/WebsiteDesign">Website Design</Link></li>
+                              <li><Link to="/Services/MainServices/ExperienceDesign/MobileExperience">Mobile Experience</Link></li>
+                              <li><Link to="/Services/MainServices/ExperienceDesign/CommerceExperience">Commerce Experience</Link></li>
+                              <li><Link to="/Services/MainServices/ExperienceDesign/HMI">Human Machine Interface (HMI)</Link></li>
+                              <li><Link to="/Services/MainServices/ExperienceDesign/AandD">Applications & Dashboard</Link></li>
                               </ul>
                               </div>
                             </div>
                             <div className="grid-item">
                               <div>
-                              <p className="sub-heading-title">Technology</p>
+                              <a href="./Services/Technology" className="sub-heading-title">Technology
+                                 <span className="material-symbols-outlined">
+                                  arrow_forward
+                                </span></a>
                               <ul className="service-heading-title">
-                                <li>Data & Analytics</li>
-                                <li>Web Development</li>
-                                <li>Mobile App Development</li>
-                                <li>E-commerce</li>
-                                <li>AI & Machine Learning (ML)</li>
-                                <li>Cyber Security</li>
+                              <li><Link to="/Services/MainServices/Technology/DataAndAnalytic">Data & Analytics</Link></li>
+                              <li><Link to="/Services/MainServices/Technology/WebDevelopment">Web Development</Link></li>
+                              <li><Link to="/Services/MainServices/Technology/MobileApp">Mobile App Development</Link></li>
+                              <li><Link to="/Services/MainServices/Technology/Ecommerce">E-commerce</Link></li>
+                              <li><Link to="/Services/MainServices/Technology/AIML">AI & Machine Learning (ML)</Link></li>
+                              <li><Link to="/Services/MainServices/Technology/CyberSecurity">Cyber Security</Link></li>
                               </ul>
                               </div>  
                               <div>
-                                <p className="sub-heading-title">Creativity</p>
+                              <a href="./Services/Creativity" className="sub-heading-title">Creativity
+                                 <span className="material-symbols-outlined">
+                                  arrow_forward
+                                </span></a>
                                   <ul className="service-heading-title">
-                                    <li>Video Editing</li>
-                                    <li>Photo Editing</li>
-                                    <li>Blog Writing</li>
-                                    <li>Content Writing</li>
-                                    <li>Resume Making</li>
-                                    <li>Personalized Occasion Card Making</li>
+                                  <li><Link to="/Services/MainServices/Creativity/VideoEditing">Video Editing</Link></li>
+                                  <li><Link to="/Services/MainServices/Creativity/PhotoEditing">Photo Editing</Link></li>
+                                  <li><Link to="/Services/MainServices/Creativity/BlogWriting">Blog Writing</Link></li>
+                                  <li><Link to="/Services/MainServices/Creativity/ContentWriting">Content Writing</Link></li>
+                                  <li><Link to="/Services/MainServices/Creativity/ResumeMaking">Resume Making</Link></li>
+                                  <li><Link to="/Services/MainServices/Creativity/POCM">Personalized Occasion Card Making</Link></li>
                                   </ul>
                               </div>
                             </div>
