@@ -1,10 +1,8 @@
 import React from "react";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Background from "../../../assets/About Us/Team.mp4";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-
-
-function Opportunities() {
+function Join() {
   return (
     <>
       <div className="  text-white p-36 flex justify-between">
@@ -14,19 +12,19 @@ function Opportunities() {
           </div>
           <div>
             <p className="text-2xl">
-              At EditQuasar, we focus on cultivating an environment where you
-              can thrive, develop deep roots, and expand your horizons. Let's
-              embark on a rewarding journey together!
+              Here at EditQuasar, we foster an environment that nurtures your
+              growth, enabling you to strengthen your foundations and reach for
+              greater heights. Join us on this fulfilling journey together!
             </p>
           </div>
           <center>
             <button className="h-10 w-96   border-2 border-black">
-              Our Experties <ArrowForwardIcon />
+            See all openings<ArrowForwardIcon />
             </button>
           </center>
         </div>
         <div>
-        <video autoPlay loop muted className="h-[750px]">
+          <video autoPlay loop muted className="h-[750px]">
             <source src={Background} type="video/mp4" />
           </video>
         </div>
@@ -35,4 +33,4 @@ function Opportunities() {
   );
 }
 
-export default Opportunities;
+export default Join;
