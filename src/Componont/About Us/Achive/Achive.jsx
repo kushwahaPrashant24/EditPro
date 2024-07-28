@@ -8,15 +8,15 @@ function Achive() {
   return (
     <>
       <div className="relative">
-        <div className="sticky">
+     
           <section>
-            <div className="  flex   relative my-8  h-[100vh] -mt-36 mb-56  ">
+            <div className="   relative my-8  h-[100vh] -mt-36 mb-56  ">
               <div>
                 <video autoPlay loop muted>
                   <source src={Background} type="video/mp4" />
                 </video>
-                <div>
-                  <div className="absolute top-[25%] left-[11%]  w-[50%] h-[60%] flex flex-col justify-evenly videosection">
+                <div className="flex">
+                  <div className="absolute top-[25%] left-[6%]  w-[50%] h-[60%] flex flex-col justify-evenly videosection">
                     <p className="text-xl   sm:text-3xl lg:text-6xl text-richblack-5  ">
                       Big Dreams, Bigger Achievements
                     </p>
@@ -30,7 +30,7 @@ function Achive() {
                       impact. We have no plans to slow down!
                     </p>
                   </div>
-                  <div className="relative my-8  h-[100vh] -mt-36 mb-56  ">
+                  <div className="absolute top-[15%] left-[60%]  w-full  flex  videosection">
                    
                     <AchiveCard />
                   </div>
@@ -38,7 +38,7 @@ function Achive() {
               </div>
             </div>
           </section>
-        </div>
+    
       </div>
     </>
   );
