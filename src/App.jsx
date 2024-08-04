@@ -9,6 +9,8 @@ import Home from '../src/Componont/Home/Home';
 import Careers from '../src/Componont/Careers/Careers';
 import Contact from '../src/Componont/Contact/Contact';
 import Services from './Componont/Services/Services';
+import EQCourses from './Componont/EQ Courses/EQCourses';
+// import More from './Componont/More/More';
 import Footer from './Footer/Footer';
 import About from './Componont/About Us/About';
 import Industries from './Componont/Industries/Industries';
@@ -53,7 +55,8 @@ import BlogWriting from './Componont/Services/MainServices/Creativity/BlogWritin
 import ContentWriting from './Componont/Services/MainServices/Creativity/ContentWriting';
 import ResumeMaking from './Componont/Services/MainServices/Creativity/ResumeMaking';
 import POCM from './Componont/Services/MainServices/Creativity/POCM';
-
+import bgvideo from './assets/Services/ourimpact1.mp4';
+import bgballvideo from './assets/Services/ballbg.mp4';
 
 
 const router = createBrowserRouter([
@@ -65,6 +68,104 @@ const router = createBrowserRouter([
     path: "Services",
     element: <><ResponsiveAppBar /><section><Services /><Footer /></section></>,
   },
+
+
+
+
+  {
+    path: "EQCourses",
+    element: <><ResponsiveAppBar /><section>
+      <EQCourses
+      bgvideo={bgvideo} 
+      title="Elevate Your Skills to New Heights" 
+      description="Unlock a world of knowledge and expertise with our upcoming EQ Courses. 
+                    Designed to empower professionals and enthusiasts alike, our courses cover 
+                    a diverse range of subjects tailored to enhance your career and personal growth. 
+                    Stay tuned for innovative, industry-relevant content delivered by expert instructors."
+      />
+      <Footer />
+      </section></>,
+  },
+  
+  
+  {
+    path: "EQEvents",
+    element: <><ResponsiveAppBar /><section>
+      <EQCourses
+      bgvideo={bgballvideo} 
+      title="Unleashing Innovation and Collaboration" 
+      description="Get ready for a series of inspiring events designed to bring together thought leaders, industry experts, and
+       passionate professionals. From workshops to conferences, our EQ Events will spark creativity and foster meaningful connections. 
+       Stay tuned for updates on our exciting lineup."
+      />
+      <Footer />
+      </section></>,
+  },
+
+  {
+    path: "EQMerchandise",
+    element: <><ResponsiveAppBar /><section>
+      <EQCourses
+      bgvideo={bgballvideo} 
+      title="Show Your EQ Pride" 
+      description="
+      Express your passion for EditQuasar with our exclusive merchandise. 
+      From stylish apparel to unique accessories, our EQ Merchandise offers something for every fan. 
+      Perfect for both personal use and gifting, these items let you carry a piece of EQ wherever you go."
+      />
+      <Footer />
+      </section></>,
+  },
+
+  {
+    path: "EQBlogs",
+    element: <><ResponsiveAppBar /><section>
+      <EQCourses
+      bgvideo={bgvideo} 
+      title="Insightful Articles and Expert Opinions" 
+      description="
+      Dive into a treasure trove of knowledge with our EQ Blogs. 
+      Featuring articles, insights, and opinions from industry leaders, 
+      our blogs are designed to keep you informed and inspired. Stay updated on the latest trends, tips, 
+      and stories from the world of business and technology."
+      />
+      <Footer />
+      </section></>,
+  },
+
+  {
+    path: "SuccessStories",
+    element: <><ResponsiveAppBar /><section>
+      <EQCourses
+      bgvideo={bgballvideo} 
+      title="Inspiring Journeys and Achievements" 
+      description="Discover the remarkable journeys of individuals and businesses who have reached new heights 
+      with the help of EditQuasar. Our Success Stories showcase real-life examples of success, innovation, and transformation.
+       Get inspired by their achievements and learn from their experiences."
+      />
+      <Footer />
+      </section></>,
+  },
+
+  {
+    path: "HallofFame",
+    element: <><ResponsiveAppBar /><section>
+      <EQCourses
+      bgvideo={bgballvideo} 
+      title="Celebrating Excellence and Impact" 
+      description="
+      Celebrate the extraordinary contributions and accomplishments of our community members.
+      The EQ Hall of Fame honors those who have made a significant impact in their fields and within our community.
+      Join us in recognizing and applauding their outstanding efforts."
+      />
+      <Footer />
+      </section></>,
+  },
+  
+  
+  
+  
+  
   {
     path: "Industries",
     element: <><ResponsiveAppBar /><Industries /><Footer /></>,
@@ -98,7 +199,7 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><LogoDesign /><Footer /></>,
   },
   {
-    path: "Services/MainServices/2D3DVisualization", // Add the path for 2d/3d Visualization
+    path: "Services/MainServices/2D/3DVisualization", // Add the path for 2d/3d Visualization
     element: <><ResponsiveAppBar /><Visualization /><Footer /></>,
   },
   {
@@ -110,23 +211,23 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><DesignFusion /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DesignFusion/PersonalizedAPC", // Add the path for Design Fusion
+    path: "Services/MainServices/DesignFusion/PersonalizedAdvertisingPosterCreation", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><PersonalizedAPC /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DesignFusion/PersonalPc", // Add the path for Design Fusion
+    path: "Services/MainServices/DesignFusion/PersonalPortfolioCreation", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><PersonalPc /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DesignFusion/CompanyPm", // Add the path for Design Fusion
+    path: "Services/MainServices/DesignFusion/CompanyPortfolioMaking", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><CompanyPm /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DesignFusion/PersonalizedBCM", // Add the path for Design Fusion
+    path: "Services/MainServices/DesignFusion/PersonalizedBusinessCardMaking", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><PersonalizedBCM /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DesignFusion/SocialMedia", // Add the path for Design Fusion
+    path: "Services/MainServices/DesignFusion/SocialMediaCreatives&AdvertisingMaterials", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><SocialMedia /><Footer /></>,
   },
   {
@@ -138,23 +239,23 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><DigitalMarketing /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DigitalMarketing/SEO", // Add the path for Design Fusion
+    path: "Services/MainServices/DigitalMarketing/SearchEngineOptimisation(SEO)", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><SEO /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DigitalMarketing/SMM", // Add the path for Design Fusion
+    path: "Services/MainServices/DigitalMarketing/SocialMediaManagement", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><SMM /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DigitalMarketing/PerformanceM", // Add the path for Design Fusion
+    path: "Services/MainServices/DigitalMarketing/PerformanceMarketing", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><PerformanceM /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DigitalMarketing/ContentM", // Add the path for Design Fusion
+    path: "Services/MainServices/DigitalMarketing/ContentMarketing", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><ContentM /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DigitalMarketing/MarketingA", // Add the path for Design Fusion
+    path: "Services/MainServices/DigitalMarketing/MarketingAutomation", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><MarketingA /><Footer /></>,
   },
   {
@@ -166,7 +267,7 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><ExperienceDesign /><Footer /></>,
   },
   {
-    path: "Services/MainServices/ExperienceDesign/UIDesign", // Add the path for Design Fusion
+    path: "Services/MainServices/ExperienceDesign/UI/UXDesign", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><UIDesign /><Footer /></>,
   },
   {
@@ -182,11 +283,11 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><CommerceExperience /><Footer /></>,
   },
   {
-    path: "Services/MainServices/ExperienceDesign/HMI", // Add the path for Design Fusion
+    path: "Services/MainServices/ExperienceDesign/HumanMachineInterface(HMI)", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><HMI /><Footer /></>,
   },
   {
-    path: "Services/MainServices/ExperienceDesign/AandD", // Add the path for Design Fusion
+    path: "Services/MainServices/ExperienceDesign/Applications&Dashboard", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><AandD /><Footer /></>,
   },
   {
@@ -194,7 +295,7 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><Technology /><Footer /></>,
   },
   {
-    path: "Services/MainServices/Technology/DataAndAnalytic", // Add the path for Design Fusion
+    path: "Services/MainServices/Technology/Data&Analytics", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><DataAndAnalytic /><Footer /></>,
   },
   {
@@ -202,15 +303,15 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><WebDevelopment /><Footer /></>,
   },
   {
-    path: "Services/MainServices/Technology/MobileApp", // Add the path for Design Fusion
+    path: "Services/MainServices/Technology/MobileAppDevelopment", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><MobileApp /><Footer /></>,
   },
   {
-    path: "Services/MainServices/Technology/Ecommerce", // Add the path for Design Fusion
+    path: "Services/MainServices/Technology/E-commerce", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><Ecommerce /><Footer /></>,
   },
   {
-    path: "Services/MainServices/Technology/AIML", // Add the path for Design Fusion
+    path: "Services/MainServices/Technology/AI&MachineLearning(ML)", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><AIML /><Footer /></>,
   },
   {
@@ -242,7 +343,7 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><ResumeMaking /><Footer /></>,
   },
   {
-    path: "Services/MainServices/Creativity/POCM", // Add the path for Design Fusion
+    path: "Services/MainServices/Creativity/PersonalizedOccasionCardMaking", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><POCM /><Footer /></>,
   },
 

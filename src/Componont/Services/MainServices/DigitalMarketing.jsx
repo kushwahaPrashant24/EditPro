@@ -126,42 +126,42 @@ const DigitalMarketing = () => {
           title='Search Engine Optimisation (SEO)' 
           description='Optimize your website to improve its visibility in search engine results, driving organic traffic and
           enhancing your online presence.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices/DigitalMarketing" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Social Media Management' 
           description="Manage your social media platforms to build brand awareness, engage with your audience, and foster
           community growth." 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices/DigitalMarketing" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Performance Marketing' 
           description='Develop targeted marketing campaigns focused on delivering measurable results and optimizing return
           on investment (ROI).' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices/DigitalMarketing" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Content Marketing' 
           description='Create valuable and relevant content that attracts, engages, and retains your audience, building brand
           loyalty and driving conversions.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices/DigitalMarketing" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Marketing Automation' 
           description='Implement automation tools and strategies to streamline marketing processes, nurture leads, and
           enhance customer interactions.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices/DigitalMarketing" 
         />
          <ServiceCard 
           img_url={serImg} 
           title='Analytics' 
           description='Leverage data analytics to gain insights into marketing performance, audience behavior, and campaign
           effectiveness.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices/DigitalMarketing" 
         />
       </div>
 
@@ -280,19 +280,19 @@ const DigitalMarketing = () => {
             img_url={serImg} 
             title='Experience Design' 
             description='Create seamless and intuitive user experiences that enhance customer satisfaction and loyalty across all digital touchpoints.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Design Fusion' 
             description='Combine creativity and innovation to deliver visually stunning designs that communicate your message and captivate your audience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Technology' 
             description='Leverage cutting-edge technology solutions to optimize your business operations, enhance security, and drive growth.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services" 
           />
         </div>
         <div className="view-all-services-button">

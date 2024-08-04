@@ -123,39 +123,39 @@ const Technology = () => {
           img_url={serImg} 
           title='Data & Analytics' 
           description='Utilize data analytics to inform business decisions, optimize strategies, and drive growth.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Technology" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Web Development' 
           description="Develop robust and scalable websites that deliver exceptional performance and user experiences." 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Technology" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Mobile App Development' 
           description='Create innovative and user-centric mobile applications for various platforms, enhancing your
           digital presence.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Technology" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='E-commerce ' 
           description='Build comprehensive e-commerce solutions that drive sales, enhance customer experiences, and support business growth.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Technology" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='AI & Machine Learning (ML)' 
           description='Integrate AI and ML technologies to automate processes, gain insights, and enhance business efficiency.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Technology" 
         />
          <ServiceCard 
           img_url={serImg} 
           title='Cyber Security' 
           description='Implement comprehensive security measures to protect your digital assets, data, and systems
           from cyber threats.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Technology" 
         />
       </div>
 
@@ -266,19 +266,19 @@ const Technology = () => {
             img_url={serImg} 
             title='Creativity' 
             description='Bring your ideas to life with our creative services, ensuring your content is compelling, polished,  and impactful.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Branding' 
             description='Develop a strong and cohesive brand identity that connects with your audience and sets you apart from the competition.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Digital Marketing' 
             description='Elevate your online presence with comprehensive digital marketing strategies that drive engagement, traffic, and conversions.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services" 
           />
         </div>
         <div className="view-all-services-button">

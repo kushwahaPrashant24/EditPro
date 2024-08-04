@@ -1,18 +1,18 @@
 .service-card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   overflow: hidden;
   color: #333;
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 10px; /* Adjust margin between cards */
-  height: 19rem;
+  margin: 10px;
+  height: 300px; /* Ensure card takes full available height */
 }
 
-
-
 .service-image {
-  height: 100px; /* Adjust height of the image container */
+  height: 150px; /* Adjust height of the image container */
   overflow: hidden;
 }
 
@@ -27,9 +27,17 @@
   transform: scale(1.05); /* Hover effect only on image */
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  flex-grow: 1; /* Allow card body to grow and take available space */
+}
+
 .card-title {
-  font-size: 1.25rem; /* Adjust title font size */
-  margin-top: 0.75rem; /* Adjust margin top for title */
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
   color: #333;
 }
 
@@ -37,10 +45,13 @@
   font-size: 1rem;
   line-height: 1.5;
   color: #666;
-  margin-bottom: 0.5rem; /* Adjust margin bottom for description */
-}
-.card-body{
-  padding: 20px;
+  margin-bottom: 0.5rem;
+  flex-grow: 1; /* Allow card text to grow and take available space */
+  overflow: hidden; /* Ensure text doesn't overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit text to 3 lines */
+  -webkit-box-orient: vertical;
 }
 
 .btn {
@@ -52,9 +63,8 @@
   transition: background-color 0.3s ease;
   display: inline-flex;
   align-items: center;
+  margin-top: auto; /* Ensure button stays at the bottom */
 }
-
-
 
 .btn::after {
   content: '\2192'; /* Unicode arrow right character */

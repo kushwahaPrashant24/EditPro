@@ -134,19 +134,19 @@ const GraphicDesign = () => {
             img_url={serImg} 
             title='Brand Identity' 
             description='Create a cohesive and recognizable brand image that resonates with your target audience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Brand Consulting' 
             description='Leverage expert insights to refine and elevate your brand strategy for maximum impact' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Logo Design' 
             description='Craft unique and memorable logos that embody your brands essence and values.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices" 
           />
         </div>
         <div className="view-all-services-button">

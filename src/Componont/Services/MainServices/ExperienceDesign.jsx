@@ -125,39 +125,39 @@ const ExperienceDesign = () => {
           img_url={serImg} 
           title='UI/UX Design' 
           description='Design intuitive and visually appealing user interfaces that enhance user experiences and drive engagement.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/ExperienceDesign" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Website Design' 
           description="Create aesthetically pleasing and functional websites that effectively communicate your brand
           message and meet user needs." 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/ExperienceDesign" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Mobile Experience' 
           description='Develop mobile-friendly designs and applications to ensure seamless user experiences across devices.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/ExperienceDesign" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Commerce Experience' 
           description='Enhance e-commerce platforms to improve user journeys, increase conversions, and drive online sales.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/ExperienceDesign" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Human Machine Interface (HMI)' 
           description='Design interactive interfaces that facilitate seamless interactions between users and machines.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/ExperienceDesign" 
         />
          <ServiceCard 
           img_url={serImg} 
           title='Applications & Dashboard' 
           description='Create custom applications and dashboards that provide valuable insights and streamline
           business operations.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/ExperienceDesign" 
         />
       </div>
 
@@ -242,19 +242,19 @@ const ExperienceDesign = () => {
             img_url={serImg} 
             title='Design Fusion' 
             description='Combine creativity and innovation to deliver visually stunning designs that communicate your message and captivate your audience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+           folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Technology' 
             description='Leverage cutting-edge technology solutions to optimize your business operations, enhance security, and drive growth.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+           folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Creativity' 
             description='Bring your ideas to life with our creative services, ensuring your content is compelling, polished, and impactful.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+           folderPath="Services" 
           />
         </div>
         <div className="view-all-services-button">

@@ -122,31 +122,31 @@ const Branding = () => {
           img_url={serImg} 
           title='Brand Consulting' 
           description='Helping businesses dissolve complexity and stay focused on their core competencies for fast results.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Logo Design' 
           description="Creating unique and memorable logos that reflect your brand's identity and values." 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='2D/3D Visualization' 
           description='Bringing your ideas to life with stunning 2D and 3D visualizations that captivate and engage.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Graphic Design' 
           description='Crafting visually compelling designs that communicate your message and elevate your brand.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Brand Identity' 
           description='Developing a cohesive and powerful brand identity that resonates with your audience and sets you apart from the competition.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services/MainServices" 
         />
       </div>
 
@@ -218,19 +218,19 @@ const Branding = () => {
             img_url={serImg} 
             title='Digital Marketing' 
             description='Elevate your online presence with comprehensive digital marketing strategies that drive engagement, traffic, and conversions.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            link='Services' 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Experience Design' 
             description='Create seamless and intuitive user experiences that enhance customer satisfaction and loyalty across all digital touchpoints.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Design Fusion' 
             description='Combine creativity and innovation to deliver visually stunning designs that communicate your message and captivate your audience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services" 
           />
         </div>
         <div className="view-all-services-button">

@@ -137,19 +137,19 @@ const CompanyPm = () => {
             img_url={serImg} 
             title='Personalized Business Card Making' 
             description='Create customized business cards that leave a lasting impression.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion" 
           />
           <ServiceCard 
             img_url={serImg} 
-            title='Social Media Creatives & Other Advertising Materials' 
+            title='Social Media Creatives & Advertising Materials' 
             description='Enhance your social media presence with engaging creatives and promotional materials' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Brochures' 
             description='Develop informative and visually appealing brochures that effectively communicate your message.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion" 
           />
         </div>
         <div className="view-all-services-button">

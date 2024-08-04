@@ -137,19 +137,19 @@ const PersonalizedAPC = () => {
             img_url={serImg} 
             title='Personal Portfolio Creation' 
             description='Showcase your skills and achievements with a professionally designed personal portfolio.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Company Portfolio Making' 
             description='Present your companys strengths and successes through a compelling portfolio.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Personalized Business Card Making' 
             description='Create customized business cards that leave a lasting impression' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion" 
           />
         </div>
         <div className="view-all-services-button">

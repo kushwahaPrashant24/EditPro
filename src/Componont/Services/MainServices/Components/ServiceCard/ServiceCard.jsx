@@ -1,7 +1,10 @@
 import React from 'react';
 import "./ServiceCard.css"; // Import CSS file
 
-const ServiceCard = ({ img_url, title, description, link }) => {
+const ServiceCard = ({ img_url, title, description, folderPath }) => {
+  // Remove spaces from title
+  const formattedTitle = title.replace(/\s+/g, '');
+
   return (
     <div className="service-card">
       <div className="service-image">
@@ -12,7 +15,7 @@ const ServiceCard = ({ img_url, title, description, link }) => {
         <p className="card-text">
           {description}
         </p>
-        <a href={link} className="btn stretched-link">
+        <a href={`/${folderPath}/${formattedTitle}`} className="btn stretched-link">
           Learn More
         </a>
       </div>

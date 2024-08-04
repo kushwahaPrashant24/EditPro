@@ -124,38 +124,38 @@ const Creativity = () => {
           title='Video Editing' 
           description='Transform raw footage into polished and engaging videos that captivate audiences and convey
           your message effectively.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Creativity" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Photo Editing' 
           description="Enhance visual appeal and correct imperfections to create high-quality images for various purposes." 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Creativity" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Blog Writing' 
           description='Craft informative and engaging blog posts that establish thought leadership and drive organic traffic.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Creativity" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Content Writing' 
           description='Deliver compelling and well-crafted content for websites, marketing materials, social media, and more.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Creativity" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Resume Making' 
           description='Create professional and customized resumes that highlight your skills, experience, and
           achievements effectively.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Creativity" 
         />
          <ServiceCard 
           img_url={serImg} 
           title='Personalized Occasion Card Making' 
           description='Design unique and beautifully crafted cards for special occasions, adding a personal touch to your celebrations.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+        folderPath="Services/MainServices/Creativity" 
         />
       </div>
 
@@ -259,19 +259,19 @@ const Creativity = () => {
             img_url={serImg} 
             title='Branding' 
             description='Develop a strong and cohesive brand identity that connects with your audience and sets you apart from the competition.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Digital Marketing' 
             description='Elevate your online presence with comprehensive digital marketing strategies that drive engagement, traffic, and conversions.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Experience Design' 
             description='Create seamless and intuitive user experiences that enhance customer satisfaction and loyalty across all digital touchpoints.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+          folderPath="Services" 
           />
         </div>
         <div className="view-all-services-button">

@@ -137,19 +137,19 @@ const SocialMedia = () => {
             img_url={serImg} 
             title='Brochures' 
             description='Develop informative and visually appealing brochures that effectively communicate your message.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion"  
           />
           <ServiceCard 
             img_url={serImg} 
             title='Personalized Advertising Poster Creation' 
             description='Design eye-catching posters tailored to your specific advertising needs.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion"  
           />
           <ServiceCard 
             img_url={serImg} 
             title='Personal Portfolio Creation' 
             description='Showcase your skills and achievements with a professionally designed personal portfolio.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DesignFusion"  
           />
         </div>
         <div className="view-all-services-button">

@@ -124,39 +124,39 @@ const DesignFusion = () => {
           img_url={serImg} 
           title='Personalized Advertising Poster Creation' 
           description='Custom-designed posters tailored to your advertising needs.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/DesignFusion" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Personal Portfolio Creation' 
           description="Be spoke portfolios that showcase your personal achievements and skills." 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/DesignFusion" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Company Portfolio Making' 
           description='Professionally crafted company portfolios that highlight your business strengths.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/DesignFusion" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Personalized Business Card Making' 
           description='Unique business cards that reflect your personal brand and professionalism.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/DesignFusion" 
         />
         <ServiceCard 
           img_url={serImg} 
           title='Social Media Creatives & Advertising Materials' 
           description='Engaging designs for social media and other
           promotional content.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/DesignFusion" 
         />
          <ServiceCard 
           img_url={serImg} 
           title='Brochures' 
           description='Informative and visually appealing brochures to effectively communicate your
           message.' 
-          link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+         folderPath="Services/MainServices/DesignFusion" 
         />
       </div>
 
@@ -269,19 +269,19 @@ const DesignFusion = () => {
             img_url={serImg} 
             title='Technology' 
             description='Leverage cutting-edge technology solutions to optimize your business operations, enhance security, and drive growth.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+           folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Creativity' 
             description='Bring your ideas to life with our creative services, ensuring your content is compelling, polished, and impactful.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+           folderPath="Services" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Branding' 
             description='Develop a strong and cohesive brand identity that connects with your audience and sets you apart from the competition.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+           folderPath="Services" 
           />
         </div>
         <div className="view-all-services-button">
