@@ -134,23 +134,23 @@ const PerformanceM = () => {
             img_url={serImg} 
             title='Content Marketing' 
             description='Create and distribute valuable content to attract and retain a clearly defined audience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DigitalMarketing" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Marketing Automation' 
             description='Streamline your marketing efforts with automation tools for better efficiency and effectiveness.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DigitalMarketing" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Analytics' 
             description='Gain actionable insights and measure the success of your marketing campaigns with advanced analytics.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DigitalMarketing" 
           />
         </div>
         <div className="view-all-services-button">
-          <NewButton buttonText="View all services" link="https://example.com" />
+          <NewButton buttonText="View all services" link="/services" />
         </div>
       </div>
 

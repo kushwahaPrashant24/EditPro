@@ -138,23 +138,23 @@ const ContentM = () => {
             img_url={serImg} 
             title='Marketing Automation' 
             description='Streamline your marketing efforts with automation tools for better efficiency and effectiveness.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DigitalMarketing" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Analytics' 
             description='Gain actionable insights and measure the success of your marketing campaigns with advanced analytics.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/DigitalMarketing" 
           />
           <ServiceCard 
             img_url={serImg} 
-            title='Search Engine Optimization' 
-            description='Improve your website’s visibility and ranking on search engines to attract more organic traffic.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            title='Search Engine Optimization (SEO)' 
+            description='Improve your website visibility and ranking on search engines to attract more organic traffic.' 
+            folderPath="Services/MainServices/DigitalMarketing" 
           />
         </div>
         <div className="view-all-services-button">
-          <NewButton buttonText="View all services" link="https://example.com" />
+          <NewButton buttonText="View all services" link="/services" />
         </div>
       </div>
 

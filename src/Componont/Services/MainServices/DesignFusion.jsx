@@ -286,7 +286,7 @@ const DesignFusion = () => {
         </div>
         <div className="view-all-services-button">
         <div>
-      <NewButton buttonText="View all services" link="https://example.com" />
+      <NewButton buttonText="View all services" link="/services" />
     </div>
       </div>
    </div>

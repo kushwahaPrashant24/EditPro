@@ -145,23 +145,23 @@ const AIML = () => {
             img_url={serImg} 
             title='Cyber Security' 
             description='Protect your digital assets with advanced cyber security measures and strategies.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Technology" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Data & Analytics' 
             description='Harness the power of data to make informed business decisions and drive growth.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Technology" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Web Development' 
             description='Build robust and scalable websites tailored to your specific needs and goals.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Technology" 
           />
         </div>
         <div className="view-all-services-button">
-          <NewButton buttonText="View all services" link="https://example.com" />
+          <NewButton buttonText="View all services" link="/services" />
         </div>
       </div>
 

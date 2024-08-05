@@ -140,23 +140,23 @@ const POCM = () => {
             img_url={serImg} 
             title='Video Editing' 
             description='Transform raw footage into polished videos that captivate and engage your audience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Creativity" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Photo Editing' 
             description='Enhance and retouch photos to achieve a professional and appealing look.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Creativity" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Blog Writing' 
             description='Create compelling and informative blog content to engage and inform your readers.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Creativity" 
           />
         </div>
         <div className="view-all-services-button">
-          <NewButton buttonText="View all services" link="https://example.com" />
+          <NewButton buttonText="View all services" link="/services" />
         </div>
       </div>
 

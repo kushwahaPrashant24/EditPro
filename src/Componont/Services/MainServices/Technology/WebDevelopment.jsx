@@ -137,23 +137,23 @@ const WebDevelopment = () => {
             img_url={serImg} 
             title='Mobile App Development' 
             description='Create innovative mobile applications that provide a seamless user experience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Technology" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='E-commerce' 
             description='Develop comprehensive e-commerce solutions to boost your online sales and customer engagement.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Technology" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='AI & Machine Learning (ML)' 
             description='Implement cutting-edge AI and ML technologies to automate processes and gain insights.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/Technology" 
           />
         </div>
         <div className="view-all-services-button">
-          <NewButton buttonText="View all services" link="https://example.com" />
+          <NewButton buttonText="View all services" link="/services" />
         </div>
       </div>
 

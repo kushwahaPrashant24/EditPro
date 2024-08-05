@@ -139,23 +139,23 @@ const HMI = () => {
             img_url={serImg} 
             title='Applications & Dashboard' 
             description='Develop user-friendly applications and dashboards for enhanced usability and data management.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/ExperienceDesign" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='UI/UX Design' 
             description='Enhance user satisfaction with intuitive and aesthetically pleasing interface designs.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/ExperienceDesign" 
           />
           <ServiceCard 
             img_url={serImg} 
             title='Website Design' 
             description='Develop visually appealing and user-friendly websites that provide a seamless browsing experience.' 
-            link='https://chatgpt.com/c/47fb970e-e929-4166-a2f5-c444d2a712e7' 
+            folderPath="Services/MainServices/ExperienceDesign" 
           />
         </div>
         <div className="view-all-services-button">
-          <NewButton buttonText="View all services" link="https://example.com" />
+          <NewButton buttonText="View all services" link="/services" />
         </div>
       </div>
 

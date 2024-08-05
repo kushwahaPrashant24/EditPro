@@ -239,7 +239,7 @@ const router = createBrowserRouter([
     element: <><ResponsiveAppBar /><DigitalMarketing /><Footer /></>,
   },
   {
-    path: "Services/MainServices/DigitalMarketing/SearchEngineOptimisation(SEO)", // Add the path for Design Fusion
+    path: "Services/MainServices/DigitalMarketing/SearchEngineOptimization(SEO)", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><SEO /><Footer /></>,
   },
   {

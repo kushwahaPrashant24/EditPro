@@ -294,7 +294,7 @@ function ResponsiveAppBar() {
                                   arrow_forward
                                 </span></a>
                               <ul className="service-heading-title">
-                              <li><Link to="/Services/MainServices/DigitalMarketing/SearchEngineOptimisation(SEO)">Search Engine Optimisation</Link></li>
+                              <li><Link to="/Services/MainServices/DigitalMarketing/SearchEngineOptimization(SEO)">Search Engine Optimisation</Link></li>
                               <li><Link to="/Services/MainServices/DigitalMarketing/SocialMediaManagement">Social Media Management</Link></li> 
                               <li><Link to="/Services/MainServices/DigitalMarketing/PerformanceMarketing">Performance Marketing</Link></li> 
                               <li><Link to="/Services/MainServices/DigitalMarketing/ContentMarketing">Content Marketing</Link></li>
