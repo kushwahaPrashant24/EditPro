@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   
   {
     path: "/",
-    element:<><ResponsiveAppBar/><Home/><Footer /></>
+    element:<><ResponsiveAppBar/><Home/><section><Footer /></section></>
   },
 
   {
@@ -30,29 +30,29 @@ const router = createBrowserRouter([
 
   {
     path: "Industries",
-    element:<><ResponsiveAppBar/><Industries/><Footer /></>
+    element:<><ResponsiveAppBar/><Industries/><section><Footer /></section></>
   },
 
  
   {
     path: "Careers",
-    element:<><ResponsiveAppBar/><Careers/><Footer /></>
+    element:<><ResponsiveAppBar/><Careers/><section><Footer /></section></>
   },
 
 
   {
     path: "Contact",
-    element:<><ResponsiveAppBar/><Contact/><Footer /></>
+    element:<><ResponsiveAppBar/><Contact/><section><Footer /></section></>
   },
 
   {
     path: "About",
-    element:<><ResponsiveAppBar/><About/><Footer /></>
+    element:<><ResponsiveAppBar/><About/><section><Footer /></section></>
   }, 
 
   {
     path: "Services/Branding",
-    element:<><ResponsiveAppBar/><Branding/><Footer /></>
+    element:<><ResponsiveAppBar/><Branding/><section><Footer /></section></>
   },
 
 ]);
