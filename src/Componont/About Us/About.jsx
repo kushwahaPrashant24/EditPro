@@ -12,14 +12,20 @@ function About() {
       return <>
            <React.Fragment>
            <div  className="text-white">
-            <Main />
-           <Achive />
+           <section><Main /></section>
+            <section> 
+            <section><Achive /></section>
             <Story />
             <Values />
             <Director />
             <Design />
+            
+            <section></section>
+            <section></section>
+
             <Impact />
-            <Opportunities />
+            <Opportunities /></section>
+          
             </div>
            </React.Fragment>
       </>

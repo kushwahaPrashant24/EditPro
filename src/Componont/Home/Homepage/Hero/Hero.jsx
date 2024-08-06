@@ -36,20 +36,9 @@ export default function Hero() {
               className="text-lg text-center  font-bold text-black md:text-2xl us"
               style={{ position: "relative", bottom: "0vw" }}
             >
-              <div
-                className="Contact text-center p-2 m-5"
-                style={{
-
-                  width: "300px",
-                  border: "2px solid #bcc8eb",
-                  position: "relative",
-                  bottom: "5vh",
-                  borderRadius: "15px",
-                  backgroundColor: "#bcc8eb",
-                }}
-              >
-                <p>CONTACT US</p>
-              </div>
+               <button className="h-10 w-96 bg-black  text-white border-2 border-white">
+                Our Experties 
+              </button>
             </Link>
           </div>
           <div className="w-full md:w-1/2 flex justify-center items-end bg-contain h-96  md:h-auto">

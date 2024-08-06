@@ -1,14 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemButton from "@mui/material/ListItemButton";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -31,10 +24,14 @@ function Card(props) {
   return (
     <React.Fragment>
       <Button variant="outlined" onClick={handleClickOpen}>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center relative">
           <img className="relative" src={props.logo} alt="Company Logo" />
-          <div className="text-white text-2xl text-head2 absolute">
-            <h2>{props.companyname}</h2> {props.button}
+          <div className="absolute bottom-0 left-0 text-white text-lg p-2 bg-black bg-opacity-50">
+            <h2>Company</h2>
+            <h3>project</h3>
+          </div>
+          <div className="text-white text-2xl text-head2 absolute top-0 right-0">
+            {props.button}
           </div>
         </div>
       </Button>
@@ -84,12 +81,12 @@ function Card(props) {
             <h2 className="text-3xl font-bold">Service Provided</h2>
             <div className="flex flex-col gap-5 w-full">
               <div className="flex flex-col sm:flex-row gap-5">
-                <img className="w-full sm:w-1/2" src={props.img1} />
-                <img className="w-full sm:w-1/2" src={props.img2} />
+                <img className="w-full sm:w-1/2" src={props.img1} alt="" />
+                <img className="w-full sm:w-1/2" src={props.img2} alt="" />
               </div>
               <div className="flex flex-col sm:flex-row gap-5">
-                <img className="w-full sm:w-1/2" src={props.img3} />
-                <img className="w-full sm:w-1/2" src={props.img4} />
+                <img className="w-full sm:w-1/2" src={props.img3} alt="" />
+                <img className="w-full sm:w-1/2" src={props.img4} alt="" />
               </div>
             </div>
             <div className="pt-5 flex flex-col gap-5">
@@ -105,7 +102,7 @@ function Card(props) {
           </div>
         </div>
         <div className="sticky bottom-0 border-t-1 p-5 bg-white">
-          <button className="w-56 h-12 border-2">
+          <button className="w-56 h-12 border-2 flex items-center justify-center">
             Let's talk <ArrowForwardIcon />
           </button>
         </div>

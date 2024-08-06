@@ -62,7 +62,10 @@ import bgballvideo from './assets/Services/ballbg.mp4';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <><ResponsiveAppBar /><Home /><Footer /></>,
+
+
+    element:<><ResponsiveAppBar/><Home/><section><Footer /></section></>
+
   },
   {
     path: "Services",
@@ -73,6 +76,7 @@ const router = createBrowserRouter([
 
 
   {
+
     path: "EQCourses",
     element: <><ResponsiveAppBar /><section>
       <EQCourses
@@ -100,9 +104,14 @@ const router = createBrowserRouter([
       />
       <Footer />
       </section></>,
+
+    path: "Industries",
+    element:<><ResponsiveAppBar/><Industries/><section><Footer /></section></>
+
   },
 
   {
+
     path: "EQMerchandise",
     element: <><ResponsiveAppBar /><section>
       <EQCourses
@@ -115,6 +124,10 @@ const router = createBrowserRouter([
       />
       <Footer />
       </section></>,
+
+    path: "Careers",
+    element:<><ResponsiveAppBar/><Careers/><section><Footer /></section></>
+
   },
 
   {
@@ -134,6 +147,7 @@ const router = createBrowserRouter([
   },
 
   {
+
     path: "SuccessStories",
     element: <><ResponsiveAppBar /><section>
       <EQCourses
@@ -145,6 +159,10 @@ const router = createBrowserRouter([
       />
       <Footer />
       </section></>,
+
+    path: "Contact",
+    element:<><ResponsiveAppBar/><Contact/><section><Footer /></section></>
+
   },
 
   {
@@ -178,10 +196,7 @@ const router = createBrowserRouter([
     path: "Contact",
     element: <><ResponsiveAppBar /><Contact /><Footer /></>,
   },
-  {
-    path: "About",
-    element: <><ResponsiveAppBar /><About /><Footer /></>,
-  },
+  
   {
     path: "Services/Branding",
     element: <><ResponsiveAppBar /><Branding /><Footer /></>,
@@ -346,6 +361,9 @@ const router = createBrowserRouter([
     path: "Services/MainServices/Creativity/PersonalizedOccasionCardMaking", // Add the path for Design Fusion
     element: <><ResponsiveAppBar /><POCM /><Footer /></>,
   },
+    {
+    element:<><ResponsiveAppBar/><About/><section><Footer /></section></>
+    },
 
 ]);
 

@@ -63,18 +63,9 @@ function Serve() {
               className="text-lg text-center  font-bold text-black md:text-2xl us"
               style={{ position: "relative", bottom: "0vw" }}
             >
-              <div
-                className="Contact text-center "
-                style={{
-                  width: "200px",
-                  border: "2px solid #bcc8eb",
-                  position: "relative",
-                  borderRadius: "15px",
-                  backgroundColor: "#bcc8eb",
-                }}
-              >
-                <p>CONTACT US</p>
-              </div>
+             <button className="h-10 w-96  text-white border-2 border-white">
+                Get Started 
+              </button>
             </Link>
           </motion.div>
         )}

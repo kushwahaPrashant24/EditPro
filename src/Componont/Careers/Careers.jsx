@@ -9,11 +9,13 @@ import Client from "./Clients/Clients";
 export default function Careers() {
     return <>
      <div>
+     <section>
         <Hero />
         <Opportunities />
         <Values />
         <Client />
         <Join />
+        </section>
      </div>
     </>
 } 
