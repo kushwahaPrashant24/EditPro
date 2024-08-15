@@ -10,7 +10,7 @@ import Opportunities from "./Opportunities/Opportunities";
 
 function About() {
       return <>
-           <React.Fragment>
+         
            <div  className="text-white">
            <section><Main /></section>
             <section> 
@@ -27,7 +27,7 @@ function About() {
             <Opportunities /></section>
           
             </div>
-           </React.Fragment>
+          
       </>
 }
 

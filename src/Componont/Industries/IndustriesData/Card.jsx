@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import CloseIcon from "@mui/icons-material/Close";
 import Slide from "@mui/material/Slide";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import NewButton from "../../Services/MainServices/Components/Button/NewButton"
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="left" ref={ref} {...props} />;
@@ -228,10 +229,10 @@ function Card(props) {
                       </p>
                     </div>
                     <div className="sticky bottom-0 border-t-1 p-5 bg-white">
-                      <button className="w-56 h-12 border-2">
-                        Let's talk <ArrowForwardIcon />
-                      </button>
+                      
+                      <NewButton buttonText="Let's talk " link="/Contact"/>
                     </div>
+                    
                   </Dialog>
                   <p className="text-xl">
                   {props.projectonename}
@@ -354,9 +355,7 @@ function Card(props) {
                       </p>
                     </div>
                     <div className="sticky bottom-0 border-t-1 p-5 bg-white">
-                      <button className="w-56 h-12 border-2">
-                        Let's talk <ArrowForwardIcon />
-                      </button>
+                    <NewButton buttonText="Let's talk " link="/Contact"/>
                     </div>
                   </Dialog>
                   <p className="text-xl">
@@ -380,9 +379,7 @@ function Card(props) {
                     </div>
 
           <div className="sticky bottom-0 border-t-1 p-5 bg-white">
-            <button className="w-56 h-12 border-2">
-              Let's talk <ArrowForwardIcon />
-            </button>
+          <NewButton buttonText="Let's talk " link="/Contact" />
           </div>
         </Dialog>
       </React.Fragment>

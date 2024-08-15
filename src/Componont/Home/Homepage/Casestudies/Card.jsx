@@ -26,10 +26,11 @@ function Card(props) {
       <Button variant="outlined" onClick={handleClickOpen}>
         <div className="flex justify-center items-center relative">
           <img className="relative" src={props.logo} alt="Company Logo" />
-          <div className="absolute bottom-0 left-0 text-white text-lg p-2 bg-black bg-opacity-50">
-            <h2>Company</h2>
-            <h3>project</h3>
+          <div className="absolute bottom-0 left-0 text-left text-white font-bold text-lg p-2 bg-black bg-opacity-50">
+            <h2 className="text-left">{props.companyname}</h2>
+            <h3 className="text-left">{props.industryname} INDUSTRIES</h3>
           </div>
+
           <div className="text-white text-2xl text-head2 absolute top-0 right-0">
             {props.button}
           </div>
@@ -86,7 +87,6 @@ function Card(props) {
               </div>
               <div className="flex flex-col sm:flex-row gap-5">
                 <img className="w-full sm:w-1/2" src={props.img3} alt="" />
-                <img className="w-full sm:w-1/2" src={props.img4} alt="" />
               </div>
             </div>
             <div className="pt-5 flex flex-col gap-5">

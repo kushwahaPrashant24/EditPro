@@ -5,6 +5,7 @@ import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import { motion } from "framer-motion";
+import Button from "../Componont/Services/MainServices/Components/Button/NewButton"
 
 function Footer() {
   return (
@@ -16,7 +17,7 @@ function Footer() {
             <p className="text-xl">It takes less than a minute of your time.</p>
           </div>
           <div>
-            <button className="h-12 w-56  border-2">Request a quote</button>
+            <Button link="/contact" buttonText="Request a quote"  />
           </div>
         </div>
 

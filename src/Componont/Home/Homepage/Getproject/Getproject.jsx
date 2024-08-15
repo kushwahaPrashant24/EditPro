@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@mui/material/Button";
+import Button from "../../../Services/MainServices/Components/Button/NewButton"
 import { Link } from "react-router-dom";
 import Stack from "@mui/material/Stack";
 import "./Getproject.scss"
@@ -16,15 +16,11 @@ function Gotproject() {
                 <p className=" text-head text-lg sm:text-xl font-semibold">Call us at this number for instant support</p>
                 <p className=" text-head text-lg sm:text-xl font-semibold ">+91 8967908081</p>
                 </div>
-                <Link
-              to="/contact"
-              className="text-lg text-center  font-bold text-black md:text-2xl us"
-              style={{ position: "relative", bottom: "0vw" }}
-            >
-             <button className="h-10 w-96  text-white border-2 border-white">
-                Our Experties
-              </button>
-            </Link>
+                
+             <Button buttonText="Contact" link="/contact" />
+                
+             
+          
             </div>
          </div>
       

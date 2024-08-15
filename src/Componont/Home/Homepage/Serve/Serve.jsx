@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Sideleft from "../../../../assets/Homepage/leftlogo.png";
 import Sideright from "../../../../assets/Homepage/rightlogo.png";
-import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import Stack from "@mui/material/Stack";
 import Increaser from "./increaser";
 import "./serve.css";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Button from "../../../Services/MainServices/Components/Button/NewButton"
 
 function Serve() {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -52,21 +52,17 @@ function Serve() {
         {hasAnimated && (
           <motion.div
             id="Serve"
-            className="h-24 w-10/12 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white bg-increaser flex flex-col md:flex-row items-center justify-between rounded-xl -mt-10 p-4"
+            className="h-24 w-10/12  text-white bg-increaser flex flex-col md:flex-row items-center justify-between rounded-xl -mt-10 p-4"
             variants={variants}
             initial="initial"
             animate="animate"
           >
-            <h1 className="mb-4 md:mb-0">Let's Get Your Project Started</h1>
-            <Link
-              to="/contact"
-              className="text-lg text-center  font-bold text-black md:text-2xl us"
-              style={{ position: "relative", bottom: "0vw" }}
-            >
-             <button className="h-10 w-96  text-white border-2 border-white">
-                Get Started 
-              </button>
-            </Link>
+            <h1 className="mb-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl  font-black md:mb-0">Let's Get Your Project Started</h1>
+           
+             <Button buttonText="Get Started"   link="/contact" />
+                
+              
+        
           </motion.div>
         )}
       </div>

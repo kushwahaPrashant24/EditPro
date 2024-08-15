@@ -5,45 +5,42 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 import Aura from "../../Aura/Aura";
 import Model1 from "../../../../assets/Homepage/NewModel1.png";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Butt from "../../../Services/MainServices/Components/Button/NewButton";
 
 export default function Hero() {
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="relative flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/path/to/background-image.jpg')" }}>
         <div
           id="Hero"
-          className="flex flex-col md:flex-row items-center justify-center pt-20 rounded-3xl"
+          className="flex flex-col md:flex-row items-center justify-center w-full text-white pt-16 px-4 md:px-7"
+          style={{ paddingTop: "calc(10vh + 60px)", minHeight: "80vh" }} // Reduced top padding and min-height
         >
-          <div className="w-full md:w-1/2 flex flex-col px-7 mt-12 md:mt-24 lg:mt-48 gap-6 md:gap-9">
+          <div className="w-full md:w-1/2 flex flex-col mt-8 md:mt-16 lg:mt-24 gap-4 sm:gap-6 md:gap-8">
             <div>
               <h3 className="w-full sm:w-3/4 md:w-full text-lg md:text-xl lg:text-2xl font-medium text-left text-head2">
                 CREATIVE AGENCY
               </h3>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight">
                 TRANSFORM VISION INTO DIGITAL MASTERPIECES
               </h1>
             </div>
             <div>
-              <p className="hidden md:block text-sm md:text-base lg:text-2xl font-medium text-left text-caribbeangreen-5">
+              <p className="hidden md:block text-sm md:text-base lg:text-xl  text-left font-bold ">
                 Welcome to EditQuasar, where creativity meets precision. We
                 specialize in diverse editing services to bring your visions to
                 life. Let your vision shine through our expert craftsmanship.
                 Together, we'll create something extraordinary.
               </p>
             </div>
-            <Link
-              to="/contact"
-              className="text-lg text-center  font-bold text-black md:text-2xl us"
-              style={{ position: "relative", bottom: "0vw" }}
-            >
-               <button className="h-10 w-96 bg-black  text-white border-2 border-white">
-                Our Experties 
-              </button>
-            </Link>
+            <div className="w-full sm:w-64 md:w-80">
+              <Butt buttonText="Know More" link="/Services" target="main" />
+            </div>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center items-end bg-contain h-96  md:h-auto">
+          <div className="w-full md:w-1/2 flex justify-center items-end h-full">
             <img
-              className="w-full h-auto max-w-xl mt-16  z-10"
+              className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mt-12 z-10"
               src={Model1}
               alt="Model"
             />

@@ -3,6 +3,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import IndustryVideo from "../../../assets/Industry/final industry section top video (1).mp4";
+import Button from "../../../Componont/Services/MainServices/Components/Button/NewButton"
 
 function Main() {
   const [counterOn, setCounterOn] = useState(false);
@@ -31,16 +32,16 @@ function Main() {
             <h1 className="text-7xl font-thin text-white">
               Advancing Industry Innovation
             </h1>
-            <div>
+            <div className="flex flex-col gap-5">
               <h2 className="text-xl text-white">
                 Delivering excellence across diverse industries and making a
                 significant impact in each.
               </h2>
-              <div className="w-56 sticky bottom-0 border-t-1 mt-10 bg-white">
-                <button className="w-56 h-12 border-2 ">
-                  Let's talk <ArrowForwardIcon />
-                </button>
-              </div>
+          
+                <Button buttonText="Let's talk"  link="" />
+                   
+               
+             
             </div>
           </div>
           <ScrollTrigger
